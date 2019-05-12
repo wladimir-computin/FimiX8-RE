@@ -6,7 +6,7 @@
 /rtm should be our X8 SE
 /rest? Maybe A3? Don't know
 
-TODO: Sort them properly!
+~~TODO: Sort them properly!~~ Done!
 
 The APK was on the server too, seems like an old version of Fimi Navi?
 
