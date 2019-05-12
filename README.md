@@ -11,3 +11,8 @@ Tools used so far:
 * Ghidra
 
 Didn't had much time to document everything yet. Look for files named README.md, I write down my notes in those.
+
+## Contribution
+Help is desperately needed!
+Anyone with skills in Reverse Engineering, OpenWRT, Embedded, MIPS and so on.
+ATM I'm trying to unpack the second stage firmware image (jiffs2 overlay).
