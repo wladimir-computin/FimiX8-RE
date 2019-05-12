@@ -1,0 +1,1 @@
+https://cdn.awsde0.fds.api.mi-img.com/fimi-firmware-bucket?/?list-type=2&prefix=&delimiter=

@@ -1,0 +1,1 @@
+https://fimiapp-server-frankfurt.mi-ae.com.de/v3/firmware/getFirmwareDetail

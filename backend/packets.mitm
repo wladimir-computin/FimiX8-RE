@@ -1,0 +1,157 @@
+1906:7:version;1:7#4:mode;11:transparent;8:response;273:13:timestamp_end;18:1557591122.3285015^15:timestamp_start;17:1557591122.323539^7:content;0:,7:headers;96:22:14:Content-Length,1:0,]40:4:Date,29:Sat, 11 May 2019 16:12:02 GMT,]22:10:Connection,5:close,]]6:reason;10:No Content,11:status_code;3:204#12:http_version;8:HTTP/1.1,}7:request;625:9:is_replay;5:false!13:timestamp_end;18:1557591122.0744178^15:timestamp_start;18:1557591122.0679119^7:content;0:,7:headers;348:40:4:Host,29:connectivitycheck.gstatic.com,]22:10:Connection,5:close,]87:6:Accept,74:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8,]77:10:User-Agent,59:Dalvik/2.1.0 (Linux; U; Android 7.0; SM-G930FD Build/NRD90M,]40:15:Accept-Encoding,17:gzip,deflate,sdch,]58:15:Accept-Language,35:en-GB,en;q=0.8,en-US;q=0.6,en;q=0.4,]]12:http_version;8:HTTP/1.1,4:path;13:/generate_204,4:port;2:80#4:host;12:216.58.210.3,6:scheme;4:http,6:method;3:GET,17:first_line_format;8:relative;}8:metadata;0:}6:marked;5:false!11:intercepted;5:false!4:type;4:http;11:server_conn;419:3:via;0:~13:timestamp_end;18:1557591122.3401191^19:timestamp_tls_setup;0:~19:timestamp_tcp_setup;18:1557591122.2211962^15:timestamp_start;18:1557591122.0888295^11:tls_version;0:~21:alpn_proto_negotiated;0:~3:sni;0:~4:cert;0:~15:tls_established;5:false!14:source_address;26:14:192.168.178.65;5:54821#]10:ip_address;21:12:216.58.210.3;2:80#]7:address;21:12:216.58.210.3;2:80#]2:id;36:b72aedbe-889e-45c1-9879-f3239b7c13cb;}11:client_conn;358:14:tls_extensions;0:~11:tls_version;0:~21:alpn_proto_negotiated;0:~11:cipher_name;0:~3:sni;0:~13:timestamp_end;18:1557591122.3496275^19:timestamp_tls_setup;0:~15:timestamp_start;18:1557591122.0607834^8:mitmcert;0:~10:clientcert;0:~15:tls_established;5:false!7:address;41:21:::ffff:192.168.12.137;5:43298#1:0#1:0#]2:id;36:9ba80518-b272-4870-accd-ba8c8de2554a;}5:error;0:~2:id;36:0d8216ed-ec66-4257-a1fc-323aa5ec688b;}14790:7:version;1:7#4:mode;11:transparent;8:response;9670:13:timestamp_end;17:1557591136.266427^15:timestamp_start;18:1557591136.2502928^7:content;9240:{"data":[{"endVersion":0,"fileEncode":"4bbfa0a7b32740df9da88f347eac4ac2","fileSize":70980,"fileUrl":"https://cdn.awsde0.fds.api.mi-img.com/fimi-firmware-bucket/app1534503453056GH2-F-V010SP24RTM180201R13051-CN-R13051_GH2_ZTZ_A-Release-4BBFA0A7B32740DF9DA88F347EAC4AC2.bin1534503453068?GalaxyAccessKeyId=5271728730218&Expires=4601258630695&Signature=RvDPse7hRnhx+5w9IAbPFJ9X/m8=","forceOta":"","forceSign":"0","logicVersion":1024,"model":5,"pushFireType":1,"startVersion":0,"status":"1","stepVersion":"","sysNameI18N":{"en_US":"GH2-Handheld","zh_CN":"GH2-Handheld","zh_TW":"GH2-Handheld"},"type":8,"updateContentI18N":{"en_US":"Handheld:1024","zh_CN":"Handheld:1024","zh_TW":"Handheld:1024"},"userVersion":"1024"},{"endVersion":0,"fileEncode":"3523a079ec3a2d409cffb6ea6dd0c0c4","fileSize":167460,"fileUrl":"https://cdn.awsde0.fds.api.mi-img.com/fimi-firmware-bucket/app1534503519116GH2-G-V010SP28RTM180709R13882-CN-R15353_GH2_LJG_A-Release-3523A079EC3A2D409CFFB6EA6DD0C0C4.bin1534503519118?GalaxyAccessKeyId=5271728730218&Expires=4601258630695&Signature=NRxi8dNFcEF7yBtO5KYQquHKAdc=","forceOta":"","forceSign":"0","logicVersion":1028,"model":5,"pushFireType":1,"startVersion":0,"status":"1","stepVersion":"","sysNameI18N":{"en_US":"GH2-Gimbal","zh_CN":"GH2-Gimbal","zh_TW":"GH2-Gimbal"},"type":3,"updateContentI18N":{"en_US":"Gimbal:1028","zh_CN":"Gimbal:1028","zh_TW":"Gimbal:1028"},"userVersion":"1028"},{"endVersion":0,"fileEncode":"009790d4eaf1495d8484965b94fab9b0","fileSize":527654,"fileUrl":"https://cdn.awsde0.fds.api.mi-img.com/fimi-firmware-bucket/app1548732356545VM-A-V010SP37RTM190124R060211-CN-OTADIFF_C-Release-009790D4EAF1495D8484965B94FAB9B0.zip1548732356549?GalaxyAccessKeyId=5271728730218&Expires=4601258630695&Signature=ZWUyDWyLqTAXvNaPUrNZFG+QyHw=","forceOta":"0","forceSign":"0","logicVersion":1037,"model":1,"pushFireType":1,"startVersion":0,"status":"1","stepVersion":"","sysNameI18N":{"en_US":"x8s-R16","zh_CN":"x8s-R16","zh_TW":"x8s-R16"},"type":9,"updateContentI18N":{"en_US":"1037C","zh_CN":"1037CÂçáÁ∫ß","zh_TW":"1037CÂçáÁ∫ß"},"userVersion":"1035"},{"endVersion":0,"fileEncode":"fee1aeeb1ab750b49e76aa11dbf477b6","fileSize":16900,"fileUrl":"https://cdn.awsde0.fds.api.mi-img.com/fimi-firmware-bucket/app1548732450036E20A-A-V010SP16RTM190117R18501-CN-A-Release-FEE1AEEB1AB750B49E76AA11DBF477B6.bin1548732450040?GalaxyAccessKeyId=5271728730218&Expires=4601258630695&Signature=Idond4NxviNiBIiu4wrwPOXnJbE=","forceOta":"0","forceSign":"0","logicVersion":1016,"model":0,"pushFireType":1,"startVersion":0,"status":"1","stepVersion":"","sysNameI18N":{"en_US":"ESC","zh_CN":"x8s-ÁîµË∞É","zh_TW":"ESC"},"type":14,"updateContentI18N":{"en_US":"1016A","zh_CN":"1016AÂçáÁ∫ß","zh_TW":"1016AÂçáÁ∫ß"},"userVersion":"1015"},{"endVersion":0,"fileEncode":"57c46041eddcfe5c078fcbaec4753103","fileSize":30340,"fileUrl":"https://cdn.awsde0.fds.api.mi-img.com/fimi-firmware-bucket/app1550117890035F20A-B-V010SP00T181121R0004-GLB-A-Release-57C46041EDDCFE5C078FCBAEC4753103(1).bin154596866769615484054902731550117890051?GalaxyAccessKeyId=5271728730218&Expires=4601258630695&Signature=4tOs1Pk2PODGuIdOc8Bg++pd/LI=","forceOta":"0","forceSign":"0","logicVersion":1000,"model":3,"pushFireType":1,"startVersion":0,"status":"1","stepVersion":"","sysNameI18N":{"en_US":"NFZ","zh_CN":"x8s-Á¶ÅÈ£ûÂå∫","zh_TW":"NFZ"},"type":10,"updateContentI18N":{"en_US":"1000a","zh_CN":"1000a","zh_TW":"1000a"},"userVersion":"1000"},{"endVersion":0,"fileEncode":"4becfe460f83818f09a47716aff5a794","fileSize":38487104,"fileUrl":"https://cdn.awsde0.fds.api.mi-img.com/fimi-firmware-bucket/app1553069124693X9-A-V010SP77RTM190313R220453-CN-A-Release-OTA-4BECFE460F83818F09A47716AFF5A794.zip1553069124872?GalaxyAccessKeyId=5271728730218&Expires=4601258630695&Signature=+j8+gx/jLIVmzhzC2b8e+papJ3A=","forceOta":"0","forceSign":"0","logicVersion":1077,"model":4,"pushFireType":1,"startVersion":0,"status":"1","stepVersion":"A","sysNameI18N":{"en_US":"MiDroneMini-Sys","zh_CN":"MiDroneMini-Sys","zh_TW":"MiDroneMini-Sys"},"type":0,"updateContentI18N":{"en_US":"Optimized flight performance.","zh_CN":"1077Âõ∫‰ª∂ÁâàÊú¨\r\n‰ºòÂåñÈ£ûË°åÊÄßËÉΩ","zh_TW":"1077Âõ∫‰ª∂ÁâàÊú¨\r\n‰ºòÂåñÈ£ûË°åÊÄßËÉΩ"},"userVersion":"1077"},{"endVersion":0,"fileEncode":"9f4b6ddf6261b426340f8f5e2b7df4a1","fileSize":4456592,"fileUrl":"https://cdn.awsde0.fds.api.mi-img.com/fimi-firmware-bucket/app1553831646872CM1C-D-V010SP17RTM190327R17-CN-def_A-Release-9F4B6DDF6261B426340F8F5E2B7DF4A1.bin1553831646912?GalaxyAccessKeyId=5271728730218&Expires=4601258630695&Signature=8lKBw+z/YFJUTXsjbuGPh7EKxW4=","forceOta":"0","forceSign":"0","logicVersion":1017,"model":3,"pushFireType":1,"startVersion":0,"status":"1","stepVersion":"A","sysNameI18N":{"en_US":"FC Relay","zh_CN":"x8s-È£ûÊú∫‰∏≠Áªß","zh_TW":"FC Relay"},"type":12,"updateContentI18N":{"en_US":"Optimized channel selection and reliable range performance","zh_CN":"‰ºòÂåñÈ£ûË°åË∑ùÁ¶ª","zh_TW":"‰ºòÂåñÈ£ûË°åË∑ùÁ¶ª"},"userVersion":"1011"},{"endVersion":0,"fileEncode":"e795576c172fe5c1fcba7fa14e914fce","fileSize":4915344,"fileUrl":"https://cdn.awsde0.fds.api.mi-img.com/fimi-firmware-bucket/app1553831717127CM1C-R-V010SP17RTM190327R17-CN-def_A-Release-E795576C172FE5C1FCBA7FA14E914FCE.bin1553831717149?GalaxyAccessKeyId=5271728730218&Expires=4601258630695&Signature=A8YOYdYQzPxPm6FsHEWgKXz0h9s=","forceOta":"0","forceSign":"0","logicVersion":1017,"model":3,"pushFireType":1,"startVersion":0,"status":"1","stepVersion":"A","sysNameI18N":{"en_US":"RC Relay","zh_CN":"x8s-ÈÅ•Êéß‰∏≠Áªß","zh_TW":"RC Relay"},"type":11,"updateContentI18N":{"en_US":"Optimized channel selection and reliable range performance","zh_CN":"‰ºòÂåñÈ£ûË°åË∑ùÁ¶ª","zh_TW":"‰ºòÂåñÈ£ûË°åË∑ùÁ¶ª"},"userVersion":"1011"},{"endVersion":0,"fileEncode":"e36b1ea1461ba2dd63aeae67723a774e","fileSize":32084,"fileUrl":"https://cdn.awsde0.fds.api.mi-img.com/fimi-firmware-bucket/app1554867192638R20A-A-V010SP19RTM190314R18954-CN-RTM_C-Release-E36B1EA1461BA2DD63AEAE67723A774E.bin1554867192641?GalaxyAccessKeyId=5271728730218&Expires=4601258630695&Signature=AXSIsOHjf1wgcfUOE+IVbHAvVqo=","forceOta":"0","forceSign":"0","logicVersion":1019,"model":3,"pushFireType":1,"startVersion":0,"status":"1","stepVersion":"C","sysNameI18N":{"en_US":"RC","zh_CN":"x8s-ÈÅ•ÊéßÂô®","zh_TW":"RC"},"type":1,"updateContentI18N":{"en_US":"Optimized the electricity calculation function, in order to reduce the electricity calculation error","zh_CN":"‰ºòÂåñÁîµÈáèËÆ°ÁÆóÂäüËÉΩÔºåÂáèÂ∞èÁîµÈáèËÆ°ÁÆóËØØÂ∑Æ","zh_TW":"‰ºòÂåñÁîµÈáèËÆ°ÁÆóÂäüËÉΩÔºåÂáèÂ∞èÁîµÈáèËÆ°ÁÆóËØØÂ∑Æ"},"userVersion":"1017"},{"endVersion":0,"fileEncode":"27878d2f9942263fd9dff75dc95b1d16","fileSize":123764,"fileUrl":"https://cdn.awsde0.fds.api.mi-img.com/fimi-firmware-bucket/app1554867242204G20A-G-V010SP15RTM190404R19091-CN-B-Release-27878D2F9942263FD9DFF75DC95B1D16.bin1554867242207?GalaxyAccessKeyId=5271728730218&Expires=4601258630695&Signature=ooNFjt0Qjwu2kOeTbz/boKgOi00=","forceOta":"0","forceSign":"0","logicVersion":1015,"model":6,"pushFireType":1,"startVersion":0,"status":"1","stepVersion":"B","sysNameI18N":{"en_US":"Gimbal","zh_CN":"x8s-‰∫ëÂè∞","zh_TW":"Gimbal"},"type":3,"updateContentI18N":{"en_US":"1.Optimized gimbal centered , and jitter problem of gimbal\r\n2.Optimized the horizontal calibration function of gimbal","zh_CN":"1. ‰ºòÂåñ‰∫ëÂè∞Âõû‰∏≠Ôºå‰∫ëÂè∞ÊäñÂä®ÈóÆÈ¢ò\r\n2. ‰ºòÂåñ‰∫ëÂè∞Ê∞¥Âπ≥Ê†°ÂáÜÂäüËÉΩ","zh_TW":"1. ‰ºòÂåñ‰∫ëÂè∞Âõû‰∏≠Ôºå‰∫ëÂè∞ÊäñÂä®ÈóÆÈ¢ò\r\n2. ‰ºòÂåñ‰∫ëÂè∞Ê∞¥Âπ≥Ê†°ÂáÜÂäüËÉΩ"},"userVersion":"1014"},{"endVersion":0,"fileEncode":"4dc29d97becd21a6c0e0bf2931e84a37","fileSize":49765580,"fileUrl":"https://cdn.awsde0.fds.api.mi-img.com/fimi-firmware-bucket/app1555322526467A12-A-V010SP16RTM190413R3368-CN-A-Release-4DC29D97BECD21A6C0E0BF2931E84A37.bin1555322526678?GalaxyAccessKeyId=5271728730218&Expires=4601258630695&Signature=ZjIA6xLgCiIdUZiQ0chJvBJC7ng=","forceOta":"0","forceSign":"0","logicVersion":1016,"model":2,"pushFireType":1,"startVersion":0,"status":"1","stepVersion":"A","sysNameI18N":{"en_US":"Camera","zh_CN":"x8s-Áõ∏Êú∫","zh_TW":"Camera"},"type":4,"updateContentI18N":{"en_US":"1.Fixed the problem of FPV frame skipping when screen moves quickly in Android device\r\n2.Adjust the scheme of color , the color tends to be natural","zh_CN":"1. ‰øÆÂ§ç ÁîªÈù¢Âø´ÈÄüÁßªÂä®Êó∂AndroidËÆæÂ§áFPVË∑≥Â∏ßÈóÆÈ¢ò\r\n2. Ë∞ÉÊï¥ÈÖçËâ≤ÊñπÊ°àÔºåËâ≤ÂΩ©Ë∂ã‰∫é‰∏≠ÊÄß","zh_TW":"1. ‰øÆÂ§ç ÁîªÈù¢Âø´ÈÄüÁßªÂä®Êó∂AndroidËÆæÂ§áFPVË∑≥Â∏ßÈóÆÈ¢ò\r\n2. Ë∞ÉÊï¥ÈÖçËâ≤ÊñπÊ°àÔºåËâ≤ÂΩ©Ë∂ã‰∫é‰∏≠ÊÄß"},"userVersion":"1011"},{"endVersion":0,"fileEncode":"7d02249e63968454ec32464e103babe9","fileSize":570484,"fileUrl":"https://cdn.awsde0.fds.api.mi-img.com/fimi-firmware-bucket/app1557489169396F20A-A-V010SP48RTM190510R19310-CN-RTM_I-Release-7D02249E63968454EC32464E103BABE9.bin1557489169400?GalaxyAccessKeyId=5271728730218&Expires=4601258630695&Signature=ZiUvtwoh1w34gCJ+oYtVDZayOrQ=","forceOta":"0","forceSign":"2","logicVersion":1048,"model":3,"pushFireType":1,"startVersion":0,"status":"1","stepVersion":"I","sysNameI18N":{"en_US":"Flight Control","zh_CN":"x8s-È£ûÊéß","zh_TW":"Flight Control"},"type":0,"updateContentI18N":{"en_US":"Optimizing the flight log upload function in the APP.","zh_CN":"‰ºòÂåñappÈ£ûË°åÊó•ÂøóÂäüËÉΩ","zh_TW":"‰ºòÂåñappÈ£ûË°åÊó•ÂøóÂäüËÉΩ"},"userVersion":"1047"}],"errCode":"90000","errMsg":"","success":true},7:headers;258:50:12:Content-Type,30:application/json;charset=utf-8,]40:4:Date,29:Sat, 11 May 2019 16:12:16 GMT,]30:6:Server,17:Apache-Coyote/1.1,]61:17:X-Vcap-Request-Id,36:b5588c6b-fe22-43f4-50b4-d10adab39116,]25:14:Content-Length,4:9240,]28:10:Connection,10:keep-alive,]]6:reason;2:OK,11:status_code;3:200#12:http_version;8:HTTP/1.1,}7:request;580:9:is_replay;5:false!13:timestamp_end;18:1557591136.0278642^15:timestamp_start;18:1557591136.0167644^7:content;0:,7:headers;148:30:10:User-Agent,12:Imooc-Mobile,]48:4:Host,37:fimiapp-server-frankfurt.mi-ae.com.de,]28:10:Connection,10:Keep-Alive,]26:15:Accept-Encoding,4:gzip,]]12:http_version;8:HTTP/1.1,4:path;164:/v3/firmware/getFirmwareDetail?access_token=1121493030ba46681b70133911b3180f&clientType=0&user_type=1&clientVersion=V1.0.10&signMsg=0e28af506441b910a5592ba0c9585dc9,4:port;3:443#4:host;13:18.196.28.229,6:scheme;5:https,6:method;3:GET,17:first_line_format;8:relative;}8:metadata;0:}6:marked;5:false!11:intercepted;5:false!4:type;4:http;11:server_conn;2526:3:via;0:~13:timestamp_end;18:1557591481.3514447^19:timestamp_tls_setup;18:1557591135.9436438^19:timestamp_tcp_setup;18:1557591135.7382684^15:timestamp_start;18:1557591135.5828447^11:tls_version;7:TLSv1.2;21:alpn_proto_negotiated;0:,3:sni;37:fimiapp-server-frankfurt.mi-ae.com.de;4:cert;2037:-----BEGIN CERTIFICATE-----
+MIIFszCCBJugAwIBAgIQC+oE6hU8rALLzABUALxbRjANBgkqhkiG9w0BAQsFADBe
+MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3
+d3cuZGlnaWNlcnQuY29tMR0wGwYDVQQDExRSYXBpZFNTTCBSU0EgQ0EgMjAxODAe
+Fw0xODExMjkwMDAwMDBaFw0xOTExMjkxMjAwMDBaMBkxFzAVBgNVBAMMDioubWkt
+YWUuY29tLmRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArO0lFiYv
+me/Ps1z7a+YxXQbXhcdvjcXYhIsRCKXudEyOd5n8DjuAZ8tuk9is81c9Sxwa0ykS
+ZmFjmH5c/RMapjQpiuomzyy09MGhq1xlaRaE85adN4CdUyV8a5Y/vZnspZ5z4FsN
+W+MOvjkjcDU26IiQ+x8haGnwlsW+4wQAG/80g1JrcJaaGEQDAS+e2hdOfl6i8Vw5
+zdMwHC2myeOQkmRXm6aR5EpnCYw72V0sNrgmcibmiQvf2KcN7k5nQuVQSuo65SCy
+Y92Op20Yyo1CCrA/eork98oZ8NqoX2ZxARfiNpqOtzUr4dNonpweBynHKyUlRYc7
+ZZTJgCUnGTSlswIDAQABo4ICsDCCAqwwHwYDVR0jBBgwFoAUU8oXWfxrwAMhLxqu
+5KqoHIJW2nUwHQYDVR0OBBYEFHbk0Rul1+hB0fTXyohOTuCyxKA/MCcGA1UdEQQg
+MB6CDioubWktYWUuY29tLmRlggxtaS1hZS5jb20uZGUwDgYDVR0PAQH/BAQDAgWg
+MB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjA/BgNVHR8EODA2MDSgMqAw
+hi5odHRwOi8vY2RwMi5kaWdpY2VydC5jb20vUmFwaWRTU0xSU0FDQTIwMTguY3Js
+MEwGA1UdIARFMEMwNwYJYIZIAYb9bAECMCowKAYIKwYBBQUHAgEWHGh0dHBzOi8v
+d3d3LmRpZ2ljZXJ0LmNvbS9DUFMwCAYGZ4EMAQIBMHAGCCsGAQUFBwEBBGQwYjAh
+BggrBgEFBQcwAYYVaHR0cDovL29jc3AuZGNvY3NwLmNuMD0GCCsGAQUFBzAChjFo
+dHRwOi8vY2FjZXJ0cy5yYXBpZHNzbC5jb20vUmFwaWRTU0xSU0FDQTIwMTguY3J0
+MAkGA1UdEwQCMAAwggEEBgorBgEEAdZ5AgQCBIH1BIHyAPAAdgC72d+8H4pxtZOU
+I5eqkntHOFeVCqtS6BqQlmQ2jh7RhQAAAWdfHbeJAAAEAwBHMEUCIQCFFU2OdohS
+R0OZnQVRNgqZj1I8rOGGsBuugtEAO9nxBAIgXCAtUof0O7UJGL3EBpGyMgnmGDMc
+uMQ/Rtek8ald+7sAdgCHdb/nWXz4jEOZX73zbv9WjUdWNv9KtWDBtOr/XqCDDwAA
+AWdfHbgqAAAEAwBHMEUCIADzTdQjCfDwEABYJtko1BYvKz/jsbRbuzgH0qNGUBeD
+AiEA+ftqjEo9hgk2LY4MxWNDvpnOevnc21TxIVwG9FRdnGEwDQYJKoZIhvcNAQEL
+BQADggEBAMdbtQKVfpE8vIUpKZO5TOTvleS+6xxKYXNI37GYj9UfYBW/OnPVehYG
+gbRkXl/n4QkeGrVl8t7KuFk1B0ocO0SMmsYO3ZDhMYU0z/sQCXGDnxmx6H5eRaVT
+b8AIHVY+qySj9aioNgCK41UzbqinaCPIw27nYzRrOWZ10TQAkn+8DF12TFo2heW2
+WACJ60Ixbm9QvH4e2nmvNC8aQcwa80Ur9hoCzFXw/obK4Gz2FlPBAQFBP21Zcl1c
+VxuoalK3N8cubWRZQC8l/rtrYKeoYBCPt1QiPIHOGT3pfVI7eTcNZGg6flYumpj9
+JDTb4sunT6LofOp5sZJMmFYlD8+wQCc=
+-----END CERTIFICATE-----
+,15:tls_established;4:true!14:source_address;26:14:192.168.178.65;5:44969#]10:ip_address;23:13:18.196.28.229;3:443#]7:address;23:13:18.196.28.229;3:443#]2:id;36:cb373d43-1380-414f-bb3b-5fde969b77b7;}11:client_conn;1780:14:tls_extensions;184:12:5:65281#1: ,]50:1:0#42: (  %fimiapp-server-frankfurt.mi-ae.com.de,]8:2:23#0:,]8:2:35#0:,]31:2:13#22: ,]23:2:16#14: h2http/1.1,]10:2:11#2: ,]12:2:10#4:  ,]]11:tls_version;7:TLSv1.2;21:alpn_proto_negotiated;8:http/1.1,11:cipher_name;27:ECDHE-RSA-AES128-GCM-SHA256;3:sni;37:fimiapp-server-frankfurt.mi-ae.com.de;13:timestamp_end;17:1557591481.364687^19:timestamp_tls_setup;18:1557591136.0124025^15:timestamp_start;18:1557591135.5758517^8:mitmcert;1135:-----BEGIN CERTIFICATE-----
+MIIDGTCCAgGgAwIBAgIGDiqMqeP8MA0GCSqGSIb3DQEBCwUAMCgxEjAQBgNVBAMM
+CW1pdG1wcm94eTESMBAGA1UECgwJbWl0bXByb3h5MB4XDTE5MDUwOTE2MTIxNVoX
+DTIxMDUxMDE2MTIxNVowGTEXMBUGA1UEAwwOKi5taS1hZS5jb20uZGUwggEiMA0G
+CSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDQxUBPzx+ujINhra9tPM2WTLWhk+Ii
+ymWhNEdyEHwW/7GmZ2sJ18QcVWCBTH+p8E8Ho9Fe82fbZxXg6LuTLoJtiuk8Djkx
+lsyarmck0TLUey3ZZD9SDAeoG26i0IZ42YySSNzC3Nqu4gl/X20cVMgKSfCfqN6T
+muPXcwi2CkF7WIVXEBDe5IbjCxTybHJGTXm/L9Zgz8/4g81sbROgHv/U+Ewvl8LU
+84ru94d7cCenssxZS1x55kDbuIxLfFQYEPotia2HLubwzAWI1egacwmoxxqGBenB
+8eDLMOr2nCcdltFgZwiqFAoE8yyQ52DCpUuBFq3eXBCfpm2cWomjjZC/AgMBAAGj
+WDBWMFQGA1UdEQRNMEuHBBLEHOWCDioubWktYWUuY29tLmRlggxtaS1hZS5jb20u
+ZGWCJWZpbWlhcHAtc2VydmVyLWZyYW5rZnVydC5taS1hZS5jb20uZGUwDQYJKoZI
+hvcNAQELBQADggEBADiI3NtnY9lLDSmQislRdR7e4QGSVgvN2rTUIvKFmQSDGOyA
+GtG8QFlpSsVI1esrtXgsWiMaltsYosAQaecV0KJFB0RU8oR28v8nmhkujoxkdS7p
+5Zd7sG/39jVk1x4AY2Q3qYH9CpM5VIDUeHgTsFftiTOipkHYmG7Ji7uGG20hodGO
+8eyHTgdzfWfPvSHGnqaJ9jWCQF0G1jhNxJYGXSm+yenVzAvLPJjXxm2sJjLYTqod
+zuJpenONLmqrIZP4dlbZFZBrPKq48kd/VCGNJIB+AqoJodsG1QmQm6kFlyE7H+cl
+WbGfDtTKJZKlmvQbdokbVM3UATXtXQA4QjMy7ww=
+-----END CERTIFICATE-----
+,10:clientcert;0:~15:tls_established;4:true!7:address;41:21:::ffff:192.168.12.137;5:59029#1:0#1:0#]2:id;36:67968a4c-b597-4195-a0c2-c23b981cf1df;}5:error;0:~2:id;36:89d7b081-af51-4096-844f-f252473950b0;}5895:7:version;1:7#4:mode;11:transparent;8:response;483:13:timestamp_end;18:1557592084.6936889^15:timestamp_start;18:1557592084.6884913^7:content;56:{"data":[],"errCode":"90000","errMsg":"","success":true},7:headers;256:50:12:Content-Type,30:application/json;charset=utf-8,]40:4:Date,29:Sat, 11 May 2019 16:28:04 GMT,]30:6:Server,17:Apache-Coyote/1.1,]61:17:X-Vcap-Request-Id,36:ae808d21-cd3a-4641-746f-2a2874146cde,]23:14:Content-Length,2:56,]28:10:Connection,10:keep-alive,]]6:reason;2:OK,11:status_code;3:200#12:http_version;8:HTTP/1.1,}7:request;572:9:is_replay;5:false!13:timestamp_end;17:1557592084.573801^15:timestamp_start;18:1557592084.5669572^7:content;0:,7:headers;148:30:10:User-Agent,12:Imooc-Mobile,]48:4:Host,37:fimiapp-server-frankfurt.mi-ae.com.de,]28:10:Connection,10:Keep-Alive,]26:15:Accept-Encoding,4:gzip,]]12:http_version;8:HTTP/1.1,4:path;159:/v1/setting/getAppSetting?access_token=1121493030ba46681b70133911b3180f&clientType=0&user_type=1&clientVersion=V1.0.10&signMsg=0e28af506441b910a5592ba0c9585dc9,4:port;3:443#4:host;11:3.120.48.52,6:scheme;5:https,6:method;3:GET,17:first_line_format;8:relative;}8:metadata;0:}6:marked;5:false!11:intercepted;5:false!4:type;4:http;11:server_conn;2522:3:via;0:~13:timestamp_end;18:1557592456.9747088^19:timestamp_tls_setup;18:1557592084.4848516^19:timestamp_tcp_setup;18:1557592084.2793372^15:timestamp_start;18:1557592084.1501553^11:tls_version;7:TLSv1.2;21:alpn_proto_negotiated;0:,3:sni;37:fimiapp-server-frankfurt.mi-ae.com.de;4:cert;2037:-----BEGIN CERTIFICATE-----
+MIIFszCCBJugAwIBAgIQC+oE6hU8rALLzABUALxbRjANBgkqhkiG9w0BAQsFADBe
+MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3
+d3cuZGlnaWNlcnQuY29tMR0wGwYDVQQDExRSYXBpZFNTTCBSU0EgQ0EgMjAxODAe
+Fw0xODExMjkwMDAwMDBaFw0xOTExMjkxMjAwMDBaMBkxFzAVBgNVBAMMDioubWkt
+YWUuY29tLmRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArO0lFiYv
+me/Ps1z7a+YxXQbXhcdvjcXYhIsRCKXudEyOd5n8DjuAZ8tuk9is81c9Sxwa0ykS
+ZmFjmH5c/RMapjQpiuomzyy09MGhq1xlaRaE85adN4CdUyV8a5Y/vZnspZ5z4FsN
+W+MOvjkjcDU26IiQ+x8haGnwlsW+4wQAG/80g1JrcJaaGEQDAS+e2hdOfl6i8Vw5
+zdMwHC2myeOQkmRXm6aR5EpnCYw72V0sNrgmcibmiQvf2KcN7k5nQuVQSuo65SCy
+Y92Op20Yyo1CCrA/eork98oZ8NqoX2ZxARfiNpqOtzUr4dNonpweBynHKyUlRYc7
+ZZTJgCUnGTSlswIDAQABo4ICsDCCAqwwHwYDVR0jBBgwFoAUU8oXWfxrwAMhLxqu
+5KqoHIJW2nUwHQYDVR0OBBYEFHbk0Rul1+hB0fTXyohOTuCyxKA/MCcGA1UdEQQg
+MB6CDioubWktYWUuY29tLmRlggxtaS1hZS5jb20uZGUwDgYDVR0PAQH/BAQDAgWg
+MB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjA/BgNVHR8EODA2MDSgMqAw
+hi5odHRwOi8vY2RwMi5kaWdpY2VydC5jb20vUmFwaWRTU0xSU0FDQTIwMTguY3Js
+MEwGA1UdIARFMEMwNwYJYIZIAYb9bAECMCowKAYIKwYBBQUHAgEWHGh0dHBzOi8v
+d3d3LmRpZ2ljZXJ0LmNvbS9DUFMwCAYGZ4EMAQIBMHAGCCsGAQUFBwEBBGQwYjAh
+BggrBgEFBQcwAYYVaHR0cDovL29jc3AuZGNvY3NwLmNuMD0GCCsGAQUFBzAChjFo
+dHRwOi8vY2FjZXJ0cy5yYXBpZHNzbC5jb20vUmFwaWRTU0xSU0FDQTIwMTguY3J0
+MAkGA1UdEwQCMAAwggEEBgorBgEEAdZ5AgQCBIH1BIHyAPAAdgC72d+8H4pxtZOU
+I5eqkntHOFeVCqtS6BqQlmQ2jh7RhQAAAWdfHbeJAAAEAwBHMEUCIQCFFU2OdohS
+R0OZnQVRNgqZj1I8rOGGsBuugtEAO9nxBAIgXCAtUof0O7UJGL3EBpGyMgnmGDMc
+uMQ/Rtek8ald+7sAdgCHdb/nWXz4jEOZX73zbv9WjUdWNv9KtWDBtOr/XqCDDwAA
+AWdfHbgqAAAEAwBHMEUCIADzTdQjCfDwEABYJtko1BYvKz/jsbRbuzgH0qNGUBeD
+AiEA+ftqjEo9hgk2LY4MxWNDvpnOevnc21TxIVwG9FRdnGEwDQYJKoZIhvcNAQEL
+BQADggEBAMdbtQKVfpE8vIUpKZO5TOTvleS+6xxKYXNI37GYj9UfYBW/OnPVehYG
+gbRkXl/n4QkeGrVl8t7KuFk1B0ocO0SMmsYO3ZDhMYU0z/sQCXGDnxmx6H5eRaVT
+b8AIHVY+qySj9aioNgCK41UzbqinaCPIw27nYzRrOWZ10TQAkn+8DF12TFo2heW2
+WACJ60Ixbm9QvH4e2nmvNC8aQcwa80Ur9hoCzFXw/obK4Gz2FlPBAQFBP21Zcl1c
+VxuoalK3N8cubWRZQC8l/rtrYKeoYBCPt1QiPIHOGT3pfVI7eTcNZGg6flYumpj9
+JDTb4sunT6LofOp5sZJMmFYlD8+wQCc=
+-----END CERTIFICATE-----
+,15:tls_established;4:true!14:source_address;26:14:192.168.178.65;5:45479#]10:ip_address;21:11:3.120.48.52;3:443#]7:address;21:11:3.120.48.52;3:443#]2:id;36:d6b53d9d-c44f-4541-9d2b-e39a92279bc0;}11:client_conn;2085:14:tls_extensions;489:12:5:65281#1: ,]50:1:0#42: (  %fimiapp-server-frankfurt.mi-ae.com.de,]8:2:23#0:,]186:2:35#176:À!Ωˆùõ9íÛ˜pT¿ﬁ†‡¨#4¸Æ	|yjcL2Ûk†–ˇÁ•Q ä>÷G≤:l≤∏P√àâ∞.WÃÒ∑ˇV@@ëª˜®?wåîÎMKl–∏5kHØ}Ì(a‘mﬁ3yàìÿÃ"P˘ípR§≈ùÑµÊÓtjı§Ω⁄vjÃZ‹mêÌí´ØıGâ ÿ*'æ sFFU…[Vﬂ°O1ï/úî–v√˙RÔ,]31:2:13#22: ,]23:2:16#14: h2http/1.1,]10:2:11#2: ,]12:2:10#4:  ,]120:2:21#110:                                                                                                              ,]]11:tls_version;7:TLSv1.2;21:alpn_proto_negotiated;8:http/1.1,11:cipher_name;27:ECDHE-RSA-AES128-GCM-SHA256;3:sni;37:fimiapp-server-frankfurt.mi-ae.com.de;13:timestamp_end;18:1557592456.9808817^19:timestamp_tls_setup;17:1557592084.558819^15:timestamp_start;18:1557592084.1432674^8:mitmcert;1135:-----BEGIN CERTIFICATE-----
+MIIDGTCCAgGgAwIBAgIGDiqNOqCuMA0GCSqGSIb3DQEBCwUAMCgxEjAQBgNVBAMM
+CW1pdG1wcm94eTESMBAGA1UECgwJbWl0bXByb3h5MB4XDTE5MDUwOTE2MjgwNFoX
+DTIxMDUxMDE2MjgwNFowGTEXMBUGA1UEAwwOKi5taS1hZS5jb20uZGUwggEiMA0G
+CSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDQxUBPzx+ujINhra9tPM2WTLWhk+Ii
+ymWhNEdyEHwW/7GmZ2sJ18QcVWCBTH+p8E8Ho9Fe82fbZxXg6LuTLoJtiuk8Djkx
+lsyarmck0TLUey3ZZD9SDAeoG26i0IZ42YySSNzC3Nqu4gl/X20cVMgKSfCfqN6T
+muPXcwi2CkF7WIVXEBDe5IbjCxTybHJGTXm/L9Zgz8/4g81sbROgHv/U+Ewvl8LU
+84ru94d7cCenssxZS1x55kDbuIxLfFQYEPotia2HLubwzAWI1egacwmoxxqGBenB
+8eDLMOr2nCcdltFgZwiqFAoE8yyQ52DCpUuBFq3eXBCfpm2cWomjjZC/AgMBAAGj
+WDBWMFQGA1UdEQRNMEuCJWZpbWlhcHAtc2VydmVyLWZyYW5rZnVydC5taS1hZS5j
+b20uZGWHBAN4MDSCDioubWktYWUuY29tLmRlggxtaS1hZS5jb20uZGUwDQYJKoZI
+hvcNAQELBQADggEBAE/NleWRfsNhlRq9z3o2TAAX+VbllATbHeB/S3B2AnD3OLYW
+M0qTZk/5ouBaps78ILNtYVCUQOYZEeKtskL7xgIJiDqeKJx6JEQcYC7VhBfpYZK6
+Vrjvmvb6eQ7sFvljMS1r2q/Dc2sB3VGkhNRH0wNRYP04krlp/lNOwRO5Gd3UD6Br
+pryazO303fATjLpGFhWaGaR8u60FNbC7zvgyt0eRXmbewzFc8VOZv63OFoLEd/R0
+j7/uzDpaBxp55M9E31SBewZygL1yY3MbWjn4s8mNrRg12VcW0qM4C0MoFEqMaS/E
+Y12ZmJB5MgKtFPOCVEaCEZGaXIYvZpfxUA5g9fw=
+-----END CERTIFICATE-----
+,10:clientcert;0:~15:tls_established;4:true!7:address;41:21:::ffff:192.168.12.137;5:34215#1:0#1:0#]2:id;36:8dcc3678-b0ea-458e-ad5c-a818c5b5189b;}5:error;0:~2:id;36:e6426dc3-2182-42e5-b961-5636c8c1f796;}5950:7:version;1:7#4:mode;11:transparent;8:response;507:13:timestamp_end;18:1557592139.0831866^15:timestamp_start;18:1557592139.0638435^7:content;80:{"data":"","errCode":"92001","errMsg":"È£ûÁ±≥Id‰∏çËÉΩ‰∏∫Á©∫„ÄÇ","success":false},7:headers;256:50:12:Content-Type,30:application/json;charset=utf-8,]40:4:Date,29:Sat, 11 May 2019 16:28:58 GMT,]30:6:Server,17:Apache-Coyote/1.1,]61:17:X-Vcap-Request-Id,36:790c73c5-cd84-4bdb-7a6b-6d59c18f1b66,]23:14:Content-Length,2:80,]28:10:Connection,10:keep-alive,]]6:reason;2:OK,11:status_code;3:200#12:http_version;8:HTTP/1.1,}7:request;603:9:is_replay;5:false!13:timestamp_end;18:1557592138.9536338^15:timestamp_start;18:1557592138.9403176^7:content;0:,7:headers;148:30:10:User-Agent,12:Imooc-Mobile,]48:4:Host,37:fimiapp-server-frankfurt.mi-ae.com.de,]28:10:Connection,10:Keep-Alive,]26:15:Accept-Encoding,4:gzip,]]12:http_version;8:HTTP/1.1,4:path;189:/v1/firmware/getApkDetail2?access_token=1121493030ba46681b70133911b3180f&clientType=0&user_type=1&pkgName=com.fimi.android.app&clientVersion=V1.0.10&signMsg=f3c725a52128164cc2113298b77c3d3a,4:port;3:443#4:host;11:3.120.48.52,6:scheme;5:https,6:method;3:GET,17:first_line_format;8:relative;}8:metadata;0:}6:marked;5:false!11:intercepted;5:false!4:type;4:http;11:server_conn;2522:3:via;0:~13:timestamp_end;18:1557592456.9747088^19:timestamp_tls_setup;18:1557592084.4848516^19:timestamp_tcp_setup;18:1557592084.2793372^15:timestamp_start;18:1557592084.1501553^11:tls_version;7:TLSv1.2;21:alpn_proto_negotiated;0:,3:sni;37:fimiapp-server-frankfurt.mi-ae.com.de;4:cert;2037:-----BEGIN CERTIFICATE-----
+MIIFszCCBJugAwIBAgIQC+oE6hU8rALLzABUALxbRjANBgkqhkiG9w0BAQsFADBe
+MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3
+d3cuZGlnaWNlcnQuY29tMR0wGwYDVQQDExRSYXBpZFNTTCBSU0EgQ0EgMjAxODAe
+Fw0xODExMjkwMDAwMDBaFw0xOTExMjkxMjAwMDBaMBkxFzAVBgNVBAMMDioubWkt
+YWUuY29tLmRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArO0lFiYv
+me/Ps1z7a+YxXQbXhcdvjcXYhIsRCKXudEyOd5n8DjuAZ8tuk9is81c9Sxwa0ykS
+ZmFjmH5c/RMapjQpiuomzyy09MGhq1xlaRaE85adN4CdUyV8a5Y/vZnspZ5z4FsN
+W+MOvjkjcDU26IiQ+x8haGnwlsW+4wQAG/80g1JrcJaaGEQDAS+e2hdOfl6i8Vw5
+zdMwHC2myeOQkmRXm6aR5EpnCYw72V0sNrgmcibmiQvf2KcN7k5nQuVQSuo65SCy
+Y92Op20Yyo1CCrA/eork98oZ8NqoX2ZxARfiNpqOtzUr4dNonpweBynHKyUlRYc7
+ZZTJgCUnGTSlswIDAQABo4ICsDCCAqwwHwYDVR0jBBgwFoAUU8oXWfxrwAMhLxqu
+5KqoHIJW2nUwHQYDVR0OBBYEFHbk0Rul1+hB0fTXyohOTuCyxKA/MCcGA1UdEQQg
+MB6CDioubWktYWUuY29tLmRlggxtaS1hZS5jb20uZGUwDgYDVR0PAQH/BAQDAgWg
+MB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjA/BgNVHR8EODA2MDSgMqAw
+hi5odHRwOi8vY2RwMi5kaWdpY2VydC5jb20vUmFwaWRTU0xSU0FDQTIwMTguY3Js
+MEwGA1UdIARFMEMwNwYJYIZIAYb9bAECMCowKAYIKwYBBQUHAgEWHGh0dHBzOi8v
+d3d3LmRpZ2ljZXJ0LmNvbS9DUFMwCAYGZ4EMAQIBMHAGCCsGAQUFBwEBBGQwYjAh
+BggrBgEFBQcwAYYVaHR0cDovL29jc3AuZGNvY3NwLmNuMD0GCCsGAQUFBzAChjFo
+dHRwOi8vY2FjZXJ0cy5yYXBpZHNzbC5jb20vUmFwaWRTU0xSU0FDQTIwMTguY3J0
+MAkGA1UdEwQCMAAwggEEBgorBgEEAdZ5AgQCBIH1BIHyAPAAdgC72d+8H4pxtZOU
+I5eqkntHOFeVCqtS6BqQlmQ2jh7RhQAAAWdfHbeJAAAEAwBHMEUCIQCFFU2OdohS
+R0OZnQVRNgqZj1I8rOGGsBuugtEAO9nxBAIgXCAtUof0O7UJGL3EBpGyMgnmGDMc
+uMQ/Rtek8ald+7sAdgCHdb/nWXz4jEOZX73zbv9WjUdWNv9KtWDBtOr/XqCDDwAA
+AWdfHbgqAAAEAwBHMEUCIADzTdQjCfDwEABYJtko1BYvKz/jsbRbuzgH0qNGUBeD
+AiEA+ftqjEo9hgk2LY4MxWNDvpnOevnc21TxIVwG9FRdnGEwDQYJKoZIhvcNAQEL
+BQADggEBAMdbtQKVfpE8vIUpKZO5TOTvleS+6xxKYXNI37GYj9UfYBW/OnPVehYG
+gbRkXl/n4QkeGrVl8t7KuFk1B0ocO0SMmsYO3ZDhMYU0z/sQCXGDnxmx6H5eRaVT
+b8AIHVY+qySj9aioNgCK41UzbqinaCPIw27nYzRrOWZ10TQAkn+8DF12TFo2heW2
+WACJ60Ixbm9QvH4e2nmvNC8aQcwa80Ur9hoCzFXw/obK4Gz2FlPBAQFBP21Zcl1c
+VxuoalK3N8cubWRZQC8l/rtrYKeoYBCPt1QiPIHOGT3pfVI7eTcNZGg6flYumpj9
+JDTb4sunT6LofOp5sZJMmFYlD8+wQCc=
+-----END CERTIFICATE-----
+,15:tls_established;4:true!14:source_address;26:14:192.168.178.65;5:45479#]10:ip_address;21:11:3.120.48.52;3:443#]7:address;21:11:3.120.48.52;3:443#]2:id;36:d6b53d9d-c44f-4541-9d2b-e39a92279bc0;}11:client_conn;2085:14:tls_extensions;489:12:5:65281#1: ,]50:1:0#42: (  %fimiapp-server-frankfurt.mi-ae.com.de,]8:2:23#0:,]186:2:35#176:À!Ωˆùõ9íÛ˜pT¿ﬁ†‡¨#4¸Æ	|yjcL2Ûk†–ˇÁ•Q ä>÷G≤:l≤∏P√àâ∞.WÃÒ∑ˇV@@ëª˜®?wåîÎMKl–∏5kHØ}Ì(a‘mﬁ3yàìÿÃ"P˘ípR§≈ùÑµÊÓtjı§Ω⁄vjÃZ‹mêÌí´ØıGâ ÿ*'æ sFFU…[Vﬂ°O1ï/úî–v√˙RÔ,]31:2:13#22: ,]23:2:16#14: h2http/1.1,]10:2:11#2: ,]12:2:10#4:  ,]120:2:21#110:                                                                                                              ,]]11:tls_version;7:TLSv1.2;21:alpn_proto_negotiated;8:http/1.1,11:cipher_name;27:ECDHE-RSA-AES128-GCM-SHA256;3:sni;37:fimiapp-server-frankfurt.mi-ae.com.de;13:timestamp_end;18:1557592456.9808817^19:timestamp_tls_setup;17:1557592084.558819^15:timestamp_start;18:1557592084.1432674^8:mitmcert;1135:-----BEGIN CERTIFICATE-----
+MIIDGTCCAgGgAwIBAgIGDiqNOqCuMA0GCSqGSIb3DQEBCwUAMCgxEjAQBgNVBAMM
+CW1pdG1wcm94eTESMBAGA1UECgwJbWl0bXByb3h5MB4XDTE5MDUwOTE2MjgwNFoX
+DTIxMDUxMDE2MjgwNFowGTEXMBUGA1UEAwwOKi5taS1hZS5jb20uZGUwggEiMA0G
+CSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDQxUBPzx+ujINhra9tPM2WTLWhk+Ii
+ymWhNEdyEHwW/7GmZ2sJ18QcVWCBTH+p8E8Ho9Fe82fbZxXg6LuTLoJtiuk8Djkx
+lsyarmck0TLUey3ZZD9SDAeoG26i0IZ42YySSNzC3Nqu4gl/X20cVMgKSfCfqN6T
+muPXcwi2CkF7WIVXEBDe5IbjCxTybHJGTXm/L9Zgz8/4g81sbROgHv/U+Ewvl8LU
+84ru94d7cCenssxZS1x55kDbuIxLfFQYEPotia2HLubwzAWI1egacwmoxxqGBenB
+8eDLMOr2nCcdltFgZwiqFAoE8yyQ52DCpUuBFq3eXBCfpm2cWomjjZC/AgMBAAGj
+WDBWMFQGA1UdEQRNMEuCJWZpbWlhcHAtc2VydmVyLWZyYW5rZnVydC5taS1hZS5j
+b20uZGWHBAN4MDSCDioubWktYWUuY29tLmRlggxtaS1hZS5jb20uZGUwDQYJKoZI
+hvcNAQELBQADggEBAE/NleWRfsNhlRq9z3o2TAAX+VbllATbHeB/S3B2AnD3OLYW
+M0qTZk/5ouBaps78ILNtYVCUQOYZEeKtskL7xgIJiDqeKJx6JEQcYC7VhBfpYZK6
+Vrjvmvb6eQ7sFvljMS1r2q/Dc2sB3VGkhNRH0wNRYP04krlp/lNOwRO5Gd3UD6Br
+pryazO303fATjLpGFhWaGaR8u60FNbC7zvgyt0eRXmbewzFc8VOZv63OFoLEd/R0
+j7/uzDpaBxp55M9E31SBewZygL1yY3MbWjn4s8mNrRg12VcW0qM4C0MoFEqMaS/E
+Y12ZmJB5MgKtFPOCVEaCEZGaXIYvZpfxUA5g9fw=
+-----END CERTIFICATE-----
+,10:clientcert;0:~15:tls_established;4:true!7:address;41:21:::ffff:192.168.12.137;5:34215#1:0#1:0#]2:id;36:8dcc3678-b0ea-458e-ad5c-a818c5b5189b;}5:error;0:~2:id;36:227fe545-164e-41d9-9af3-29e5895f2628;}
