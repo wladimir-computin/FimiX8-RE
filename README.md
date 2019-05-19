@@ -12,6 +12,9 @@ Tools used so far:
 
 Didn't had much time to document everything yet. Look for files named README.md, I write down my notes in those.
 
+## Useful stuff
+* I found a way to flash firmware via sd-card and write a tool for it: https://github.com/wladimir-computin/FimiX8-SDFG
+
 ## Stuff we know
 * The 5km range is achieved by some custom 5GHz wifi implementation between the RC and the drone. Connection to the phone is over USB. (That's actually a pretty good solution, using wifi of the phone results always in low range and high latency)
 ** Further analysis indicates, that iw/iwconfig is used for tx power management.
