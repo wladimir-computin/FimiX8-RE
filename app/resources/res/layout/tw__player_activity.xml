@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.twitter.sdk.android.tweetui.internal.VideoView android:layout_gravity="center" android:id="@+id/video_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/video_progress_view" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <com.twitter.sdk.android.tweetui.internal.VideoControlView android:layout_gravity="bottom" android:id="@+id/video_control_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:textSize="@dimen/tw__text_size_medium" android:textColor="@color/tw__cta_text_color" android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/call_to_action_view" android:background="@drawable/tw__call_to_action" android:padding="@dimen/tw__cta_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tw__cta_margin_top"/>
+</merge>

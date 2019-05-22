@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rl_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="22dp" android:layout_above="@+id/img_item3">
+        <ImageView android:id="@+id/img_open_close" android:background="@drawable/x8_btn_ai_follow_mode_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+        <ImageView android:id="@+id/img_item1" android:background="@drawable/x8_btn_ai_follow_lockup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_below="@+id/img_open_close" android:layout_centerHorizontal="true"/>
+        <ImageView android:id="@+id/img_item2" android:background="@drawable/x8_btn_ai_follow_parallel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:layout_below="@+id/img_item1" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/img_item3" android:background="@drawable/x8_btn_ai_follow_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

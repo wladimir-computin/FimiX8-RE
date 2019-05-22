@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fimi.app.x8s.widget.RecyclerViewItemRelayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/v_item" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Button android:textSize="@dimen/textsize_36" android:textColor="@drawable/x8_btn_text_selector" android:id="@+id/btn_item" android:background="@drawable/x8_btn_fc_button_selector" android:layout_width="40dp" android:layout_height="20dp" android:text="button" android:layout_centerInParent="true"/>
+</com.fimi.app.x8s.widget.RecyclerViewItemRelayout>

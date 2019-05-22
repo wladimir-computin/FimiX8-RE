@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <ImageView android:id="@+id/tw__gif_badge" style="@style/tw__Badge"/>
+    <TextView android:id="@+id/tw__video_duration" style="@style/tw__Badge.VideoDuration"/>
+</merge>

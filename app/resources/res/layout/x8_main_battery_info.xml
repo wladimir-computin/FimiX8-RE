@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.fimi.kernel.percent.PercentLinearLayout android:id="@+id/x8_rl_main_battery_info" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/textsize_39" android:textColor="@color/white_90" android:id="@+id/tv_ai_fly_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/x8_ai_fly_title" android:layout_centerHorizontal="true" app:layout_marginTopPercent="3.333333%"/>
+    </com.fimi.kernel.percent.PercentLinearLayout>
+</merge>

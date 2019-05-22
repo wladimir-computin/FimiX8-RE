@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.fimi.kernel.percent.PercentRelativeLayout android:id="@+id/x8_rl_main_fc_all_setting" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.fimi.kernel.percent.PercentRelativeLayout android:id="@+id/rl_main_fc_all_setting_content" android:background="@color/black_80" android:clickable="true" android:layout_width="0dp" android:layout_height="0dp" android:layout_centerHorizontal="true" app:layout_widthPercent="84.53125%w" app:layout_heightPercent="75%" app:layout_marginTopPercent="15.27777777777778%h">
+            <com.fimi.kernel.percent.PercentRelativeLayout android:id="@+id/x8_all_setting_first_content" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <com.fimi.kernel.percent.PercentRelativeLayout android:id="@+id/x8_all_setting_second_content" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </com.fimi.kernel.percent.PercentRelativeLayout>
+    </com.fimi.kernel.percent.PercentRelativeLayout>
+</merge>

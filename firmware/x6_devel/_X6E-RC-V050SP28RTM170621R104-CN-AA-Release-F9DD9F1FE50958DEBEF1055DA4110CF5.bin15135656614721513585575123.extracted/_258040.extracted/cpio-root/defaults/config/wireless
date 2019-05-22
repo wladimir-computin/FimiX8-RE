@@ -1,0 +1,75 @@
+config wifi-device 'wifi0'
+	option ifname		'wifi0'
+	option type		atheros
+	option country		CN
+	option channel		149
+	option maxassoc		128
+	option distance		65535
+	option hwmode		11A
+	option rxantenna	2
+	option txantenna	2
+	option txpower		20
+    option txpower_max  27
+    option chanbw       1
+    option txchmask     3
+    option dynpwr       1
+
+config wifi-iface	'ap0'
+	option ifname		'ath0'
+	option network  	camap
+	option device		wifi0
+	option mode		ap
+	option txpower  	23
+	option ssid		'X6E-'
+	option bssid		''
+	option encryption	none
+	option key		''
+	option key1		''
+	option key2		''
+	option key3		''
+	option key4		''
+	option server		''
+	option port     	0
+	option hidden		0
+	option isolate		0
+	option doth		0
+	option wmm		0
+	option rate		0
+    	option extdrv   1
+
+config wifi-iface	'sta0'
+	option ifname		'ath1'
+	option network  	camera
+	option device		wifi0
+	option mode		sta
+	option txpower  	23
+	option ssid		'REMCNTL0284C5'
+	option bssid		''
+	option encryption	none
+	option key		''
+	option key1		''
+	option key2		''
+	option key3		''
+	option key4		''
+	option server		''
+	option port     	0
+	option hidden		0
+	option isolate		0
+	option doth		0
+	option wmm		0
+	option rate		0
+
+config wifi-iface       'ap1'
+        option ifname           'wlan0'
+        option network          fwdap
+        option mode             ap
+        option txpower          23
+        option ssid             ''
+        option encryption       'psk2'
+        option key              '123456789'
+	option channel		11
+	option country		'CN'
+	option usebr		0
+	option bridge		'br0'
+	option dhcp_start_br	'192.168.40.120'
+	option dhcp_end_br	'192.168.40.150'

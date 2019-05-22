@@ -1,0 +1,13 @@
+Package: libjson
+Version: 0.9-2
+Depends: libc
+Provides: 
+Source: package/libjson-c
+Section: libs
+Status: unknown ok not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: ar71xx
+Installed-Size: 9663
+Description:  This package contains a library for javascript object notation backends.

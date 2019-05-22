@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fimi.app.x8s.widget.X8HorizontalTrimView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/x8_horizontal_trim_view" android:layout_width="match_parent" android:layout_height="match_parent"/>

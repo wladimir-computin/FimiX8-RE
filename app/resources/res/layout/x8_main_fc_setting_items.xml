@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fimi.kernel.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/x8_rl_main_fc_setting_items" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_fc_setting_items" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/rl_fc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.fimi.app.x8s.widget.TwoStateImageView android:id="@+id/img_fc" android:background="@drawable/x8_btn_fc_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_rc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.fimi.app.x8s.widget.TwoStateImageView android:id="@+id/img_rc" android:background="@drawable/x8_btn_rc_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_gimbal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.fimi.app.x8s.widget.TwoStateImageView android:id="@+id/img_gimbal" android:background="@drawable/x8_btn_gimbal_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_battery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.fimi.app.x8s.widget.TwoStateImageView android:id="@+id/img_battery" android:background="@drawable/x8_btn_battery_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_general" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.fimi.app.x8s.widget.TwoStateImageView android:id="@+id/img_general" android:background="@drawable/x8_btn_general_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@+id/v_divider" android:background="@color/white_10" android:layout_width="1dp" android:layout_height="match_parent" android:layout_toRightOf="@+id/ll_fc_setting_items"/>
+    <ViewStub android:id="@+id/stub_fc_item" android:layout="@layout/x8_main_fc_item" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toRightOf="@+id/v_divider"/>
+    <ViewStub android:id="@+id/stub_rc_item" android:layout="@layout/x8_main_rc_item" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toRightOf="@+id/v_divider"/>
+    <ViewStub android:id="@+id/stub_gimbal_item" android:layout="@layout/x8_main_gimbal_item" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toRightOf="@+id/v_divider"/>
+    <ViewStub android:id="@+id/stub_battery_item" android:layout="@layout/x8_main_battery_item" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toRightOf="@+id/v_divider"/>
+    <ViewStub android:id="@+id/stub_general_item" android:layout="@layout/x8_main_general_item" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toRightOf="@+id/v_divider"/>
+</com.fimi.kernel.percent.PercentRelativeLayout>

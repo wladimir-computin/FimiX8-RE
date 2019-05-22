@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fimi.kernel.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/textsize_36" android:textColor="@color/white_100" android:id="@+id/tv_calibration_step1_describe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/x8_modify_start_calibration_describe3" android:layout_above="@+id/layout_top" android:layout_centerHorizontal="true" android:textAlignment="center"/>
+    <ImageView android:id="@+id/iv_calibration_step_picture" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/tv_calibration_step1_describe" android:layout_centerHorizontal="true"/>
+    <com.fimi.app.x8s.widget.X8AircrftCalibrationIndicatorView android:id="@+id/view_aircrft_Calibration_Indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/iv_calibration_step_picture" android:layout_centerHorizontal="true"/>
+</com.fimi.kernel.percent.PercentRelativeLayout>

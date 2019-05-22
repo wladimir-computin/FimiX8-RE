@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:textSize="12sp" android:textColor="#66000000" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/sticky_header_letter_tv" android:background="#ffffff" android:paddingLeft="17.6dp" android:layout_width="match_parent" android:layout_height="33.6dp" android:text="13.6dp"/>

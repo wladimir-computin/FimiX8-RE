@@ -1,0 +1,52 @@
+/**fimi**/
+*{margin: 0rem; padding: 0rem;}
+table{border-collapse:collapse;border-spacing:0; width: 100%;}
+body {font: 14px Helvetica Neue,Helvetica,PingFang SC,\5FAE\8F6F\96C5\9ED1,Tahoma,Arial,sans-serif;}
+.fm-main{ padding: 0.4rem 0.4rem 1.4rem 0.4rem;}
+.fm-main ul{ padding-left: 0.4rem; margin-bottom: 0.5rem;}
+.fm-main ul li{ font-size: 0.42rem; line-height: 0.66rem; margin-bottom: 0.2rem;}
+.fm-main h1{ font-size: 0.5rem; border-bottom: 0.01rem solid #ededed; padding-bottom: 0.3rem; margin-bottom: 0.4rem;}
+.fm-main p{ font-size: 0.42rem; line-height: 0.66rem; margin-bottom: 0.4rem; }
+.fm-main h2{ font-size: 0.48rem;  margin-bottom: 0.3rem; padding-top: 0.2rem;} 
+.fm-main h3{ font-size: 0.42rem;  margin-bottom: 0.3rem; padding-top: 0.2rem; margin-top: -0.2rem;} 
+.fm-main .fm-blod{ font-weight: bold;}
+.fm-main .fm-right{ text-align: right; margin-top: 0.6rem;}
+
+.fm-if{ position: fixed; width: 100%; height:100%;}
+#FrameNav{ width: 100%; height: 100%;}
+.fm-nav{ width: 100%; height: 1.4rem; background-color: #000000; position: fixed; bottom: 0rem; left: 0rem; background: rgba(129,129,129,0.4);}
+#fm-language{ float: right; margin-right: 0.2rem; height: 1rem; margin-top: 0.2rem; border: none; background-color: #FFFFFF; border-radius: 0.12rem; font-size: 0.4rem; padding: 0.2rem;}
+select:focus{ outline: 0;}
+.fm-table{ background-color: #f2f2f2;}
+.fm-table tr td{ padding: 0.1rem; font-size: 0.38rem;}
+.fm-table thead tr td{ text-align: center; font-weight: bold; font-size: 0.42rem;}
+
+/**FAQ**/
+.fm-faq .fm-title{
+	margin-bottom: 0;
+	color: #ff6600;
+	font-size: 0.46rem;
+}
+.fm-faq h2{
+	color: #ff6600;
+}
+
+
+
+@media only screen and (min-width: 1029px){
+	.fm-main{ padding: 20px 20px 50px 20px;}
+	.fm-main ul{ padding-left: 30px; margin-bottom: 20px}
+	.fm-main ul li{ font-size: 16px; line-height: 26px; margin-bottom: 10px;}
+	.fm-main h1{ font-size: 30px; border-bottom: 1px solid #ededed; padding-bottom: 20px; margin-bottom: 30px;}
+	.fm-main p{ font-size: 16px; line-height: 26px; margin-bottom: 10px; }
+	.fm-main h2{ font-size: 20px;  margin-bottom: 20px; padding-top: 20px;} 
+	.fm-main h3{ font-size: 20px;  margin-bottom: 30px; padding-top: 20px; } 
+	.fm-main .fm-blod{ font-weight: bold;}
+	.fm-main .fm-right{ text-align: right; margin-top: 30px;}
+	.fm-nav{ height: 60px;}
+	#fm-language{ font-size: 14px; height: 40px; margin-top: 10px; padding: 10px; border-radius: 4px;}
+	
+	.fm-faq .fm-title{font-size: 18px; }
+	.fm-table tr td{ padding: 10px; font-size: 0.16px;}
+	.fm-table thead tr td{font-size: 16px;}
+}

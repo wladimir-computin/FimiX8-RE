@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffffffff" android:layout_width="match_parent" android:layout_height="33dp">
+    <ImageView android:id="@+id/iv_return" android:layout_width="30dp" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:src="@drawable/fimisdk_img_return_selector" android:scaleType="centerInside" android:layout_centerVertical="true"/>
+    <TextView android:textSize="14dp" android:textColor="@color/person_title_textcolor" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_main_title" android:layout_centerInParent="true"/>
+    <TextView android:textSize="14dp" android:textColor="@color/person_title_textcolor" android:gravity="center" android:id="@+id/tv_right" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="20dp" android:text="@string/login_email_title" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

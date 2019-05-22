@@ -1,0 +1,3 @@
+/etc/init.d/fmlog
+/etc/syslog.conf
+/etc/syslog_debug.conf

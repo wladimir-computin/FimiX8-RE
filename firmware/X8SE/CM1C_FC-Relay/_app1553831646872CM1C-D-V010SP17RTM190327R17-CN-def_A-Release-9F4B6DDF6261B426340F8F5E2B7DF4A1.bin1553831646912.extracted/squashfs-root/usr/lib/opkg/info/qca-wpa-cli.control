@@ -1,0 +1,13 @@
+Package: qca-wpa-cli
+Version: ge59f151-dirty-1
+Depends: libc
+Provides: 
+Source: qca/feeds/wlan_10_2/qca-hostap
+Section: QCA
+Status: unknown ok not-installed
+Essential: no
+Priority: optional
+Maintainer: Qualcomm Atheros
+Architecture: ar71xx
+Installed-Size: 28751
+Description:  WPA Supplicant command line interface

@@ -1,0 +1,3 @@
+/etc/hotplug.d/button/52-wps-supplicant
+/lib/wifi/wps-supplicant-update-uci
+/usr/sbin/wpa_cli

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="tw__time_hours">
+        <item>%d год</item>
+        <item>1 год</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item>%d хв</item>
+        <item>1 хв</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item>%d с</item>
+        <item>1 с</item>
+    </plurals>
+</resources>

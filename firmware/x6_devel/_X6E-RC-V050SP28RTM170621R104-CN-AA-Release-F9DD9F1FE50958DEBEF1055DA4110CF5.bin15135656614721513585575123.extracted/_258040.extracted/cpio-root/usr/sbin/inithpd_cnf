@@ -1,0 +1,6 @@
+#!/bin/sh
+
+rm -f /opt/config/x6_hostapd.conf
+(cat /defaults/x6_hostapd.conf;echo wpa_passphrase=`openssl rand -base64 24`) > /opt/config/x6_hostapd.conf
+
+exit 0

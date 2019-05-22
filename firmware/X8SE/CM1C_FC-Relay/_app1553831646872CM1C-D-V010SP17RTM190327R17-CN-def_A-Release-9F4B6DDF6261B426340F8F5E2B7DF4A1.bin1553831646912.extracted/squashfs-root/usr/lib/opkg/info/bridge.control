@@ -1,0 +1,14 @@
+Package: bridge
+Version: 1.5-1
+Depends: libc
+Provides: 
+Source: package/bridge-utils
+Section: net
+Status: unknown ok not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: ar71xx
+Installed-Size: 9087
+Description:  Manage ethernet bridging: a way to connect networks together to 
+ form a larger network.

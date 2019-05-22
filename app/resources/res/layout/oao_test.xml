@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textStyle="bold" android:id="@+id/tv_send_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="Send Data"/>
+    <RelativeLayout android:id="@+id/rl1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/tv_send_data">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <CheckBox android:id="@+id/cb_loop" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="循环"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="间隔："/>
+            <EditText android:id="@+id/edt_sendata" android:layout_width="60dp" android:layout_height="wrap_content" android:inputType="number"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="总包长："/>
+            <TextView android:id="@+id/tv_data_len" android:layout_width="60dp" android:layout_height="wrap_content"/>
+            <Button android:id="@+id/btn_close_aoa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="关掉AOA"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/rl_send_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/ll1">
+            <EditText android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/etx_data" android:background="@null" android:layout_width="300dp" android:layout_height="200dp" android:layout_weight="4"/>
+            <Button android:id="@+id/btn_send" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="发送" android:layout_toRightOf="@+id/etx_data" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView android:textStyle="bold" android:id="@+id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Receive Data" android:layout_below="@+id/rl1"/>
+    <TextView android:id="@+id/tv_show_callback" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="200dp" android:layout_marginTop="5dp" android:layout_below="@+id/text1"/>
+</RelativeLayout>

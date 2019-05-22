@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <stroke android:width="@dimen/tw__cta_border_size" android:color="@color/tw__cta_border_color"/>
+    <solid android:color="@android:color/transparent"/>
+    <corners android:radius="@dimen/tw__cta_radius"/>
+</shape>

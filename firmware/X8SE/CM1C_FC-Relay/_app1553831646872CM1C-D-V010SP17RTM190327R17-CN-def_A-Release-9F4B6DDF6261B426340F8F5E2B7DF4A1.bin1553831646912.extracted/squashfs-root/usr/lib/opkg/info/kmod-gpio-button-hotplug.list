@@ -1,0 +1,3 @@
+/lib/modules/3.3.8/gpio-button-hotplug.ko
+/etc/uci-defaults/gpio-button-hotplug
+/etc/modules.d/30-gpio-button-hotplug

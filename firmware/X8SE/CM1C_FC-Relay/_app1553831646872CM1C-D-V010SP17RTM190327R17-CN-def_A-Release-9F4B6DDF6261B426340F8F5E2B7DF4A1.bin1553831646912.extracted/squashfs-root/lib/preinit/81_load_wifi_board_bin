@@ -1,0 +1,21 @@
+#!/bin/sh
+
+. /lib/ar71xx.sh
+
+do_load_ath10k_board_bin() {
+	local board=$(ar71xx_board_name)
+	local mtdblock=$(find_mtd_part art)
+
+	local dir="/lib/firmware/ath10k/QCA988X/hw2.0"
+
+	# load board.bin
+	case "$board" in
+	        ap152)
+			mkdir -p ${dir}
+	                dd if=${mtdblock} of=${dir}/board.bin \
+	                        bs=1 skip=20480 count=2116
+	        ;;
+	esac
+}
+
+boot_hook_add preinit_main do_load_ath10k_board_bin

@@ -1,0 +1,6 @@
+/etc/hotplug.d/button/60-switch
+/etc/hotplug.d/button/51-wps-reset
+/etc/hotplug.d/button/70-switch
+/usr/sbin/hostapd_cli
+/etc/hotplug.d/button/50-wps
+/lib/wifi/wps-hostapd-update-uci

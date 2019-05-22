@@ -1,0 +1,24 @@
+#!/bin/sh /etc/rc.common
+# Copyright (C) 2008-2010 OpenWrt.org
+
+START=99
+
+reload() {
+	ps| grep "syslogd" |grep -v grep| cut -c 1-5 | xargs kill -9
+	syslogd -s 64 -C16 -f /etc/syslog_debug.conf
+}
+
+enable(){
+	if [ -f /etc/syslog_debug.conf ];then
+	mv /etc/syslog.conf /etc/syslog_small.conf
+	mv /etc/syslog_debug.conf /etc/syslog.conf
+	fi
+}
+
+disable(){
+	if [ -f /etc/syslog_small.conf ];then
+	mv /etc/syslog.conf /etc/syslog_debug.conf
+	mv /etc/syslog_small.conf /etc/syslog.conf
+	fi
+}
+

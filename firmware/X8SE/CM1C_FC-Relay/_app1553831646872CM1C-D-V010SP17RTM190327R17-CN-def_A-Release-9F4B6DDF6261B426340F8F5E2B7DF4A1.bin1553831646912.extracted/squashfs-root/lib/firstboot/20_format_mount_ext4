@@ -1,0 +1,18 @@
+#!/bin/sh
+
+# Copyright (c) 2014 The Linux Foundation. All rights reserved.
+
+format_and_mount_ext4() {
+	partname="rootfs_data"
+	emmcblock="$(find_mmc_part "$partname")"
+
+	if [ -e "$emmcblock" ]; then
+		mkfs.ext4 "$emmcblock"
+		mkdir -p /tmp/overlay
+		mount "$emmcblock" /tmp/overlay -t ext4
+		mount -o move /tmp/overlay /overlay 2>&-
+		fopivot /overlay /rom
+	fi
+}
+
+boot_hook_add switch2jffs format_and_mount_ext4

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fimi.kernel.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/x8s_main_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/x8s_map_video_cardview"/>
+    <include layout="@layout/x8_camera_interest_merering_contering"/>
+    <include android:id="@+id/x8s_main_top_layout" layout="@layout/x8s_main_top_layout"/>
+    <RelativeLayout android:id="@+id/rl_x8_ai_excute" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <include layout="@layout/x8s_main_bottom_parameter_layout"/>
+    <include layout="@layout/x8_main_all_setting_five_key_show"/>
+    <include layout="@layout/x8s_main_right_menu_layout"/>
+    <include layout="@layout/x8_right_icon_for_map_layout"/>
+    <include layout="@layout/x8s_main_errorcode_power_pitchingangle_layout"/>
+    <include layout="@layout/x8_main_ai_fly"/>
+    <include layout="@layout/x8_main_fc_all_setting"/>
+    <include android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/main_right_menu" layout="@layout/x8_main_camera_setting"/>
+    <include layout="@layout/x8_main_ai_follow_confirm_main_layout"/>
+    <RelativeLayout android:id="@+id/rl_x8_setting_show_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/rl_cover" android:background="@color/white_20" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/rl_error_codeTest" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <EditText android:textSize="@dimen/textsize_39" android:textColor="@color/white_100" android:ellipsize="none" android:gravity="center" android:id="@+id/tv_pow" android:background="#000000" android:layout_width="100dp" android:layout_height="wrap_content" android:text="0" android:maxLength="50" android:digits="0123456789" android:layout_centerInParent="true" android:imeOptions="flagNoExtractUi"/>
+        <Button android:id="@+id/btn_errorcode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Test ErrorCode" android:layout_toRightOf="@+id/tv_pow" android:layout_centerVertical="true" android:onClick="onTestErrorCode"/>
+    </RelativeLayout>
+    <com.fimi.app.x8s.widget.X8AiTipWithCloseView android:orientation="horizontal" android:id="@+id/v_accurate_landing_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:layout_marginBottomPercent="4.722222%"/>
+</com.fimi.kernel.percent.PercentRelativeLayout>

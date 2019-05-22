@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/album_layout_media_bar_select_bottom"/>
+    <android.support.v7.widget.RecyclerView android:id="@+id/recycleview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="6.5dp" android:layout_above="@+id/media_select_bottom_rl"/>
+    <include layout="@layout/album_media_no_data_tip"/>
+</RelativeLayout>

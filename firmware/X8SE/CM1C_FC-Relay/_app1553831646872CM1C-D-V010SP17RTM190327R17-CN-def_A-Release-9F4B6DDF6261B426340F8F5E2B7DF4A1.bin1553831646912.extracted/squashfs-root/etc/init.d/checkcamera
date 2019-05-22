@@ -1,0 +1,31 @@
+#!/bin/sh /etc/rc.common
+
+START=92
+
+SERVICE_DAEMONIZE=1
+SERVICE_WRITE_PID=1
+
+start() {
+	insmod /lib/modules/3.3.8/usb-common.ko
+	insmod /lib/modules/3.3.8/udc-core.ko
+	insmod /lib/modules/3.3.8/ath_udc.ko
+	insmod /lib/modules/3.3.8/g_ether.ko
+	sleep 8
+	ping 192.168.40.10 -c 1 -W 1
+	RC=$?
+	if [ $RC = 0 ]; then
+		echo "A12 USB already connected!" > /dev/console
+		exit 0
+	fi
+	rmmod g_ether
+	rmmod ath_udc
+	rmmod udc_core
+	rmmod usb_common
+	sleep 1
+	insmod /lib/modules/3.3.8/usb-common.ko
+	insmod /lib/modules/3.3.8/udc-core.ko
+	insmod /lib/modules/3.3.8/ath_udc.ko
+	insmod /lib/modules/3.3.8/g_ether.ko
+}
+
+

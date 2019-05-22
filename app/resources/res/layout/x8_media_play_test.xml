@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fimi.kernel.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Button android:textSize="12dp" android:textColor="@drawable/fimi_person_btn_butom_txcolor_select" android:id="@+id/btn_connect" android:background="@drawable/fimi_person_btn_bottom__shape_enable" android:layout_width="0dp" android:layout_height="0dp" android:text="@string/str_main_connect_device" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:onClick="onDeviceClick" app:layout_widthPercent="87.2222%w" app:layout_heightPercent="11.2962%w" style="?android:attr/borderlessButtonStyle"/>
+    <com.fimi.player.widget.FimiVideoView android:id="@+id/fimi_video" android:layout_width="match_parent" android:layout_height="0dp" app:layout_heightPercent="50%"/>
+</com.fimi.kernel.percent.PercentRelativeLayout>

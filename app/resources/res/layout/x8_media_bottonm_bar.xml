@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:id="@+id/rl_bottom_bar" android:background="#ff020202" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="66.3dp" android:layout_alignParentBottom="true">
+    <RelativeLayout android:id="@+id/rl_delete" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <ImageButton android:enabled="false" android:id="@+id/ibtn_delete" android:background="@drawable/album_btn_delete_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:alpha="0.3"/>
+        <TextView android:enabled="false" android:textSize="9.3dp" android:textColor="#66ffffff" android:id="@+id/tv_bottom_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/media_delete" android:layout_below="@+id/ibtn_delete" android:layout_centerHorizontal="true" android:alpha="0.3"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_download" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="41.3dp" android:layout_toLeftOf="@+id/rl_delete">
+        <ImageButton android:enabled="false" android:id="@+id/ibtn_download" android:background="@drawable/album_btn_download_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:alpha="0.3"/>
+        <TextView android:enabled="false" android:textSize="9.3dp" android:textColor="#66ffffff" android:id="@+id/tv_bottom_download" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/album_download" android:layout_below="@+id/ibtn_download" android:layout_centerHorizontal="true" android:alpha="0.3"/>
+    </RelativeLayout>
+</RelativeLayout>

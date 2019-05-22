@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fimi.kernel.percent.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="60dp">
+    <RelativeLayout android:textSize="@dimen/textsize_39" android:textColor="@color/white_100" android:gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Version V1.0.1.10504" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/textsize_39" android:textColor="@color/white_100" android:id="@+id/tv_statement_line1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Version "/>
+        <TextView android:textSize="@dimen/textsize_39" android:textColor="@color/white_100" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_version" android:layout_toRightOf="@+id/tv_statement_line1"/>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/textsize_39" android:textColor="@color/white_100" android:gravity="center" android:id="@+id/tv_statement_line2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Copyright © 2018 Fimi. All RIghts Reserved." android:layout_centerVertical="true"/>
+    <TextView android:textSize="@dimen/textsize_39" android:textColor="@color/x8_track_select" android:gravity="center" android:id="@+id/tv_statement_line3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Terms &amp; Conditions" android:layout_centerVertical="true"/>
+</com.fimi.kernel.percent.PercentLinearLayout>

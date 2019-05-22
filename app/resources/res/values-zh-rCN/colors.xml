@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="media_all_no_select">#ccffffff</color>
+    <color name="media_all_select">#ffffff</color>
+    <color name="media_diviver">#4a4a4a</color>
+    <color name="media_head_direction_bg">#2a2a2a</color>
+    <color name="media_main_bg">#1f1f21</color>
+    <color name="media_tablayout_text">#828282</color>
+    <color name="meida_detail_title">#ffffffff</color>
+    <color name="recycle_head_title">#64ffffff</color>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/tw__composer_header" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@+id/tw__composer_close" android:layout_centerVertical="true" style="@style/tw__ComposerClose"/>
+        <ImageView android:id="@+id/tw__twitter_logo" android:layout_width="@dimen/tw__composer_logo_width" android:layout_height="@dimen/tw__composer_logo_height" android:src="?attr/tw__twitter_logo" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/tw__author_avatar" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/tw__ComposerAvatar"/>
+    </RelativeLayout>
+    <View android:id="@+id/tw__composer_profile_divider" android:visibility="invisible" style="@style/tw__ComposerDivider"/>
+    <com.twitter.sdk.android.tweetcomposer.internal.util.ObservableScrollView android:id="@+id/tw__composer_scroll_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:id="@+id/tw__edit_tweet" style="@style/tw__EditTweet"/>
+            <ImageView android:id="@+id/tw__image_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/tw__composer_spacing_large" android:adjustViewBounds="true"/>
+        </LinearLayout>
+    </com.twitter.sdk.android.tweetcomposer.internal.util.ObservableScrollView>
+    <View android:id="@+id/tw__composer_toolbar_divider" style="@style/tw__ComposerDivider"/>
+    <LinearLayout android:id="@+id/tw__composer_toolbar" style="@style/tw__ComposerToolbar">
+        <TextView android:id="@+id/tw__char_count" style="@style/tw__ComposerCharCount"/>
+        <Button android:id="@+id/tw__post_tweet" style="@style/tw__ComposerTweetButton"/>
+    </LinearLayout>
+</LinearLayout>

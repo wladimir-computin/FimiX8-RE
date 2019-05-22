@@ -1,0 +1,246 @@
+0010 = GPS error, please land ASAP
+0011 = GPS error, please restart the drone
+0012 = GPS error, please restart the drone
+0020 = Motors payload error detected , please check propellers
+0030 = Compass error, please land ASAP
+0031 = Compass error, please restart the drone
+0040 = Compass error, please land ASAP
+0041 = Compass error, please restart the drone
+0050 = Accelerometer error, please land ASAP
+0051 = Accelerometer error, please restart the drone
+0060 = Gyroscope error, please land ASAP
+0061 = Gyroscope error, please restart the drone
+0070 = Barometer error, please land ASAP
+0071 = Barometer error, please restart the drone
+0080 = Battery error, please land ASAP
+0081 = Battery error, please restart the drone
+0082 = Battery error, please restart the drone
+0090 = Non-genuine battery detected
+0100 = System failed to initialize, please restart the drone
+0110 = VPU error, please land ASAP
+0111 = VPU error, please restart the drone
+0120 = Poor optical-flow accuracy, please fly carefully
+0121 = Please fly above well-lit ground with clear texture
+0130 = RC is in RTH mode, please toggle Auto Return switch to the left
+0140 = System Initializing
+0150 = Gimbal not ready
+0160 = No Cam
+0170 = No-FlY-Zone data error, please update NFZ
+0180 = The sensor temperature is too high, please land ASAP
+0181 = The sensor temperature is too high, please turn off the drone
+0190 = Battery update failed, please try again
+0200 = Battery update failed, please return to factory for maintenance
+0210 = Compass interfered, please fly carefully
+0211 = Compass interfered, please change take off point or calibrate
+0220 = Sensor temperature error
+0230 = Battery voltage too low, over-discharge will damage the battery, please land ASAP
+0231 = Battery voltage is too low, please charge ASAP
+0240 = Battery has been damaged, please land ASAP
+0241 = Battery has been damaged, it cannot be used anymore
+0250 = Low temperature and battery level is less than 80%,  please charge or preheat
+0260 = Battery communication error, please land ASAP
+0261 = Battery communication error, please check the contact or reinsert the battery
+0262 = Battery communication error, please check the contact or reinsert the battery
+0270 = No-FlY-Zone data error, please fly carefully
+0271 = No-FlY-Zone data error, please be careful
+0280 = Barometer temperature error, please fly carefully
+0281 = Barometer temperature error, please be careful
+0290 = Failed to generate  flight log, please restart propellers
+0300 = Unable to enter GPS mode, please fly carefully
+0301 = Unable to enter GPS mode, please be careful
+0310 = Compass error, please land ASAP to calibrate
+0311 = Compass error, please calibrate
+0320 = Accelerometer calibration error, please restart the drone
+0330 = Horizontal calibration error, please restart the drone
+0340 = Gyroscope calibration error, please restart the drone
+0350 = Please place the drone on a flat surface
+0360 = Low battery, please land ASAP to avoid damaging
+0361 = Low battery, please charge ASAP
+0370 = Low batery for RTH, please fly carefully
+0371 = Only RTH battery level left, the drone is returning
+0380 = Low battery, please land
+0381 = Low battery, please charge or replace
+0390 = Battery temperature is too high, please land ASAP
+0391 = Battery temperature is too high, please replace the battery ASAP
+0400 = Battery voltage unstable, please use it carefully
+0410 = Battery voltage too low, over-discharge will damage the battery, please land ASAP
+0420 = Using sticks in RTH mode will change flight route
+0430 = Ultrasonic sensor error, please land ASAP
+0431 = Ultrasonic error
+0440 = Camera error, please land ASAP
+0441 = Camera error
+0450 = Critical low battery, please fly carefully
+0451 = critical low battery, the drone is landing
+0452 = Low battery, please charge or replace
+0460 = Low battery for landing, please fly carefully
+0461 = Only landing battery level left, the drone is landing
+0470 = Gimbal error, please restart the drone
+0480 = Gimbal overheated, please land ASAP
+0490 = Gimbal self test failed, please restart the drone
+0500 = Gimbal possibly being interfered by an obstacle, please check
+0510 = Gimbal error
+0520 = Gimbal IMU error, please restart the drone
+0530 = Battery possibly damaged, please land ASAP
+0531 = Battery possibly damaged, please replace the battery
+0540 = The drone has reached max altitude
+0550 = The drone has reached max distance
+0560 = Gimbal is preheating, please wait for 3 minutes
+0570 = Battery temperature is too low, please preheat to above 15℃
+0580 = Sensor Calibrating
+0590 = Drone Updating
+0600 = Drone overloaded, please fly carefully
+0610 = The drone has reached auto-take-off altitude
+0620 = System calibration error, please restart the drone
+0621 = System calibration error, please restart the drone
+0630 = System preheating, please wait
+0640 = The drone temperature is too high, please land ASAP
+0641 = The drone temperature is too high, please turn off the drone to cool down
+0650 = Battery voltage and capacity mismatch, please update
+0670 = Dynamic No-FlY-Zone is updating
+0680 = System is preparing
+0790 = Low GPS precision, unable to use intelligent flight
+0800 = Motors locked
+0810 = Switching flight mode
+0820 = Failed to build flight log
+0830 = The drone is on maintenance mode, please wait
+0840 = External USB inserted
+0850 = The drone is on high altitude, Sport mode invalid
+0860 = The motor stopped, please land ASAP
+0861 = The motor stopped, please check
+0870 = Checking IMU, please wait
+0880 = Gale warning, please fly carefully
+
+1000 = Approaching to Altitude Limit Zone, please lower down the drone
+1010 = Entering Altitude Limited Zone，please fly carefully
+1011 = In Altitude Limited Zone, please be careful
+1020 = Approaching to No-FlY-Zone, please return ASAP
+1021 = On the edge of No-FlY-Zone, it is unable to take off
+1030 = In No-FlY-Zone,it is landing automatically
+1031 = In No-FlY-Zone, it is unable to take off
+
+2000 = RC error, please return ASAP
+2001 = RC error, please restart or calibrate
+2010 = Low Battery of RC
+2020 = Low Battery of RC, please land ASAP
+2021 = Low Battery of RC, please charge ASAP
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

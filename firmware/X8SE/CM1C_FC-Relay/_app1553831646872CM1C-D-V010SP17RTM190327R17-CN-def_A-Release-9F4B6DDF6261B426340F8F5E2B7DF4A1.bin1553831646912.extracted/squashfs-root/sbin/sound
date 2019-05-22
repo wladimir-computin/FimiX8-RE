@@ -1,0 +1,29 @@
+#!/bin/sh
+# Copyright (c) 2013 The Linux Foundation. All rights reserved.
+
+. /lib/functions.sh
+
+usage() {
+	cat << EOF
+Usage: $0
+update the UCI configuration to reflect the current alsa status
+EOF
+}
+
+sound_detect() {
+	for driver in ${2:-$SND_DRIVERS}; do (
+		if eval "type detect_$driver" 2>/dev/null >/dev/null; then
+			eval "detect_$driver" || echo "$driver: Detect failed" >&2
+		else
+			echo "$driver: Hardware detection not supported" >&2
+		fi
+	);done
+}
+
+SND_DRIVERS=
+include /lib/sound
+
+case "$1" in
+	--help|help) usage;;
+	*) sound_detect;;
+esac

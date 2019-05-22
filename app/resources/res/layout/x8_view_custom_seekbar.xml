@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textColor="@color/white_100" android:id="@+id/tv_param" android:layout_width="0dp" android:layout_height="wrap_content" android:text="name" android:layout_weight="10" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    <RelativeLayout android:id="@+id/rl_reduce" android:padding="@dimen/x8s_view_custom_seekbar_x4" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.5" android:layout_centerVertical="true">
+        <Button android:background="@drawable/x8_btn_minus_bg" android:clickable="false" android:layout_width="@dimen/x8s_view_custom_seekbar_x3" android:layout_height="@dimen/x8s_view_custom_seekbar_x1"/>
+    </RelativeLayout>
+    <com.fimi.app.x8s.widget.X8SeekBarView android:id="@+id/sb_value" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="8"/>
+    <RelativeLayout android:id="@+id/rl_add" android:padding="@dimen/x8s_view_custom_seekbar_x4" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.5">
+        <Button android:background="@drawable/x8_btn_plus_bg" android:clickable="false" android:layout_width="@dimen/x8s_view_custom_seekbar_x4" android:layout_height="@dimen/x8s_view_custom_seekbar_x4"/>
+    </RelativeLayout>
+</LinearLayout>

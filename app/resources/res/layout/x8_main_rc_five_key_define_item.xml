@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <Button android:textSize="@dimen/textsize_36" android:textColor="@color/white_100" android:id="@+id/btn_item" android:background="@drawable/x8_btn_fc_button_selector" android:layout_width="wrap_content" android:layout_height="27dp" android:layout_margin="18dp" android:text="button" android:textAllCaps="false"/>
+</LinearLayout>

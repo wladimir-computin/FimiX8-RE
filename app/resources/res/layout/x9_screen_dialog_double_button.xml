@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:id="@+id/rl" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:background="@drawable/fimisdk_shape_dialog_content_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rl_content" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="14dp" android:textColor="#ff3a3a3a" android:gravity="center" android:id="@+id/tv_title" android:layout_width="251.6dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="12.3dp" android:layout_marginRight="20dp" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="12.6dp" android:textColor="#cc3a3a3a" android:gravity="center" android:id="@+id/msg_tv" android:layout_width="251.6dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="18dp" android:layout_marginRight="20dp" android:layout_marginBottom="39.3dp" android:layout_below="@+id/tv_title"/>
+        </RelativeLayout>
+        <LinearLayout android:id="@+id/rl_double" android:layout_width="251.6dp" android:layout_height="wrap_content" android:layout_below="@+id/rl_content" android:layout_alignLeft="@+id/rl_content" android:layout_alignRight="@+id/rl_content">
+            <Button android:textSize="14sp" android:textColor="@drawable/fimisdk_textcolor_selector" android:gravity="center" android:id="@+id/left_btn" android:layout_width="match_parent" android:layout_height="52dp" android:text="@string/cancel" android:layout_weight="1" android:layout_alignParentLeft="true"/>
+            <Button android:textSize="14sp" android:textColor="@drawable/fimisdk_textcolor_selector" android:gravity="center" android:id="@+id/right_btn" android:layout_width="match_parent" android:layout_height="52dp" android:text="@string/ensure" android:layout_weight="1" android:layout_toRightOf="@+id/left_btn"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+kernel/drivers/net/usb/asix.ko
+kernel/drivers/net/usb/cdc_ether.ko
+kernel/drivers/net/usb/cdc_eem.ko
+kernel/drivers/net/usb/rndis_host.ko
+kernel/drivers/net/usb/cdc_subset.ko
+kernel/drivers/net/usb/usbnet.ko
+kernel/drivers/net/usb/iphone.ko
+kernel/drivers/usb/host/ehci-hcd.ko
+kernel/drivers/usb/core/usbcore.ko
+kernel/drivers/usb/gadget/ath_udc.ko
+kernel/drivers/usb/gadget/g_zero.ko
+kernel/drivers/usb/gadget/g_ether.ko
+kernel/drivers/usb/gadget/gadgetfs.ko
+kernel/drivers/usb/gadget/g_file_storage.ko
+kernel/drivers/usb/gadget/g_serial.ko
+kernel/drivers/usb/gadget/g_cdc.ko

@@ -1,0 +1,12 @@
+#!/bin/sh
+echo "---------- Ethernet ----------"
+LAN_IFNAME=`uci get network.lan.ifname`
+LAN_IPADDR=`uci get network.lan.ipaddr`
+LAN_NETMASK=`uci get network.lan.netmask`
+LAN_MAC=`uci get network.lan.mac`
+
+ifconfig lo 127.0.0.1 up
+insmod /lib/modules/2.6.31/net/athrs_gmac.ko
+sleep 1
+ifconfig ${LAN_IFNAME} hw ether ${LAN_MAC}
+ifconfig ${LAN_IFNAME} ${LAN_IPADDR} netmask ${LAN_NETMASK} up

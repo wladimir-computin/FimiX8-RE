@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="10dp" android:textColor="@color/white_100" android:id="@+id/point_heightValue" android:background="@drawable/x8_ai_follow_marker_info_bg" android:paddingLeft="@dimen/x8s_map_custom_mark_view_x2" android:paddingRight="@dimen/x8s_map_custom_mark_view_x2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5m" android:layout_centerHorizontal="true"/>
+    <ImageView android:id="@+id/markerIcon" android:background="@drawable/x8_img_ai_follow_point2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x8s_map_custom_mark_view_x1" android:layout_below="@+id/point_heightValue"/>
+</RelativeLayout>

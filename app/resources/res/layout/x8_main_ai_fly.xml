@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.fimi.kernel.percent.PercentRelativeLayout android:id="@+id/x8_rl_main_ai_fly" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@+id/x8_rl_main_ai_fly_blank" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/rl_main_ai_fly_content"/>
+        <com.fimi.kernel.percent.PercentRelativeLayout android:id="@+id/rl_main_ai_fly_content" android:background="@color/black_90" android:layout_width="0dp" android:layout_height="match_parent" android:layout_alignParentRight="true" app:layout_widthPercent="50%w">
+            <ViewStub android:id="@+id/stub_ai_fly_items" android:layout="@layout/x8_main_ai_fly_items" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <com.fimi.kernel.percent.PercentRelativeLayout android:id="@+id/x8_main_ai_confirm_content" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentRight="true"/>
+        </com.fimi.kernel.percent.PercentRelativeLayout>
+    </com.fimi.kernel.percent.PercentRelativeLayout>
+</merge>

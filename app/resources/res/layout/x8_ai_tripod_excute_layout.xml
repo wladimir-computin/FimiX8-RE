@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fimi.kernel.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:layout_marginRightPercent="4.6666%h" app:layout_marginBottomPercent="5.833333%">
+        <RelativeLayout android:id="@+id/rl_flag_small" android:background="@drawable/x8_ai_follow_tx_bg" android:paddingRight="11dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <com.fimi.app.x8s.widget.TwoStateImageView android:id="@+id/img_ai_flag_small" android:background="@drawable/x8_img_ai_tripod_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/textsize_39" android:textColor="@color/white_100" android:gravity="center_vertical" android:id="@+id/tv_task_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/x8_ai_tripod" android:layout_toRightOf="@+id/img_ai_flag_small" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <com.fimi.app.x8s.widget.TwoStateImageView android:id="@+id/img_ai_follow_back" android:background="@drawable/x8_btn_ai_follow_point2point_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_toRightOf="@+id/rl_flag_small" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</com.fimi.kernel.percent.PercentRelativeLayout>

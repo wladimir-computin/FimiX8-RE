@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="common_places_list">
+        <item>China</item>
+        <item>Hongkong</item>
+        <item>Macao</item>
+        <item>Taiwan</item>
+        <item>Japan</item>
+        <item>United States of America</item>
+        <item>United Kiongdom</item>
+        <item>Australia</item>
+        <item>Canada</item>
+    </array>
+    <array name="country_code_list">
+        <item>Angola *+244</item>
+        <item>Afghanistan *+93</item>
+        <item>Albania *+355</item>
+        <item>Algeria *+213</item>
+        <item>Andorra *+376</item>
+        <item>Anguilla *+1264</item>
+        <item>Antigua and Barbuda *+1268</item>
+        <item>Argentina *+54</item>
+        <item>Armenia *+374</item>
+        <item>Ascension *+247</item>
+        <item>Australia *+61</item>
+        <item>Austria *+43</item>
+        <item>Azerbaijan *+994</item>
+        <item>Bahamas *+1242</item>
+        <item>Bahrain *+973</item>
+        <item>Bangladesh *+880</item>
+        <item>Barbados *+1246</item>
+        <item>Belarus *+375</item>
+        <item>Belgium *+32</item>
+        <item>Belize *+501</item>
+        <item>Benin *+229</item>
+        <item>BermudaIs. *+1441</item>
+        <item>Bolivia *+591</item>
+        <item>Botswana *+267</item>
+        <item>Brazil *+55</item>
+        <item>Brunei *+673</item>
+        <item>Bulgaria *+359</item>
+        <item>Burkina-faso *+226</item>
+        <item>Burma *+95</item>
+        <item>Burundi *+257</item>
+        <item>Cameroon *+237</item>
+        <item>Canada *+1</item>
+        <item>Cayman Is. *+1345</item>
+        <item>Central African Republic *+236</item>
+        <item>Chad *+235</item>
+        <item>Chile *+56</item>
+        <item>China *+86</item>
+        <item>Colombia *+57</item>
+        <item>Congo *+242</item>
+        <item>Cook Is. *+682</item>
+        <item>Costa Rica *+506</item>
+        <item>Cuba *+53</item>
+        <item>Cyprus *+357</item>
+        <item>Czech Republic *+420</item>
+        <item>Denmark *+45</item>
+        <item>Djibouti *+253</item>
+        <item>Dominica Rep. *+1890</item>
+        <item>Ecuador *+593</item>
+        <item>Egypt *+20</item>
+        <item>EISalvador *+503</item>
+        <item>Estonia *+372</item>
+        <item>Ethiopia *+251</item>
+        <item>Fiji *+679</item>
+        <item>Finland *+358</item>
+        <item>France *+33</item>
+        <item>French Guiana *+594</item>
+        <item>Gabon *+241</item>
+        <item>Gambia *+220</item>
+        <item>Georgia *+995</item>
+        <item>Germany *+49</item>
+        <item>Ghana *+233</item>
+        <item>Gibraltar *+350</item>
+        <item>Greece *+30</item>
+        <item>Grenada *+1809</item>
+        <item>Guam *+1671</item>
+        <item>Guatemala *+502</item>
+        <item>Guinea *+224</item>
+        <item>Guyana *+592</item>
+        <item>Haiti *+509</item>
+        <item>Honduras *+504</item>
+        <item>Hongkong *+852</item>
+        <item>Hungary *+36</item>
+        <item>Iceland *+354</item>
+        <item>India *+91</item>
+        <item>Indonesia *+62</item>
+        <item>Iran *+98</item>
+        <item>Iraq *+964</item>
+        <item>Ireland *+353</item>
+        <item>Israel *+972</item>
+        <item>Italy *+39</item>
+        <item>IvoryCoast *+225</item>
+        <item>Jamaica *+1876</item>
+        <item>Japan *+81</item>
+        <item>Jordan *+962</item>
+        <item>Kampuchea (Cambodia ) *+855</item>
+        <item>Kazakstan *+327</item>
+        <item>Kenya *+254</item>
+        <item>Korea *+82</item>
+        <item>Kuwait *+965</item>
+        <item>Kyrgyzstan *+331</item>
+        <item>Laos *+856</item>
+        <item>Latvia *+371</item>
+        <item>Lebanon *+961</item>
+        <item>Lesotho *+266</item>
+        <item>Liberia *+231</item>
+        <item>Libya *+218</item>
+        <item>Liechtenstein *+423</item>
+        <item>Lithuania *+370</item>
+        <item>Luxembourg *+352</item>
+        <item>Macao *+853</item>
+        <item>Madagascar *+261</item>
+        <item>Malawi *+265</item>
+        <item>Malaysia *+60</item>
+        <item>Maldives *+960</item>
+        <item>Mali *+223</item>
+        <item>Malta *+356</item>
+        <item>Mariana Is *+1670</item>
+        <item>Martinique *+596</item>
+        <item>Mauritius *+230</item>
+        <item>Mexico *+52</item>
+        <item>Moldova, Republic of *+373</item>
+        <item>Monaco *+377</item>
+        <item>Mongolia *+976</item>
+        <item>Montserrat Is *+1664</item>
+        <item>Morocco *+212</item>
+        <item>Mozambique *+258</item>
+        <item>Namibia *+264</item>
+        <item>Nauru *+674</item>
+        <item>Nepal *+977</item>
+        <item>Netheriands Antilles *+599</item>
+        <item>Netherlands *+31</item>
+        <item>NewZealand *+64</item>
+        <item>Nicaragua *+505</item>
+        <item>Niger *+227</item>
+        <item>Nigeria *+234</item>
+        <item>North Korea *+850</item>
+        <item>Norway *+47</item>
+        <item>Oman *+968</item>
+        <item>Pakistan *+92</item>
+        <item>Panama *+507</item>
+        <item>Papua New Cuinea *+675</item>
+        <item>Paraguay *+595</item>
+        <item>Peru *+51</item>
+        <item>Philippines *+63</item>
+        <item>Poland *+48</item>
+        <item>French Polynesia *+689</item>
+        <item>Portugal *+351</item>
+        <item>PuertoRico *+1787</item>
+        <item>Qatar *+974</item>
+        <item>Reunion *+262</item>
+        <item>Romania *+40</item>
+        <item>Russia *+7</item>
+        <item>Saint Lueia *+1758</item>
+        <item>Saint Vincent *+1784</item>
+        <item>Samoa Eastern *+684</item>
+        <item>Samoa Western *+685</item>
+        <item>San Marino *+378</item>
+        <item>Sao Tome and Principe *+239</item>
+        <item>Saudi Arabia *+966</item>
+        <item>Senegal *+221</item>
+        <item>Seychelles *+248</item>
+        <item>Sierra Leone *+232</item>
+        <item>Singapore *+65</item>
+        <item>Slovakia *+421</item>
+        <item>Slovenia *+386</item>
+        <item>Solomon Is *+677</item>
+        <item>Somali *+252</item>
+        <item>South Africa *+27</item>
+        <item>Spain *+34</item>
+        <item>Sri Lanka *+94</item>
+        <item>St.Lucia *+1758</item>
+        <item>St.Vincent *+1784</item>
+        <item>Sudan *+249</item>
+        <item>Suriname *+597</item>
+        <item>Swaziland *+268</item>
+        <item>Sweden *+46</item>
+        <item>Switzerland *+41</item>
+        <item>Syriaw *+963</item>
+        <item>Taiwan *+886</item>
+        <item>Tajikstan *+992</item>
+        <item>Tanzania *+255</item>
+        <item>Thailand *+66</item>
+        <item>Togo *+228</item>
+        <item>Tonga *+676</item>
+        <item>Trinidad and Tobago *+1809</item>
+        <item>Tunisia *+216</item>
+        <item>Turkey *+90</item>
+        <item>Turkmenistan *+993</item>
+        <item>Uganda *+256</item>
+        <item>Ukraine *+380</item>
+        <item>United Arab Emirates *+971</item>
+        <item>United Kiongdom *+44</item>
+        <item>United States of America *+1</item>
+        <item>Uruguay *+598</item>
+        <item>Uzbekistan *+233</item>
+        <item>Venezuela *+58</item>
+        <item>Vietnam *+84</item>
+        <item>Yemen *+967</item>
+        <item>Yugoslavia *+381</item>
+        <item>South Africa *+27</item>
+        <item>Zimbabwe *+263</item>
+        <item>Zaire *+243</item>
+        <item>Zambia *+260</item>
+    </array>
+    <array name="x8_ai_fly_lines_excute_end">
+        <item>@string/x8_ai_fly_lines_excute_end_hover</item>
+        <item>@string/x8_ai_fly_lines_excute_end_return</item>
+    </array>
+    <array name="x8_ai_gravitation_excute_value_advanced_setting">
+        <item>@string/x8_ai_fly_gravitation_excute_advanced_setting_clockwise</item>
+        <item>@string/x8_ai_fly_gravitation_excute_advanced_setting_anti_clockwise</item>
+    </array>
+    <array name="x8_ai_gravitation_excute_value_videotape">
+        <item>@string/x8_ai_fly_gravitation_excute_videotape_free_direction</item>
+        <item>@string/x8_ai_fly_gravitation_excute_videotape_route</item>
+        <item>@string/x8_ai_fly_gravitation_excute_videotape_point</item>
+    </array>
+    <array name="x8_ai_line_device_rorate1">
+        <item>@string/x8_ai_fly_follow_surround_orientation1</item>
+        <item>@string/x8_ai_fly_lines_orientation2</item>
+    </array>
+    <array name="x8_ai_line_device_rorate2">
+        <item>@string/x8_ai_fly_follow_surround_orientation1</item>
+        <item>@string/x8_ai_fly_lines_orientation2</item>
+        <item>@string/x8_ai_fly_lines_orientation3</item>
+    </array>
+    <array name="x8_ai_line_excute_disconnect">
+        <item>@string/x8_ai_fly_lines_excute_disconnect_exit</item>
+        <item>@string/x8_ai_fly_lines_excute_disconnect_continu</item>
+    </array>
+    <array name="x8_ai_line_point_value_rorate">
+        <item>@string/x8_ai_fly_point_value_rotate1</item>
+        <item>@string/x8_ai_fly_follow_surround_rotation1</item>
+        <item>@string/x8_ai_fly_follow_surround_rotation2</item>
+    </array>
+    <array name="x8_ai_screw_rorate">
+        <item>@string/x8_ai_fly_follow_surround_rotation1</item>
+        <item>@string/x8_ai_fly_follow_surround_rotation2</item>
+    </array>
+    <array name="x8_awb_array">
+        <item>@string/x8_awb_auto</item>
+        <item>@string/x8_awb_incandescent</item>
+        <item>@string/x8_awb_d4000</item>
+        <item>@string/x8_awb_sunny</item>
+        <item>@string/x8_awb_cloudy</item>
+        <item>@string/x8_awb_shadow</item>
+    </array>
+    <array name="x8_battery_low_power_state_option">
+        <item>@string/x8_general_grid_line_nothing</item>
+        <item>@string/x8_fc_item_measure_for_disconnect_landing</item>
+        <item>@string/x8_fc_item_measure_for_disconnect_return</item>
+    </array>
+    <array name="x8_battery_serious_low_power_state_option">
+        <item>@string/x8_fc_item_measure_for_disconnect_landing</item>
+        <item>@string/x8_fc_item_measure_for_disconnect_return</item>
+    </array>
+    <array name="x8_camera_setting_options">
+        <item>@string/x8_camera_iso_auto</item>
+        <item>@string/x8_camera_iso_hand</item>
+    </array>
+    <array name="x8_colours_array">
+        <item>@string/x8_colours_general</item>
+        <item>@string/x8_colours_vivid</item>
+        <item>@string/x8_colours_art</item>
+        <item>@string/x8_colours_black_white</item>
+        <item>@string/x8_colours_film</item>
+        <item>@string/x8_colours_sepia</item>
+        <item>@string/x8_colours_flog</item>
+    </array>
+    <array name="x8_disconnect_measure_state_option">
+        <item>@string/x8_fc_item_measure_for_disconnect_hover</item>
+        <item>@string/x8_fc_item_measure_for_disconnect_landing</item>
+        <item>@string/x8_fc_item_measure_for_disconnect_return</item>
+    </array>
+    <array name="x8_drone_info_state_array">
+        <item>@string/x8_fly_model_gps</item>
+        <item>@string/x8_fc_item_compass</item>
+        <item>@string/x8_fc_item_magnetic_field</item>
+        <item>@string/x8_fc_item_imu</item>
+        <item>@string/x8_fw_battery_name</item>
+        <item>@string/x8_fw_gimbal_name</item>
+    </array>
+    <array name="x8_fc_ap_module_state_option">
+        <item>@string/x8_fc_item_apmodule_ce</item>
+        <item>@string/x8_fc_item_apmodule_fcc</item>
+    </array>
+    <array name="x8_five_key_define_option">
+        <item>@string/x8_rc_setting_map_fpv</item>
+        <item>@string/x8_rc_setting_back_center_down</item>
+        <item>@string/x8_rc_setting_battery_frame</item>
+        <item>@string/x8_rc_setting_self_check_frame</item>
+        <item>@string/x8_rc_setting_media_frame</item>
+        <item>@string/x8_rc_setting_saturation</item>
+        <item>@string/x8_rc_setting_contrast_ratio</item>
+        <item>@string/x8_rc_setting_shoot_mode</item>
+        <item>@string/x8_rc_setting_metering</item>
+    </array>
+    <array name="x8_general_grid_line_option">
+        <item>@string/x8_general_grid_line_nothing</item>
+        <item>@string/x8_general_grid_line_nine_diagonal</item>
+        <item>@string/x8_general_grid_line_squared_paper_for_practicing_calligraphy</item>
+    </array>
+    <array name="x8_general_map_option">
+        <item>@string/x8_general_map_nomarl</item>
+        <item>@string/x8_general_map_satellite</item>
+    </array>
+    <array name="x8_general_unity_option">
+        <item>@string/x8_general_unity_metric</item>
+        <item>@string/x8_general_unity_british</item>
+    </array>
+    <array name="x8_iso_options">
+        <item>@string/x8_camera_iso_value_auto</item>
+        <item>@string/x8_camera_iso_value_1</item>
+        <item>@string/x8_camera_iso_value_2</item>
+        <item>@string/x8_camera_iso_value_3</item>
+        <item>@string/x8_camera_iso_value_4</item>
+        <item>@string/x8_camera_iso_value_5</item>
+        <item>@string/x8_camera_iso_value_6</item>
+    </array>
+    <array name="x8_meter_array">
+        <item>@string/x8_meter_spot</item>
+        <item>@string/x8_meter_center</item>
+        <item>@string/x8_meter_average</item>
+    </array>
+    <array name="x8_ntsc_resolution_array">
+        <item>@string/x8_3840x2160_30P</item>
+        <item>@string/x8_3840x2160_24P</item>
+        <item>@string/x8_2560x1440_60P</item>
+        <item>@string/x8_2560x1440_30P</item>
+        <item>@string/x8_2560x1440_24P</item>
+        <item>@string/X8_1920x1080_100P</item>
+        <item>@string/X8_1920x1080_60P</item>
+        <item>@string/X8_1920x1080_30P</item>
+        <item>@string/X8_1920x1080_24P</item>
+        <item>@string/X8_1280x720_200P</item>
+    </array>
+    <array name="x8_photo_format_array">
+        <item>@string/x8_photo_format_JPG</item>
+        <item>@string/x8_photo_format_DNG</item>
+    </array>
+    <array name="x8_photo_mode_array">
+        <item>@string/x8_photo_signal_mode</item>
+        <item>@string/x8_photo_delay_mode</item>
+        <item>@string/x8_photo_panorama_mode</item>
+    </array>
+    <array name="x8_photo_params_array">
+        <item>@string/x8_photo_mode</item>
+        <item>@string/x8_photo_size</item>
+        <item>@string/x8_photo_format</item>
+        <item>@string/x8_camera_awb</item>
+        <item>@string/x8_camera_digita</item>
+        <item>@string/x8_camera_style</item>
+    </array>
+    <array name="x8_photo_size_array">
+        <item>@string/x8_photo_12M_size</item>
+        <item>@string/x8_photo_8M_size</item>
+    </array>
+    <array name="x8_photo_style_array">
+        <item>@string/x8_camera_saturation</item>
+        <item>@string/x8_camera_contrast</item>
+    </array>
+    <array name="x8_record_mode_array">
+        <item>@string/x8_record_normal</item>
+        <item>@string/x8_record_cut_mode</item>
+    </array>
+    <array name="x8_record_params_array">
+        <item>@string/x8_record_mode</item>
+        <item>@string/x8_video_type</item>
+        <item>@string/x8_video_resolution</item>
+        <item>@string/x8_record_quality</item>
+        <item>@string/x8_camera_awb</item>
+        <item>@string/x8_camera_digita</item>
+        <item>@string/x8_camera_style</item>
+    </array>
+    <array name="x8_record_quality_array">
+        <item>@string/x8_record_quality_sfine</item>
+        <item>@string/x8_record_quality_fine</item>
+        <item>@string/x8_record_quality_normal</item>
+    </array>
+    <array name="x8_resturn_measure_state_option">
+        <item>@string/x8_fc_item_return_point_takeoff</item>
+        <item>@string/x8_fc_item_return_point_landing</item>
+    </array>
+    <array name="x8_rocker_mode_option">
+        <item>@string/x8_rc_setting_japanese_rocker</item>
+        <item>@string/x8_rc_setting_america_rocker</item>
+        <item>@string/x8_rc_setting_chinese_rocker</item>
+    </array>
+    <array name="x8_sdcard_array">
+        <item>@string/x8_sdcard_free</item>
+        <item>@string/x8_sdcard_video</item>
+        <item>@string/x8_sdcard_photo</item>
+    </array>
+    <array name="x8_shutter_options">
+        <item>@string/x8_camera_shutter_value_0</item>
+        <item>@string/x8_camera_shutter_value_1</item>
+        <item>@string/x8_camera_shutter_value_2</item>
+        <item>@string/x8_camera_shutter_value_3</item>
+        <item>@string/x8_camera_shutter_value_4</item>
+        <item>@string/x8_camera_shutter_value_5</item>
+        <item>@string/x8_camera_shutter_value_6</item>
+        <item>@string/x8_camera_shutter_value_7</item>
+        <item>@string/x8_camera_shutter_value_8</item>
+        <item>@string/x8_camera_shutter_value_9</item>
+        <item>@string/x8_camera_shutter_value_10</item>
+        <item>@string/x8_camera_shutter_value_11</item>
+        <item>@string/x8_camera_shutter_value_12</item>
+        <item>@string/x8_camera_shutter_value_13</item>
+        <item>@string/x8_camera_shutter_value_14</item>
+        <item>@string/x8_camera_shutter_value_15</item>
+        <item>@string/x8_camera_shutter_value_16</item>
+        <item>@string/x8_camera_shutter_value_17</item>
+        <item>@string/x8_camera_shutter_value_18</item>
+        <item>@string/x8_camera_shutter_value_19</item>
+        <item>@string/x8_camera_shutter_value_20</item>
+        <item>@string/x8_camera_shutter_value_21</item>
+        <item>@string/x8_camera_shutter_value_22</item>
+        <item>@string/x8_camera_shutter_value_23</item>
+        <item>@string/x8_camera_shutter_value_24</item>
+        <item>@string/x8_camera_shutter_value_25</item>
+        <item>@string/x8_camera_shutter_value_26</item>
+        <item>@string/x8_camera_shutter_value_27</item>
+        <item>@string/x8_camera_shutter_value_28</item>
+        <item>@string/x8_camera_shutter_value_29</item>
+        <item>@string/x8_camera_shutter_value_30</item>
+        <item>@string/x8_camera_shutter_value_31</item>
+        <item>@string/x8_camera_shutter_value_32</item>
+        <item>@string/x8_camera_shutter_value_33</item>
+        <item>@string/x8_camera_shutter_value_34</item>
+        <item>@string/x8_camera_shutter_value_35</item>
+        <item>@string/x8_camera_shutter_value_36</item>
+        <item>@string/x8_camera_shutter_value_37</item>
+        <item>@string/x8_camera_shutter_value_38</item>
+        <item>@string/x8_camera_shutter_value_39</item>
+        <item>@string/x8_camera_shutter_value_40</item>
+        <item>@string/x8_camera_shutter_value_41</item>
+        <item>@string/x8_camera_shutter_value_42</item>
+        <item>@string/x8_camera_shutter_value_43</item>
+        <item>@string/x8_camera_shutter_value_44</item>
+        <item>@string/x8_camera_shutter_value_45</item>
+        <item>@string/x8_camera_shutter_value_46</item>
+        <item>@string/x8_camera_shutter_value_47</item>
+        <item>@string/x8_camera_shutter_value_48</item>
+        <item>@string/x8_camera_shutter_value_49</item>
+    </array>
+    <array name="x8_style_array">
+        <item>@string/x8_style_normal</item>
+        <item>@string/x8_style_sharp</item>
+    </array>
+    <array name="x8_system_type_array">
+        <item>@string/x8_system_ntsc</item>
+        <item>@string/x8_system_pal</item>
+    </array>
+    <array name="x8_timelapse_capture_array">
+        <item>@string/x8_timelapse_capture_0</item>
+        <item>@string/x8_timelapse_capture_2</item>
+        <item>@string/x8_timelapse_capture_3</item>
+        <item>@string/x8_timelapse_capture_4</item>
+        <item>@string/x8_timelapse_capture_5</item>
+        <item>@string/x8_timelapse_capture_6</item>
+        <item>@string/x8_timelapse_capture_7</item>
+        <item>@string/x8_timelapse_capture_8</item>
+        <item>@string/x8_timelapse_capture_9</item>
+        <item>@string/x8_timelapse_capture_10</item>
+    </array>
+    <array name="x8_timelapse_record_array">
+        <item>@string/x8_timelapse_record_0</item>
+        <item>@string/x8_timelapse_record_1</item>
+        <item>@string/x8_timelapse_record_2</item>
+        <item>@string/x8_timelapse_record_3</item>
+        <item>@string/x8_timelapse_record_4</item>
+        <item>@string/x8_timelapse_record_5</item>
+        <item>@string/x8_timelapse_record_6</item>
+        <item>@string/x8_timelapse_record_7</item>
+    </array>
+    <array name="x9_drone_frame_anim">
+        <item>@drawable/x9_drone_frame_001</item>
+    </array>
+</resources>

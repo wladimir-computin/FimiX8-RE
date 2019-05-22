@@ -1,0 +1,3 @@
+/sbin/hotplug2
+/sbin/udevtrigger
+/etc/hotplug2.rules

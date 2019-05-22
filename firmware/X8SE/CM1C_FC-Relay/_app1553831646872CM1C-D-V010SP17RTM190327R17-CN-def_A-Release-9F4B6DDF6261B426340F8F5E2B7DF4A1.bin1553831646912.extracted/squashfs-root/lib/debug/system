@@ -1,0 +1,19 @@
+#!/bin/sh /sbin/sysdebug
+
+log cat /sys/devices/system/soc/soc0/build_id
+log cat /etc/openwrt_release
+log cat /proc/version
+log cat /proc/meminfo
+log cat /proc/interrupts
+log uptime
+log ps
+log ifconfig
+log iptables -L
+log iptables -t nat -L
+log iptables -t mangle -L
+log cat /proc/net/igmp
+log cat /proc/net/ip_mr_cache
+log cat /proc/net/ip_mr_vif
+log cat /proc/net/igmp6
+log cat /proc/net/ip6_mr_cache
+log cat /proc/net/ip6_mr_vif

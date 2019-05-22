@@ -1,0 +1,1445 @@
+{
+    "Version": {
+        "Format": "1.0.0",
+        "Content": "1.0.0"
+    },
+    "Configs": [
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 0,
+            "Severity": 2,
+            "Text": 10,
+            "Speak": 10,
+            "Vibrate": true,
+            "Label": "GPS",
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 0,
+            "Severity": 2,
+            "Text": 11,
+            "Speak": 12,
+            "Label": "GPS",
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 1,
+            "Severity": 1,
+            "Text": 20,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 2,
+            "Severity": 2,
+            "Text": 30,
+            "Label": "Compass",
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 2,
+            "Severity": 2,
+            "Text": 31,
+            "Label": "Compass",
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 3,
+            "Severity": 2,
+            "Text": 40,
+            "Label": "Compass",
+            "IsInFlight": true,
+            "ConditionBits": [
+                {
+                    "GroupID": "FCS-A",
+                    "OffsetBit": 2,
+                    "Value": false
+                }
+            ]
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 3,
+            "Severity": 2,
+            "Text": 41,
+            "Label": "Compass",
+            "IsInFlight": false,
+            "ConditionBits": [
+                {
+                    "GroupID": "FCS-A",
+                    "OffsetBit": 2,
+                    "Value": false
+                }
+            ]
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 4,
+            "Severity": 2,
+            "Text": 50,
+            "Label": "IMU",
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 4,
+            "Severity": 2,
+            "Text": 51,
+            "Label": "IMU",
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 5,
+            "Severity": 2,
+            "Text": 60,
+            "Label": "IMU",
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 5,
+            "Severity": 2,
+            "Text": 61,
+            "Label": "IMU",
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 6,
+            "Severity": 2,
+            "Text": 70,
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 6,
+            "Severity": 2,
+            "Text": 71,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 7,
+            "Severity": 2,
+            "Text": 80,
+            "Speak": 80,
+            "Vibrate": true,
+            "Label": "BAT",
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 7,
+            "Severity": 2,
+            "Text": 81,
+            "Speak": 82,
+            "Label": "BAT",
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 8,
+            "Severity": 1,
+            "Text": 90,
+            "Label": "BAT",
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 9,
+            "Severity": 2,
+            "Text": 100,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 10,
+            "Severity": 2,
+            "Text": 110,
+            "Speak": 110,
+            "Vibrate": true,
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 10,
+            "Severity": 2,
+            "Text": 111,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 11,
+            "Severity": 1,
+            "Text": 120,
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 11,
+            "Severity": 1,
+            "Text": 121,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 12,
+            "Severity": 1,
+            "Text": 130,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 13,
+            "Severity": 1,
+            "Text": 140,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 14,
+            "Severity": 1,
+            "Text": 150,
+            "Label": "GC",
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 15,
+            "Severity": 1,
+            "Text": 160,
+            "Label": "GC",
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 16,
+            "Severity": 1,
+            "Text": 170,
+            "Speak": 170,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 17,
+            "Severity": 2,
+            "Text": 180,
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 17,
+            "Severity": 1,
+            "Text": 181,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 18,
+            "Severity": 1,
+            "Text": 190,
+            "Label": "BAT",
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 19,
+            "Severity": 1,
+            "Text": 200,
+            "Label": "BAT",
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 20,
+            "Severity": 1,
+            "Text": 210,
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 20,
+            "Severity": 1,
+            "Text": 211,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 24,
+            "Severity": 2,
+            "Text": 220,
+            "Speak": 220,
+            "Vibrate": true,
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 24,
+            "Severity": 2,
+            "Text": 220,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 25,
+            "Severity": 2,
+            "Text": 230,
+            "Speak": 230,
+            "Vibrate": true,
+            "Label": "BAT",
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 25,
+            "Severity": 1,
+            "Text": 231,
+            "Label": "BAT",
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 26,
+            "Severity": 2,
+            "Text": 240,
+            "Speak": 240,
+            "Vibrate": true,
+            "Label": "BAT",
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 26,
+            "Severity": 1,
+            "Text": 241,
+            "Label": "BAT",
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 27,
+            "Severity": 1,
+            "Text": 250,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 28,
+            "Severity": 2,
+            "Text": 260,
+            "Speak": 260,
+            "Vibrate": true,
+            "Label": "BAT",
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 28,
+            "Severity": 2,
+            "Text": 261,
+            "Speak": 262,
+            "Vibrate": true,
+            "Label": "BAT",
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 29,
+            "Severity": 1,
+            "Text": 270,
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 29,
+            "Severity": 1,
+            "Text": 271,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 30,
+            "Severity": 1,
+            "Text": 280,
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 30,
+            "Severity": 1,
+            "Text": 281,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-A",
+            "OffsetBit": 31,
+            "Severity": 1,
+            "Text": 290,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 0,
+            "Severity": 1,
+            "Text": 300,
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 0,
+            "Severity": 1,
+            "Text": 301,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 1,
+            "Severity": 2,
+            "Text": 310,
+            "Label": "Compass",
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 1,
+            "Severity": 1,
+            "Text": 311,
+            "Label": "Compass",
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 2,
+            "Severity": 2,
+            "Text": 320,
+            "Label": "IMU",
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 3,
+            "Severity": 2,
+            "Text": 330,
+            "Label": "IMU",
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 4,
+            "Severity": 2,
+            "Text": 340,
+            "Label": "IMU",
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 5,
+            "Severity": 1,
+            "Text": 350,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 6,
+            "Severity": 1,
+            "Text": 360,
+            "Speak": 360,
+            "Vibrate": true,
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 6,
+            "Severity": 1,
+            "Text": 361,
+            "Speak": 361,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 7,
+            "Severity": 1,
+            "Text": 370,
+            "Speak": 370,
+            "Vibrate": true,
+            "IsInFlight": true,
+            "CtrlMode": [
+                {
+                    "IsEqual": false,
+                    "Value": 7
+                },
+                {
+                    "IsEqual": false,
+                    "Value": 8
+                }
+            ]
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 7,
+            "Severity": 1,
+            "Text": 371,
+            "Speak": 371,
+            "Vibrate": true,
+            "IsInFlight": true,
+            "CtrlMode": [
+                {
+                    "IsEqual": true,
+                    "Value": 7
+                }
+            ]
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 7,
+            "Severity": 1,
+            "Text": 371,
+            "Speak": 371,
+            "Vibrate": true,
+            "IsInFlight": true,
+            "CtrlMode": [
+                {
+                    "IsEqual": true,
+                    "Value": 8
+                }
+            ]
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 8,
+            "Severity": 2,
+            "Text": 380,
+            "Speak": 380,
+            "Vibrate": true,
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 8,
+            "Severity": 2,
+            "Text": 381,
+            "Speak": 381,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 9,
+            "Severity": 2,
+            "Text": 390,
+            "Speak": 390,
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 9,
+            "Severity": 1,
+            "Text": 391,
+            "Speak": 391,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 10,
+            "Severity": 1,
+            "Text": 400,
+            "Label": "BAT",
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 11,
+            "Severity": 2,
+            "Text": 410,
+            "Speak": 410,
+            "Vibrate": true,
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 12,
+            "Severity": 1,
+            "Text": 420,
+            "Speak": 420,
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 13,
+            "Severity": 2,
+            "Text": 430,
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 13,
+            "Severity": 1,
+            "Text": 431,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 14,
+            "Severity": 2,
+            "Text": 440,
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 14,
+            "Severity": 1,
+            "Text": 441,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 15,
+            "Severity": 2,
+            "Text": 450,
+            "Speak": 450,
+            "Vibrate": true,
+            "IsInFlight": true,
+            "FlightPhase": [
+                {
+                    "IsEqual": false,
+                    "Value": 4
+                }
+            ]
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 15,
+            "Severity": 2,
+            "Text": 451,
+            "Speak": 451,
+            "Vibrate": true,
+            "IsInFlight": true,
+            "FlightPhase": [
+                {
+                    "IsEqual": true,
+                    "Value": 4
+                }
+            ]
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 15,
+            "Severity": 2,
+            "Text": 452,
+            "Speak": 452,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 16,
+            "Severity": 2,
+            "Text": 460,
+            "Speak": 460,
+            "IsInFlight": true,
+            "FlightPhase": [
+                {
+                    "IsEqual": false,
+                    "Value": 4
+                }
+            ]
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 16,
+            "Severity": 2,
+            "Text": 461,
+            "Speak": 461,
+            "IsInFlight": true,
+            "FlightPhase": [
+                {
+                    "IsEqual": true,
+                    "Value": 4
+                }
+            ]
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 17,
+            "Severity": 1,
+            "Text": 470,
+            "Label": "GC",
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 18,
+            "Severity": 1,
+            "Text": 480,
+            "Label": "GC",
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 18,
+            "Severity": 1,
+            "Text": 480,
+            "Label": "GC",
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 19,
+            "Severity": 1,
+            "Text": 490,
+            "Label": "GC",
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 20,
+            "Severity": 1,
+            "Text": 500,
+            "Label": "GC",
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 21,
+            "Severity": 1,
+            "Text": 510,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 22,
+            "Severity": 1,
+            "Text": 520,
+            "Label": "GC",
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 23,
+            "Severity": 2,
+            "Text": 530,
+            "Speak": 530,
+            "Vibrate": true,
+            "Label": "BAT",
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 23,
+            "Severity": 1,
+            "Text": 531,
+            "Speak": 531,
+            "Label": "BAT",
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 24,
+            "Severity": 1,
+            "Text": 540,
+            "Speak": 540,
+            "Inhibition": 30,
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 25,
+            "Severity": 1,
+            "Text": 550,
+            "Speak": 550,
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 26,
+            "Severity": 1,
+            "Text": 560,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 27,
+            "Severity": 1,
+            "Text": 570,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 28,
+            "Severity": 1,
+            "Text": 580,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 29,
+            "Severity": 1,
+            "Text": 590,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 30,
+            "Severity": 1,
+            "Text": 600,
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "FCS-B",
+            "OffsetBit": 31,
+            "Severity": 1,
+            "Text": 610,
+            "Speak": 610,
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "FCS-C",
+            "OffsetBit": 0,
+            "Severity": 2,
+            "Text": 620,
+            "Speak": 621,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-C",
+            "OffsetBit": 1,
+            "Severity": 1,
+            "Text": 630,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-C",
+            "OffsetBit": 2,
+            "Severity": 2,
+            "Text": 640,
+            "Speak": 640,
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "FCS-C",
+            "OffsetBit": 2,
+            "Severity": 1,
+            "Text": 641,
+            "Speak": 641,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-C",
+            "OffsetBit": 3,
+            "Severity": 1,
+            "Text": 650,
+            "Label": "BAT",
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-C",
+            "OffsetBit": 5,
+            "Severity": 1,
+            "Text": 670,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-C",
+            "OffsetBit": 6,
+            "Severity": 1,
+            "Text": 680,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-C",
+            "OffsetBit": 8,
+            "Severity": 1,
+            "Text": 680,
+            "IsInFlight": false,
+            "ConditionBits": [
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 6,
+                    "Value": false
+                }
+            ]
+        },
+        {
+            "GroupID": "FCS-C",
+            "OffsetBit": 9,
+            "Severity": 1,
+            "Text": 680,
+            "IsInFlight": false,
+            "ConditionBits": [
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 6,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 8,
+                    "Value": false
+                }
+            ]
+        },
+        {
+            "GroupID": "FCS-C",
+            "OffsetBit": 10,
+            "Severity": 1,
+            "Text": 680,
+            "IsInFlight": false,
+            "ConditionBits": [
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 6,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 8,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 9,
+                    "Value": false
+                }
+            ]
+        },
+        {
+            "GroupID": "FCS-C",
+            "OffsetBit": 11,
+            "Severity": 1,
+            "Text": 680,
+            "IsInFlight": false,
+            "ConditionBits": [
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 6,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 8,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 9,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 10,
+                    "Value": false
+                }
+            ]
+        },
+        {
+            "GroupID": "FCS-C",
+            "OffsetBit": 12,
+            "Severity": 1,
+            "Text": 680,
+            "IsInFlight": false,
+            "ConditionBits": [
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 6,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 8,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 9,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 10,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 11,
+                    "Value": false
+                }
+            ]
+        },
+        {
+            "GroupID": "FCS-C",
+            "OffsetBit": 14,
+            "Severity": 1,
+            "Text": 680,
+            "IsInFlight": false,
+            "ConditionBits": [
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 6,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 8,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 9,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 10,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 11,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 12,
+                    "Value": false
+                }
+            ]
+        },
+        {
+            "GroupID": "FCS-C",
+            "OffsetBit": 15,
+            "Severity": 1,
+            "Text": 680,
+            "IsInFlight": false,
+            "ConditionBits": [
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 6,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 8,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 9,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 10,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 11,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 12,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 14,
+                    "Value": false
+                }
+            ]
+        },
+        {
+            "GroupID": "FCS-C",
+            "OffsetBit": 16,
+            "Severity": 1,
+            "Text": 680,
+            "IsInFlight": false,
+            "ConditionBits": [
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 6,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 8,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 9,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 10,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 11,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 12,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 14,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 15,
+                    "Value": false
+                }
+            ]
+        },
+        {
+            "GroupID": "FCS-C",
+            "OffsetBit": 20,
+            "Severity": 1,
+            "Text": 680,
+            "IsInFlight": false,
+            "ConditionBits": [
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 6,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 8,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 9,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 10,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 11,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 12,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 14,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 15,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 16,
+                    "Value": false
+                }
+            ]
+        },
+        {
+            "GroupID": "FCS-C",
+            "OffsetBit": 21,
+            "Severity": 1,
+            "Text": 680,
+            "IsInFlight": false,
+            "ConditionBits": [
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 6,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 8,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 9,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 10,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 11,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 12,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 14,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 15,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 16,
+                    "Value": false
+                },
+                {
+                    "GroupID": "FCS-C",
+                    "OffsetBit": 20,
+                    "Value": false
+                }
+            ]
+        },
+        {
+            "GroupID": "FCS-C",
+            "OffsetBit": 29,
+            "Severity": 1,
+            "Text": 850,
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "FCS-C",
+            "OffsetBit": 30,
+            "Severity": 2,
+            "Text": 860,
+            "Speak": 860,
+            "Vibrate": true,
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "FCS-C",
+            "OffsetBit": 30,
+            "Severity": 1,
+            "Text": 861,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "FCS-C",
+            "OffsetBit": 31,
+            "Severity": 1,
+            "Text": 880,
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "ATC",
+            "Value": 214,
+            "Severity": 1,
+            "Text": 790,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "ATC",
+            "Value": 222,
+            "Severity": 1,
+            "Text": 810,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "ATC",
+            "Value": 228,
+            "Severity": 1,
+            "Text": 820,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "ATC",
+            "Value": 240,
+            "Severity": 1,
+            "Text": 870,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "ATC",
+            "Value": 242,
+            "Severity": 1,
+            "Text": 800,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "ATC",
+            "Value": 249,
+            "Severity": 1,
+            "Text": 830,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "ATC",
+            "Value": 250,
+            "Severity": 1,
+            "Text": 840,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "ATC",
+            "Value": 253,
+            "Severity": 1,
+            "Text": 800,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "NFZS",
+            "Value": 1,
+            "Severity": 1,
+            "Text": 1000,
+            "Speak": 1000,
+            "Vibrate": true,
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "NFZS",
+            "Value": 2,
+            "Severity": 1,
+            "Text": 1010,
+            "Speak": 1010,
+            "Vibrate": true,
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "NFZS",
+            "Value": 2,
+            "Severity": 1,
+            "Text": 1011,
+            "Speak": 1011,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "NFZS",
+            "Value": 3,
+            "Severity": 1,
+            "Text": 1020,
+            "Speak": 1020,
+            "Vibrate": true,
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "NFZS",
+            "Value": 3,
+            "Severity": 1,
+            "Text": 1021,
+            "Speak": 1021,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "NFZS",
+            "Value": 4,
+            "Severity": 2,
+            "Text": 1030,
+            "Speak": 1030,
+            "Vibrate": true,
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "NFZS",
+            "Value": 4,
+            "Severity": 1,
+            "Text": 1031,
+            "Speak": 1031,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "RCS",
+            "OffsetBit": 0,
+            "Severity": 2,
+            "Text": 2000,
+            "Speak": 2000,
+            "Vibrate": true,
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "RCS",
+            "OffsetBit": 0,
+            "Severity": 1,
+            "Text": 2001,
+            "Speak": 2001,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "RCS",
+            "OffsetBit": 1,
+            "Severity": 2,
+            "Text": 2000,
+            "Speak": 2000,
+            "Vibrate": true,
+            "IsInFlight": true,
+            "ConditionBits": [
+                {
+                    "GroupID": "RCS",
+                    "OffsetBit": 0,
+                    "Value": false
+                }
+            ]
+        },
+        {
+            "GroupID": "RCS",
+            "OffsetBit": 1,
+            "Severity": 1,
+            "Text": 2001,
+            "Speak": 2001,
+            "IsInFlight": false,
+            "ConditionBits": [
+                {
+                    "GroupID": "RCS",
+                    "OffsetBit": 0,
+                    "Value": false
+                }
+            ]
+        },
+        {
+            "GroupID": "RCS",
+            "OffsetBit": 2,
+            "Severity": 1,
+            "Text": 2010,
+            "Speak": 2010,
+            "Vibrate": true,
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "RCS",
+            "OffsetBit": 2,
+            "Severity": 1,
+            "Text": 2010,
+            "Speak": 2010,
+            "IsInFlight": false
+        },
+        {
+            "GroupID": "RCS",
+            "OffsetBit": 3,
+            "Severity": 2,
+            "Text": 2020,
+            "Speak": 2020,
+            "Vibrate": true,
+            "IsInFlight": true
+        },
+        {
+            "GroupID": "RCS",
+            "OffsetBit": 3,
+            "Severity": 1,
+            "Text": 2021,
+            "Speak": 2021,
+            "IsInFlight": false
+        }
+    ]
+}

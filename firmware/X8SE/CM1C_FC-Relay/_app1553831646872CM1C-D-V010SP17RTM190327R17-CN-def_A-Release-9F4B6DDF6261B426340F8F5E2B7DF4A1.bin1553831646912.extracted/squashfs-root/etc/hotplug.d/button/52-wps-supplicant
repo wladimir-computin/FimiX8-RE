@@ -1,0 +1,62 @@
+#
+# Copyright (c) 2014, The Linux Foundation. All rights reserved.
+#
+#  Permission to use, copy, modify, and/or distribute this software for any
+#  purpose with or without fee is hereby granted, provided that the above
+#  copyright notice and this permission notice appear in all copies.
+#
+#  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+#  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+#  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+#  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+#  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+#  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+#  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+#
+
+ubus call fmlink pairingprepare
+
+ifconfig ath0
+if [ $? != 0 ]; then
+	wifi detect > /etc/config/wireless
+	wifi
+fi
+
+ping 192.168.40.100 -c 1 -W 1
+RC=$?
+ping 192.168.40.210 -c 1 -W 1
+DR=$?
+
+local wps_allow=`uci get wireless.@wifi-iface[0].wps_allow`
+
+if [ $RC = 0 -a $DR = 0  -a $wps_allow = 1 ]; then
+        echo "CONNECTED! DO NOT PAIR" > /dev/console
+        exit 0
+	ubus call fmlink pairingstop
+fi
+
+
+local wps_state=`uci get wireless.@wifi-iface[0].wps_state`
+local mode=`uci get wireless.@wifi-iface[0].mode`
+local encryption=`uci get wireless.@wifi-iface[0].encryption`
+if [ $wps_state != 1 -a "$mode" = "ap" -a "$encryption" != "none" ]; then 
+	uci set wireless.@wifi-iface[0].wps_state='1'
+	uci commit
+	wifi
+fi
+
+ubus call fmlink pairingstart
+
+echo 0 > /sys/class/net/wifi0/fimi_sta_ok
+
+local pid
+if [ "$ACTION" = "pressed" -a "$BUTTON" = "wps" ]; then
+	for dir in /var/run/wpa_supplicant-*; do
+		[ -d "$dir" ] || continue
+		pid=/var/run/wps-hotplug-${dir#"/var/run/wpa_supplicant-"}.pid
+		wpa_cli -p "$dir" wps_pbc
+		[ -f $pid ] || {
+			wpa_cli -p"$dir" -a/lib/wifi/wps-supplicant-update-uci -P$pid -B
+		}
+	done
+fi

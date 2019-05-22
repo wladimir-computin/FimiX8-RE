@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppearance.AppCompat.Notification.Info.Media">
+    </style>
+    <style name="TextAppearance.AppCompat.Notification.Media">
+    </style>
+    <style name="TextAppearance.AppCompat.Notification.Time.Media">
+    </style>
+    <style name="TextAppearance.AppCompat.Notification.Title.Media">
+    </style>
+    <style name="TextAppearance.Compat.Notification.Info.Media">
+    </style>
+    <style name="TextAppearance.Compat.Notification.Media">
+    </style>
+    <style name="TextAppearance.Compat.Notification.Time.Media">
+    </style>
+    <style name="TextAppearance.Compat.Notification.Title.Media">
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored">
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Widget.Button.Colored">
+    </style>
+</resources>

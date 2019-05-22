@@ -1,0 +1,1 @@
+X8SE Camera uses UBIFS, can be unpacked with ubidump https://github.com/nlitsme/ubidump

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.fimi.kernel.percent.PercentRelativeLayout android:id="@+id/main_left_tools" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.fimi.app.x8s.widget.X8ErrorCodeLayout android:id="@+id/v_error_code" android:layout_width="match_parent" android:layout_height="400dp" android:layout_marginLeft="@dimen/x8s_main_errorcode_power_pitchingangle_layout_x3" android:layout_marginTop="40dp">
+            <RelativeLayout android:id="@+id/rl_level0" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <RelativeLayout android:id="@+id/rl_level1" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </com.fimi.app.x8s.widget.X8ErrorCodeLayout>
+    </com.fimi.kernel.percent.PercentRelativeLayout>
+</merge>

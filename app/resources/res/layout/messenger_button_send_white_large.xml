@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/messenger_send_button" style="@style/MessengerButton.White.Large">
+    <TextView android:text="@string/messenger_send_button_text" style="@style/MessengerButtonText.White.Large"/>
+</FrameLayout>

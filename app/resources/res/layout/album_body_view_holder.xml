@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/body_viewgroup" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/simpledraweeview" android:layout_width="match_parent" android:layout_height="match_parent" app:failureImage="@drawable/album_friends_sends_pictures_no" app:actualImageScaleType="6"/>
+    <TextView android:textSize="12sp" android:textColor="#ffffff" android:id="@+id/duringdate_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ImageView android:id="@+id/selected_iv" android:visibility="gone" android:layout_width="18dp" android:layout_height="18dp"/>
+</RelativeLayout>

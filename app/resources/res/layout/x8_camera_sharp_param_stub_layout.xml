@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x8s_camera_style_sub_layout_x3" android:layout_marginBottom="22dp">
+        <TextView android:textSize="12dp" android:textColor="@drawable/x8_camera_value_enable_selector" android:gravity="center" android:id="@+id/normal_v" android:layout_width="70dp" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:text="@string/x8_style_normal" android:layout_centerVertical="true"/>
+        <TextView android:textSize="12dp" android:textColor="@drawable/x8_camera_value_enable_selector" android:gravity="center" android:id="@+id/sharp_v" android:layout_width="70dp" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="@string/x8_style_sharp" android:layout_toRightOf="@+id/normal_v" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,41 @@
+config system
+	option hostname	OpenWrt
+	option timezone	UTC
+
+config settings usb
+	option mode HOST
+
+config setting wifi
+    option enable 1
+    option paired 0
+    option check_cnt 9
+
+config timeserver ntp
+	list server	0.openwrt.pool.ntp.org
+	list server	1.openwrt.pool.ntp.org
+	list server	2.openwrt.pool.ntp.org
+	list server	3.openwrt.pool.ntp.org
+	option enabled 1
+	option enable_server 0
+
+config settings master
+	option debug 6
+
+config remcntlserver remcntlsrv
+	option enable 1
+	option address 0.0.0.0
+	option port 8080
+	option broadcast_enable 1
+	option broadcast_interval 2
+
+config upgradeserver firmupg
+	option enable 1
+	option ftpd_enable 1
+	option ftpd_addr 0.0.0.0
+	option ftpd_port 21
+	option tftpd_enable 0
+	option httpd_enable 0
+
+
+
+

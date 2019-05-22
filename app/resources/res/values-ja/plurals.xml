@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="tw__time_hours">
+        <item>%d時間</item>
+        <item>1時間</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item>%d分</item>
+        <item>1分</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item>%d秒</item>
+        <item>1秒</item>
+    </plurals>
+</resources>

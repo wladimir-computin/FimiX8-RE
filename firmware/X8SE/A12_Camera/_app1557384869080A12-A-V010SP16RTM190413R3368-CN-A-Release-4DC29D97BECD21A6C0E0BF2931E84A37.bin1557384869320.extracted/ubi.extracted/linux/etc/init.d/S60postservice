@@ -1,0 +1,29 @@
+#!/bin/sh
+
+echo 'S60postservice is running...'
+#Enable AMBA RTSP Server. This is for test only.
+#if [ -x /usr/bin/AmbaRTSPServer ]; then
+#	/usr/bin/AmbaRTSPServer
+#fi
+
+#Enable Remoteapi command server
+#if [ -x /usr/bin/remoteapi_cmd_daemon ]; then
+#	/usr/bin/remoteapi_cmd_daemon
+#fi
+
+#Enable Remoteapi data server
+#if [ -x /usr/bin/remoteapi_data_daemon ]; then
+#	/usr/bin/remoteapi_data_daemon
+#fi
+
+#Enable Remoteapi system service daemon
+#if [ -x /usr/bin/remoteapi_syssvc_daemon ]; then
+#	/usr/bin/remoteapi_syssvc_daemon
+#fi
+
+#Enable Remoteapi disc server
+if [ -x /usr/bin/remoteapi_disc_daemon ]; then
+	/usr/bin/remoteapi_disc_daemon
+fi
+
+exit $?

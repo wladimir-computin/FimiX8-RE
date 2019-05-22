@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:drawable="@drawable/x8_rc_japanese_rocker_left" android:maxLevel="0"/>
+    <item android:drawable="@drawable/x8_rc_america_and_chinese_rocker_right" android:maxLevel="1"/>
+    <item android:drawable="@drawable/x8_rc_america_and_chinese_rocker_left" android:maxLevel="2"/>
+</level-list>

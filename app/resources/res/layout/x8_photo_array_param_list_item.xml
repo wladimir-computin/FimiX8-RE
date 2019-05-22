@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="@dimen/x8s_photo_array_param_list_item_x1">
+    <TextView android:textSize="13dp" android:textColor="@drawable/x8_camera_value_enable_selector" android:gravity="center" android:id="@+id/item_value" android:layout_width="@dimen/x8s_photo_array_param_list_item_x2" android:layout_height="match_parent" android:text="@string/x8_camera_shutter_value_0" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:drawable="@drawable/x8_img_fc_magnetic_field1" android:maxLevel="1"/>
+    <item android:drawable="@drawable/x8_img_fc_magnetic_field2" android:maxLevel="2"/>
+    <item android:drawable="@drawable/x8_img_fc_magnetic_field3" android:maxLevel="3"/>
+    <item android:drawable="@drawable/x8_img_fc_magnetic_field4" android:maxLevel="4"/>
+</level-list>

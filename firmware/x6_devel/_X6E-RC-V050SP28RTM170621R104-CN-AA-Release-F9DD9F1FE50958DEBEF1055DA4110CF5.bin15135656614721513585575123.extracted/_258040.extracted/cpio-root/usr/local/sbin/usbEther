@@ -1,0 +1,4 @@
+#!/bin/bash
+modprobe -r rndis_host
+modprobe -r ehci_hcd
+

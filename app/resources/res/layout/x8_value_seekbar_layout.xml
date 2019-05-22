@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingLeft="@dimen/x8s_value_seekbar_layout_x5" android:paddingRight="@dimen/x8s_value_seekbar_layout_x5" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rl_title" android:layout_width="match_parent" android:layout_height="@dimen/x8s_value_seekbar_layout_x6">
+        <TextView android:textSize="@dimen/textsize_39" android:textColor="@color/white_100" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/x8_fc_item_speed_limit" android:layout_centerVertical="true"/>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/rl_flag_menu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/textsize_36" android:textColor="@color/x8_fc_all_setting_blue" android:id="@+id/tv_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="%" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/img_flag_menu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/x8_btn_menu_state_selector" android:scaleType="fitCenter" android:layout_centerVertical="true"/>
+            <com.fimi.widget.SwitchButton android:id="@+id/swb_toggle" android:visibility="gone" android:layout_width="@dimen/x8s_main_fc_item_x8" android:layout_height="@dimen/x8s_main_fc_item_x6" android:layout_centerVertical="true" app:onColor="#09d9ff"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_seekbar" android:layout_width="match_parent" android:layout_height="@dimen/x8s_value_seekbar_layout_x6" android:layout_below="@+id/rl_title">
+        <RelativeLayout android:id="@+id/rl_minus" android:layout_width="@dimen/x8s_value_seekbar_layout_x5" android:layout_height="@dimen/x8s_value_seekbar_layout_x5" android:layout_centerVertical="true">
+            <View android:id="@+id/view_minus" android:background="@drawable/x8_btn_minus_bg" android:layout_width="@dimen/x8s_value_seekbar_layout_x3" android:layout_height="@dimen/x8s_value_seekbar_layout_x1" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <View android:id="@+id/rl_minus1" android:layout_width="@dimen/x8s_value_seekbar_layout_x5" android:layout_height="@dimen/x8s_value_seekbar_layout_x1" android:layout_toRightOf="@+id/rl_minus" android:layout_centerInParent="true"/>
+        <com.fimi.app.x8s.widget.X8SeekBarView android:id="@+id/sb_value" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/rl_plus1" android:layout_toRightOf="@+id/rl_minus1" android:layout_centerVertical="true"/>
+        <View android:id="@+id/rl_plus1" android:layout_width="@dimen/x8s_value_seekbar_layout_x5" android:layout_height="@dimen/x8s_value_seekbar_layout_x1" android:layout_toLeftOf="@+id/rl_plus" android:layout_centerInParent="true"/>
+        <RelativeLayout android:id="@+id/rl_plus" android:layout_width="@dimen/x8s_value_seekbar_layout_x5" android:layout_height="@dimen/x8s_value_seekbar_layout_x5" android:layout_marginRight="@dimen/x8s_value_seekbar_layout_x7" android:layout_toLeftOf="@+id/imb_confirm" android:layout_centerVertical="true">
+            <View android:id="@+id/view_plus" android:background="@drawable/x8_btn_plus_bg" android:layout_width="@dimen/x8s_value_seekbar_layout_x4" android:layout_height="@dimen/x8s_value_seekbar_layout_x4" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <com.fimi.app.x8s.widget.TwoStateImageButton android:id="@+id/imb_confirm" android:background="@drawable/x8_value_seekbar_confirm_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

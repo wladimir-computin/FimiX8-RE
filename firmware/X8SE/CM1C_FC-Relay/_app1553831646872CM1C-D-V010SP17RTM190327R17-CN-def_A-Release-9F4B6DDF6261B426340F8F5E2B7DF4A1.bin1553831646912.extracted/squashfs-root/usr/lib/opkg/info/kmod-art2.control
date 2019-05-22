@@ -1,0 +1,13 @@
+Package: kmod-art2
+Version: 3.3.8+CS10.2v4.9.385-1
+Depends: kernel (=3.3.8-1-c2a5c233b60a1bb6fa8179c5c2edfa37), libpthread, libc, librt
+Provides: 
+Source: qca/feeds/qca/utils/art2
+Section: QCA
+Status: unknown ok not-installed
+Essential: no
+Priority: optional
+Maintainer: Qualcomm Atheros
+Architecture: ar71xx
+Installed-Size: 2006071
+Description:  - QCA ART Driver & tools

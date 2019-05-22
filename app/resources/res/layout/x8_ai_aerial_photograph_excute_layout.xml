@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fimi.kernel.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_centerVertical="true">
+        <com.fimi.app.x8s.widget.TwoStateImageView android:id="@+id/img_edit" android:background="@drawable/x8_btn_ai_line_point_value_edit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ImageView android:id="@+id/img_change_angle" android:background="@drawable/x8_btn_head_lock_update_select" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="27dp" android:layout_below="@+id/img_edit"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:layout_marginRightPercent="4.6666%h" app:layout_marginBottomPercent="5.833333%">
+        <RelativeLayout android:id="@+id/rl_flag_small" android:background="@drawable/x8_ai_follow_tx_bg" android:paddingRight="11dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <com.fimi.app.x8s.widget.TwoStateImageView android:id="@+id/img_ai_flag_small" android:background="@drawable/x8_img_ai_aerial_graph_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/textsize_39" android:textColor="@color/white_100" android:gravity="center_vertical" android:id="@+id/tv_task_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/x8_ai_aerial_photograph" android:layout_toRightOf="@+id/img_ai_flag_small" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <com.fimi.app.x8s.widget.TwoStateImageView android:id="@+id/img_ai_follow_back" android:background="@drawable/x8_btn_ai_follow_point2point_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_toRightOf="@+id/rl_flag_small" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:id="@+id/x8_head_lock_next_blank" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/v_x8_head_lock_next"/>
+    <com.fimi.kernel.percent.PercentRelativeLayout android:id="@+id/v_x8_head_lock_next" android:background="@color/black_80" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_alignParentRight="true" app:layout_widthPercent="50%w">
+        <com.fimi.kernel.percent.PercentRelativeLayout android:id="@+id/rl_ai_follow_confirm" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_marginTopPercent="2.7777%">
+            <TextView android:textSize="@dimen/textsize_39" android:textColor="@color/white_90" android:id="@+id/tv_ai_aerail_graph_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/x8_ai_heading_lock_update" android:layout_centerInParent="true"/>
+        </com.fimi.kernel.percent.PercentRelativeLayout>
+        <View android:background="@color/white_10" android:layout_width="match_parent" android:layout_height="@dimen/x8s_ai_point_to_point_confirm_layout_x1" app:layout_marginTopPercent="11.11111%"/>
+        <RelativeLayout android:id="@+id/rl_head_lock_setangle" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_marginTopPercent="13.666%">
+            <TextView android:textSize="@dimen/textsize_36" android:textColor="@color/white_90" android:id="@+id/tv_lock_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="21dp" android:layout_marginTop="10dp" android:text="@string/x8_ai_heading_lock_tip6"/>
+            <TextView android:textSize="@dimen/textsize_36" android:textColor="@color/white_90" android:id="@+id/tv_lock_angle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="21dp" android:layout_marginTop="10dp" android:text="@string/x8_ai_heading_lock_tip3" android:layout_below="@+id/tv_lock_tip"/>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/tv_lock_angle" android:layout_centerHorizontal="true">
+                <ImageView android:id="@+id/img_lock_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+                <ImageView android:id="@+id/img_lock_angle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_marginTopPercent="13.666%" layout="@layout/x8_ai_aerial_photograph_sensityvity_layout"/>
+        <Button android:textSize="@dimen/textsize_36" android:textColor="@color/black_90" android:id="@+id/btn_ai_follow_confirm_ok" android:background="@drawable/x8_btn_white_selector" android:layout_width="@dimen/x8s_ai_point_to_point_confirm_layout_x4" android:layout_height="@dimen/x8s_ai_point_to_point_confirm_layout_x3" android:text="@string/x8_ai_fly_lines_point_action_update" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:layout_marginBottomPercent="5.833333%"/>
+    </com.fimi.kernel.percent.PercentRelativeLayout>
+</com.fimi.kernel.percent.PercentRelativeLayout>

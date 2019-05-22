@@ -1,0 +1,18 @@
+#!/bin/sh
+
+. /lib/functions.sh
+. /lib/functions/network.sh
+
+#restart dhcp server when domain changed and this domain should be delegated to LAN side
+option_cb(){
+	[ "$1" != "update_domain" ] && return
+	[ "$2" != "$INTERFACE" ] && return
+
+	old_domain=$(grep domain= /var/etc/dnsmasq.conf | cut -d "=" -f 2)
+	network_get_dnssearch new_domain "$INTERFACE"
+	[ "$old_domain" != "$new_domain" ] && /etc/init.d/dnsmasq restart
+}
+
+/etc/init.d/dnsmasq enabled && [ "$ACTION" = "ifup" ] && {
+	config_load dhcp
+}

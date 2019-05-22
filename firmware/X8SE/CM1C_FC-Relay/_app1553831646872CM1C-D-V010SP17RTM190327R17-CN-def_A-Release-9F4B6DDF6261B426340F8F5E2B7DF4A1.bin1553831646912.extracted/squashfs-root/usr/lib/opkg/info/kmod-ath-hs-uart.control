@@ -1,0 +1,13 @@
+Package: kmod-ath-hs-uart
+Version: 3.3.8-1
+Depends: kernel (=3.3.8-1-c2a5c233b60a1bb6fa8179c5c2edfa37)
+Provides: 
+Source: fimi/ath-hs-uart
+Section: kernel
+Status: unknown ok not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: ar71xx
+Installed-Size: 4513
+Description:  Atheros AR934x High Speed Uart module

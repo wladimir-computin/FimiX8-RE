@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="10" android:versionName="V1.0.10" package="com.fimi.android.app" platformBuildVersionCode="26" platformBuildVersionName="8.0.0">
+    <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="26"/>  \10
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>  \10
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <protected-broadcast android:name="android.intent.action.MEDIA_MOUNTED"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <protected-broadcast android:name="android.intent.action.MEDIA_MOUNTED"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-feature android:name="android.hardware.usb.accessory"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="com.xiaomi.permission.AUTH_SERVICE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-feature android:glEsVersion="20000" android:required="true"/>
+    <application android:theme="@style/AppTheme" android:label="@string/app_product_name" android:icon="@mipmap/ic_launcher_fimiapp" android:name="com.fimi.app.base.HostApplication" android:debuggable="false" android:allowBackup="false" android:hardwareAccelerated="true" android:largeHeap="true" android:supportsRtl="true">
+        <meta-data android:name="channel" android:value="xiaomi"/>
+        <meta-data android:name="splash_icon" android:resource="@drawable/icon_splash_fimiapp"/>
+        <activity android:name="com.fimi.app.ui.SplashActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.fimi.app.ui.FimiAoaSplashActivity" android:launchMode="singleTask" android:screenOrientation="behind" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"/>
+            </intent-filter>
+            <meta-data android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" android:resource="@xml/accessory_filter"/>
+        </activity>
+        <activity android:name="com.fimi.app.ui.main.HostNewMainActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="mcc|mnc|locale|keyboardHidden|orientation|screenSize|layoutDirection"/>
+        <provider android:name="android.support.v4.content.FileProvider" android:exported="false" android:authorities="com.fimi.android.app.fileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths_gh2"/>
+        </provider>
+        <activity android:name="com.fimi.libperson.ui.me.login.LoginMainActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.fimi.libperson.ui.me.login.LoginActivity" android:launchMode="singleTop" android:screenOrientation="userPortrait" android:configChanges="mcc|mnc|locale|keyboardHidden|orientation|screenSize|layoutDirection"/>
+        <activity android:name="com.fimi.libperson.ui.me.register.RegisterActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.fimi.libperson.ui.setting.LibPersonAboutActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name="com.fimi.libperson.ui.setting.LibPersonRightApplyActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name="com.fimi.libperson.ui.setting.PersonSettingNewActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="locale|layoutDirection"/>
+        <activity android:name="com.fimi.libperson.ui.me.countryselect.CountrySelectListActivity" android:screenOrientation="userPortrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.fimi.libperson.ui.web.UserProtocolWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.fimi.libperson.ui.setting.LanguageSettingActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name="com.fimi.libperson.ui.setting.ServiceSettingActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <receiver android:name="com.fimi.libperson.receiver.LocalChangedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.fimi.libdownfw.service.AppInitService"/>
+        <activity android:name="com.fimi.libdownfw.update.DownloadFwSelectActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.fimi.libdownfw.update.FindeNewFwDownActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="orientation|screenSize"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/google_maps_key"/>
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="@string/gaode_maps_key"/>
+        <service android:name="com.amap.api.location.APSService"/>
+        <activity android:name="com.fimi.app.x8s.ui.activity.X8SplashActivity" android:launchMode="singleTask" android:screenOrientation="behind" android:windowSoftInputMode="stateHidden" android:allowBackup="false"/>
+        <activity android:name="com.fimi.app.x8s.ui.activity.X8DeviceSelectActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/x8s_main_activity_style" android:name="com.fimi.app.x8s.ui.activity.X8sMainActivity" android:launchMode="singleTask" android:screenOrientation="landscape" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.fimi.app.x8s.ui.activity.update.X8UpdateDetailActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.fimi.app.x8s.ui.activity.update.X8UpdatingActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.fimi.app.x8s.ui.album.x8s.X8MediaActivity" android:launchMode="singleTask" android:screenOrientation="landscape"/>
+        <activity android:name="com.fimi.app.x8s.ui.activity.X8AiLineHistoryActivity" android:launchMode="singleTask" android:screenOrientation="sensorLandscape" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.fimi.app.x8s.ui.album.x8s.X8FimiPlayerActivity" android:screenOrientation="landscape" android:configChanges="locale|keyboardHidden|orientation|screenSize|layoutDirection"/>
+        <activity android:name="com.fimi.app.x8s.ui.album.x8s.X8MediaDetailActivity" android:screenOrientation="userLandscape"/>
+        <activity android:name="com.fimi.app.x8s.ui.activity.X8MediaPlayTestActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <service android:name="com.fimi.network.DownFwService"/>
+        <receiver android:name="com.fimi.receiver.SpeekSignReceiver"/>
+        <service android:name="com.fimi.apk.DownloadApkService"/>
+        <meta-data android:name="UMENG_APPKEY" android:value="@string/uemng_facebook_app_id"/>
+        <activity android:name="com.facebook.FacebookActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <activity android:name="com.xiaomi.account.openauth.AuthorizeActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:theme="@style/MediaTheme" android:name="com.twitter.sdk.android.tweetui.PlayerActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/MediaTheme" android:name="com.twitter.sdk.android.tweetui.GalleryActivity"/>
+        <activity android:name="com.twitter.sdk.android.tweetcomposer.ComposerActivity" android:exported="false" android:windowSoftInputMode="adjustUnspecified|stateVisible|adjustResize"/>
+        <service android:name="com.twitter.sdk.android.tweetcomposer.TweetUploadService" android:enabled="true" android:exported="false"/>
+        <activity android:name="com.twitter.sdk.android.core.identity.OAuthActivity" android:exported="false" android:excludeFromRecents="true" android:configChanges="orientation|screenSize"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:theme="@style/NoActionBar" android:name="com.fimi.album.ui.MediaActivity" android:launchMode="singleTop" android:screenOrientation="sensorLandscape" android:configChanges="orientation|screenLayout|screenSize"/>
+        <activity android:theme="@style/NoActionBar" android:name="com.fimi.album.ui.MediaDetailActivity" android:screenOrientation="sensorLandscape" android:configChanges="orientation|screenLayout|screenSize"/>
+        <activity android:theme="@style/NoActionBar" android:name="com.fimi.album.ui.VideoPlayActivity" android:screenOrientation="sensorLandscape" android:configChanges="orientation|screenLayout|screenSize"/>
+        <meta-data android:name="android.support.VERSION" android:value="26.1.0"/>
+        <meta-data android:name="android.arch.lifecycle.VERSION" android:value="27.0.0-SNAPSHOT"/>
+        <activity android:theme="@style/block_canary_BlockCanary.Base" android:label="@string/block_canary_display_activity_label" android:icon="@drawable/block_canary_icon" android:name="com.github.moduth.blockcanary.ui.DisplayActivity" android:enabled="false" android:taskAffinity="com.github.moduth.blockcanary">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

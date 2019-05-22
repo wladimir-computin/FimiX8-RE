@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:layout_marginRight="5dp">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/left_layout" android:layout_width="40dp" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+        <ImageView android:id="@+id/img_update_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@android:drawable/stat_notify_sync" android:scaleType="fitXY" android:layout_weight="1"/>
+        <TextView android:textSize="16sp" android:id="@+id/text_download_process" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginBottom="5dp" android:layout_toRightOf="@+id/left_layout" android:layout_alignParentRight="true">
+        <TextView android:textSize="16sp" android:id="@+id/text_download_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginBottom="1dp" android:layout_weight="1"/>
+        <ProgressBar android:id="@+id/download_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:layout_marginBottom="2dp" android:layout_weight="1" style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+    </LinearLayout>
+</RelativeLayout>

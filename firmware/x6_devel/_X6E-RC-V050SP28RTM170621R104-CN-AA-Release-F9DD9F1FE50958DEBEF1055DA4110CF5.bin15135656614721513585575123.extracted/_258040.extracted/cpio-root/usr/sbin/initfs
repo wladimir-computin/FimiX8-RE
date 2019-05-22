@@ -1,0 +1,57 @@
+#!/bin/sh
+
+MTD_STR=`grep mtd8 /proc/mtd`
+if [ -z "$MTD_STR" ]; then
+	echo "I am single firmware, MTD_EXTFS=/dev/mtdblock4"
+	MTD_EXTFS=/dev/mtdblock4
+else
+	echo "I am dual firmware, MTD_EXTFS=/dev/mtdblock7"
+	MTD_EXTFS=/dev/mtdblock7
+fi
+
+DIR_EXTFS=/opt
+
+hostapd_conf_recovery(){
+	if [ -f ${DIR_EXTFS}/config/.need_update ]; then
+		echo "Need update /opt"
+		cp ${DIR_EXTFS}/config/x6_hostapd.conf ${DIR_EXTFS}/config/x6_hostapd.conf.bak
+		sync
+        rm ${DIR_EXTFS}/log/*
+        cp -rf /defaults/config ${DIR_EXTFS}
+		cp ${DIR_EXTFS}/config/x6_hostapd.conf.bak ${DIR_EXTFS}/config/x6_hostapd.conf
+		rm ${DIR_EXTFS}/config/x6_hostapd.conf.bak
+		rm ${DIR_EXTFS}/config/.need_update
+		sync
+	fi
+}
+
+if [ "`mount | grep ${DIR_EXTFS}`" != "" ]; then
+	umount ${DIR_EXTFS}
+fi
+
+if [ "`mount | grep ${MTD_EXTFS}`" == "" ]; then
+	mount ${MTD_EXTFS} ${DIR_EXTFS} -t jffs2 -o noatime
+	if [ "`mount | grep ${MTD_EXTFS}`" == "" ]; then
+		echo "Mount extfs ${MTD_EXTFS} to ${DIR_EXTFS} failure and try to restore jffs2 extfs"
+		mtd erase ${MTD_EXTFS}
+		mount ${MTD_EXTFS} ${DIR_EXTFS} -t jffs2 -o noatime
+	fi
+fi
+
+if [ "`mount | grep ${MTD_EXTFS}`" == "" ]; then
+	echo "Initialized EXTFS FAILURE"
+
+else
+	if [ -f ${DIR_EXTFS}/config/x6_hostapd.conf ]; then
+		echo "Initialized EXTFS Success"
+	else
+		echo "Restore to FACTORY DEFAULTS"
+		mkdir -p ${DIR_EXTFS}/config
+		mkdir -p ${DIR_EXTFS}/log
+		cp -rf /defaults/config ${DIR_EXTFS}
+		/usr/sbin/inithpd_cnf
+        sync
+	fi
+	hostapd_conf_recovery
+fi
+

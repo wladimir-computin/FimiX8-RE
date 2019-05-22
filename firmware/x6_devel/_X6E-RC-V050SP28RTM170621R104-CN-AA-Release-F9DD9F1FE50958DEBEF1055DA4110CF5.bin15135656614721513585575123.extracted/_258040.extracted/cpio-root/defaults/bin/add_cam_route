@@ -1,0 +1,10 @@
+#!/bin/sh
+  
+CAMERA_IP="192.168.40.1"
+EXTERNAL_IP="192.168.42.1"
+IFNAME="usb0:4"
+
+ifconfig ${IFNAME} ${EXTERNAL_IP} up
+iptables -t nat -A PREROUTING -d ${EXTERNAL_IP} -j DNAT --to-destination ${CAMERA_IP}
+iptables -t nat -A POSTROUTING -s ${CAMERA_IP} -d ${EXTERNAL_IP}/24 -j SNAT --to-source ${EXTERNAL_IP}
+

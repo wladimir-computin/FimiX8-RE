@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="tw__time_hours">
+        <item>%d jam</item>
+        <item>1 jam</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item>%d mnt</item>
+        <item>1 mnt</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item>%d dtk</item>
+        <item>1 dtk</item>
+    </plurals>
+</resources>

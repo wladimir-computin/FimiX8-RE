@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#1f1f21" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/img_splash" android:layout_width="62dp" android:layout_height="62dp" android:layout_marginTop="150dp" android:scaleType="center" android:layout_centerHorizontal="true"/>
+    <com.fimi.widget.LetterSpacingTextView android:textSize="14dp" android:textColor="#b2ffffff" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="@string/device_slogn" android:layout_below="@+id/img_splash" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="10.6dp" android:textColor="#99ffffff" android:id="@+id/tv_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.6dp" android:text="@string/splash_copyright_2017_2018fimi_all_rights_reserved" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

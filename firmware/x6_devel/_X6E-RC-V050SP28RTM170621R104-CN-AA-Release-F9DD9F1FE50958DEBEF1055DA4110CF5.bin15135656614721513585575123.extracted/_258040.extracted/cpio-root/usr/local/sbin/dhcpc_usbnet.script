@@ -1,0 +1,15 @@
+#!/bin/sh
+NAME="usbnet"
+
+case "$1" in
+	deconfig)
+		ubus -t 1 call master.dhcpc deconfig "{'name':'$NAME', 'interface':'$interface'}"
+		;;
+
+	renew|bound)
+		ubus -t 1 call master.dhcpc renew "{'name':'$NAME', 'interface':'$interface', 'ip':'$ip', 'subnet':'$subnet', 'route':'$router', 'broadcast':'$broadcast', 'dns':'$dns', 'domain':'$domain'}"
+		;;
+esac
+
+exit 0
+

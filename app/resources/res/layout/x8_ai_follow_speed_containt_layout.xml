@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="14dp" android:textColor="#ffffff" android:id="@+id/tv_speed" android:background="@drawable/x8_ai_follow_speed_bg" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3.0m/s" android:layout_centerHorizontal="true"/>
+    <RelativeLayout android:id="@+id/rl_more" android:background="@drawable/x8_ai_follow_speed_bg" android:paddingLeft="11dp" android:paddingRight="11dp" android:layout_width="267dp" android:layout_height="33dp" android:layout_marginTop="3dp" android:layout_below="@+id/tv_speed">
+        <ImageView android:id="@+id/img_anti_clockwise" android:background="@drawable/x8_btn_follow_speed_anti_clockwise" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:layout_toLeftOf="@+id/v_speed" android:layout_centerVertical="true"/>
+        <com.fimi.app.x8s.widget.X8FollowSpeedView android:id="@+id/v_speed" android:layout_width="200dp" android:layout_height="33dp" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/img_clockwise" android:background="@drawable/x8_btn_follow_speed_clockwise" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_toRightOf="@+id/v_speed" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

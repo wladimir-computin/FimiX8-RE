@@ -1,0 +1,22 @@
+#!/bin/sh
+# Copyright (c) 2013 The Linux Foundation. All rights reserved.
+
+ubifs_not_mounted() {
+    if [ "$pi_ubifs_mount_success" != "true" ]; then
+	return 0
+    else
+	return 1
+    fi
+}
+
+do_mount_ubifs() {
+    check_skip && return
+    grep -wqs ubi_rootfs_data /sys/class/ubi/ubi0/ubi0_*/name || return 1
+
+    mkdir -p /tmp/overlay
+    mount -t ubifs ubi0:ubi_rootfs_data /tmp/overlay &&
+	    pi_ubifs_mount_success=true
+}
+
+boot_hook_add preinit_mount_root do_mount_ubifs
+

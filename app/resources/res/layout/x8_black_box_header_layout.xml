@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fimi.kernel.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/rlRootView" android:layout_width="match_parent" android:layout_height="@dimen/x8s_ai_line_history_item_layout_x1">
+    <TextView android:textSize="14dp" android:textColor="@color/white_90" android:id="@+id/tvItme1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/x8_ai_fly_take_off" android:layout_centerVertical="true"/>
+    <View android:background="@color/white_30" android:layout_width="match_parent" android:layout_height="@dimen/x8s_main_general_fw_upgrade_item_normal_x1" android:layout_alignParentBottom="true"/>
+</com.fimi.kernel.percent.PercentRelativeLayout>

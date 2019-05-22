@@ -1,0 +1,2 @@
+/etc/modules.d/40-gpio-dev
+/lib/modules/3.3.8/gpio_dev.ko

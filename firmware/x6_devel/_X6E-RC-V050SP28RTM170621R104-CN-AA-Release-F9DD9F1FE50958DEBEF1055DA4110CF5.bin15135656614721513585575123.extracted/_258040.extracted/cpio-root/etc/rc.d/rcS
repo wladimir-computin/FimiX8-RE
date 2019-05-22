@@ -1,0 +1,87 @@
+#!/bin/sh
+echo
+export PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:/etc/ath
+
+echo "---------- Initializing Basic Settings ----------"
+
+# Rootfs and Extfs
+mount -a
+mount -o remount +w /
+/usr/sbin/initfs
+
+# UBus
+/usr/sbin/ubusd&
+
+# Ethernet 
+ifconfig lo 127.0.0.1 up
+
+# Syslog
+mkdir -p /opt/log
+/sbin/syslogd -S -D -s 512 -f /etc/syslogd.conf
+#cd /tmp && ln -s /opt/log log
+
+# Recovery
+firmupg cal recovery
+MTD_STR=`grep mtd8 /proc/mtd`
+if [ -z "$MTD_STR" ];then
+	echo "I am single, don't call firmupg recovery"
+else
+	echo "I am dual, call frimupg recovery"
+	firmupg recovery&
+fi
+
+# check if factory test
+if [ -f /opt/nart.out ]; then
+    echo "--------- Factory test mode ---------"
+    /sbin/hotplugd&
+    /sbin/netd&
+    /sbin/firmupgd&
+    /sbin/fac_server&
+    /usr/sbin/telnetd
+    cd /tmp && tcpsvd -vE 0.0.0.0 21 ftpd -w -t 30  &    
+else
+# normal product boot up
+    echo "---------- Product mode ---------"
+    echo "---------- Init WLAN ----------"
+    insmod /lib/modules/2.6.31/net/adf.ko
+    insmod /lib/modules/2.6.31/net/asf.ko
+    insmod /lib/modules/2.6.31/net/ath_hal.ko
+    insmod /lib/modules/2.6.31/net/ath_rate_atheros.ko
+    insmod /lib/modules/2.6.31/net/ath_dfs.ko
+    insmod /lib/modules/2.6.31/net/ath_dev.ko
+    insmod /lib/modules/2.6.31/net/umac.ko
+
+    echo -n "Create WLAN 5G AP at interface "
+    wlanconfig ath0 create wlandev wifi0 wlanmode ap
+
+    #
+    # FiMi Apps
+    #
+    echo "---------- Load FiMi APPs ----------"
+    /sbin/hotplugd&
+    cd /tmp && tcpsvd -vE 0.0.0.0 21 ftpd -w -t 30  &
+    /sbin/netd&
+    /sbin/tcp_monitor&
+    /sbin/firmupgd&
+    /sbin/db_host&
+    /sbin/watch_dog&
+    sleep 2
+    /sbin/proc_guard&
+    /sbin/fmlink_gs&
+    
+fi #end check factory test 
+
+echo "---`cat /sys/class/net/wifi0/address`---"
+
+# start the page cache/kmem cache cleanup timer in the kernel
+echo 1 > /proc/sys/vm/drop_caches
+
+# when processes uses page-cache more than 30% of system memory,
+# lets force them to write
+echo 20 > /proc/sys/vm/dirty_ratio
+
+# when the dirty pages cross more than 5% of sys memory,
+# kick in the pdflush
+echo 5 > /proc/sys/vm/dirty_background_ratio
+
+

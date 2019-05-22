@@ -1,0 +1,23 @@
+#!/bin/sh
+# Copyright (C) 2006-2010 OpenWrt.org
+# Copyright (C) 2010 Vertical Communications
+
+ext4_not_mounted() {
+    if [ "$pi_ext4_mount_success" != "true" ]; then
+	return 0
+    else
+	return 1
+    fi
+}
+
+do_mount_ext4() {
+    check_skip && return
+    grep -wqs rootfs_data /sys/block/mmcblk*/*/uevent || return 1
+
+    mkdir -p /tmp/overlay
+    mount "$(find_mmc_part rootfs_data)" /tmp/overlay -t ext4 &&
+        pi_ext4_mount_success=true
+}
+
+boot_hook_add preinit_mount_root do_mount_ext4
+

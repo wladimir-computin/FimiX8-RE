@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/rl_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/v_divide" android:background="@color/person_setting_divide" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="13dp"/>
+    <TextView android:textSize="14.3dp" android:textColor="@color/person_setting_font" android:id="@+id/tv_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/iv_arrow" android:background="@drawable/person_setting_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="23.3dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <TextView android:textSize="12sp" android:textColor="#663a3a3a" android:id="@+id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="29dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_selected="true" android:drawable="@drawable/fimsdk_update_up"/>
+    <item android:state_selected="false" android:drawable="@drawable/fimisdk_update_down"/>
+    <item android:drawable="@drawable/fimisdk_update_down"/>
+</selector>

@@ -1,0 +1,29 @@
+#!/bin/sh
+
+mkdir -p /tmp/mjpeg
+mount --bind /tmp/mjpeg /var/www/mjpeg
+sync
+mount --bind /tmp/fuse_d/DCIM/ /var/www/DCIM
+/usr/local/share/script/restart_webserver.sh
+# To prevent wifi_xxx.sh is run more than once during boot-up.
+sysctl -w net.core.wmem_default=4194304
+touch /tmp/S52wifi_running
+
+case "$1" in
+  start)
+        /usr/local/share/script/wifi_start.sh
+        ;;
+  stop)
+        /usr/local/share/script/wifi_stop.sh unload
+        ;;
+  restart|reload)
+        "$0" stop
+        "$0" start
+        ;;
+  *)
+        echo $"Usage: $0 {start|stop|restart}"
+esac
+
+rm -f /tmp/S52wifi_running
+
+exit $?

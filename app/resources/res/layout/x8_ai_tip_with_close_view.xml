@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fimi.kernel.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_tip" android:background="@drawable/x8_img_ai_suround_tip_bg" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <TextView android:textColor="@color/white_100" android:id="@+id/tv_tip" android:paddingLeft="@dimen/x8s_ai_surround_layout_x1" android:paddingRight="@dimen/x8s_ai_surround_layout_x2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/x8_ai_surround_select_point" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/tl_close" android:background="#00ff4c31" android:layout_width="@dimen/x8s_ai_surround_layout_x7" android:layout_height="@dimen/x8s_ai_surround_layout_x9" android:layout_alignRight="@+id/rl_tip">
+        <ImageView android:background="@drawable/x8_btn_ai_follow_tip_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x8s_ai_surround_layout_x4" android:layout_marginRight="@dimen/x8s_ai_surround_layout_x4" android:scaleType="fitCenter" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</com.fimi.kernel.percent.PercentRelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rl" android:background="@drawable/dialog_background_inset" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="14sp" android:textColor="#000000" android:id="@+id/msg_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="42dp" android:layout_marginBottom="75dp" android:text="确认退出吗？" android:layout_centerHorizontal="true"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/msg_tv">
+        <Button android:textSize="14sp" android:textColor="#7fffffff" android:gravity="center" android:id="@+id/left_btn" android:background="@drawable/fimisdk_selector_dialog_btn_left" android:layout_width="match_parent" android:layout_height="52.6dp" android:text="@string/cancel" android:layout_weight="1" android:layout_alignParentLeft="true"/>
+        <Button android:textSize="14sp" android:textColor="#7fffffff" android:gravity="center" android:id="@+id/right_btn" android:background="@drawable/fimisdk_selector_dialog_btn_right" android:layout_width="match_parent" android:layout_height="52.6dp" android:text="@string/ensure" android:layout_weight="1" android:layout_toRightOf="@+id/left_btn"/>
+    </LinearLayout>
+</RelativeLayout>

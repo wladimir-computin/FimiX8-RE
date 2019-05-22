@@ -1,0 +1,15 @@
+#!/bin/sh /etc/rc.common
+
+START=93
+
+SERVICE_DAEMONIZE=1
+SERVICE_WRITE_PID=1
+
+start() {
+	/usr/bin/fwupd &
+}
+
+stop() {
+	killall -9 fwupd
+}
+

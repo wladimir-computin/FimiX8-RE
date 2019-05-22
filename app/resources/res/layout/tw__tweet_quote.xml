@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" style="@style/tw__TweetFillWidth">
+    <LinearLayout android:id="@+id/tw__author_attribution" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" style="@style/tw__QuoteAttributionLine">
+        <TextView android:id="@+id/tw__tweet_author_full_name" style="@style/tw__TweetFullName.Compact"/>
+        <TextView android:id="@+id/tw__tweet_author_screen_name" style="@style/tw__TweetScreenName.Compact"/>
+    </LinearLayout>
+    <TextView android:id="@+id/tw__tweet_text" android:layout_below="@+id/tw__author_attribution" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" style="@style/tw__TweetText.Quote"/>
+    <com.twitter.sdk.android.tweetui.internal.AspectRatioFrameLayout android:id="@+id/tw__aspect_ratio_media_container" android:layout_below="@+id/tw__tweet_text" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" style="@style/tw__TweetMediaContainer.Quote">
+        <com.twitter.sdk.android.tweetui.internal.TweetMediaView android:id="@+id/tweet_media_view" style="@style/tw__TweetMedia"/>
+        <com.twitter.sdk.android.tweetui.internal.MediaBadgeView android:id="@+id/tw__tweet_media_badge" style="@style/tw__TweetBadge"/>
+    </com.twitter.sdk.android.tweetui.internal.AspectRatioFrameLayout>
+</merge>

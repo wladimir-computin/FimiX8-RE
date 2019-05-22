@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_checked="true" android:color="@color/selector_font_login_select"/>
+    <item android:state_pressed="true" android:color="@color/selector_font_login_select"/>
+    <item android:state_selected="true" android:color="@color/selector_font_login_select"/>
+    <item android:color="@color/selector_font_login_unselect"/>
+</selector>

@@ -1,0 +1,2 @@
+/etc/modules.d/50-wdt-ath79
+/lib/modules/3.3.8/ath79_wdt.ko

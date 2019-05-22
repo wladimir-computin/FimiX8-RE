@@ -1,0 +1,13 @@
+#!/bin/sh
+
+ifconfig ath0 down
+wlanconfig ath0 destroy
+
+rmmod umac
+rmmod ath_dev
+rmmod ath_dfs
+rmmod ath_rate_atheros
+rmmod ath_hal
+rmmod asf
+rmmod adf
+

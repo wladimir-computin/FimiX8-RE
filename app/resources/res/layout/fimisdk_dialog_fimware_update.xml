@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_content" android:background="@drawable/fimisdk_shape_dialog_content_bg" android:layout_width="345dp" android:layout_height="181dp">
+        <TextView android:textSize="14dp" android:textColor="#ff3a3a3a" android:gravity="center" android:id="@+id/tv_title" android:layout_width="251.6dp" android:layout_height="wrap_content" android:layout_marginTop="12.3dp" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="12.6dp" android:textColor="#663a3a3a" android:id="@+id/tv_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.3dp" android:layout_below="@+id/tv_title" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="12.6dp" android:textColor="#cc3a3a3a" android:id="@+id/tv_delcare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/tv_sub_title" android:layout_alignLeft="@+id/tv_sub_title"/>
+        <TextView android:textSize="10.6dp" android:textColor="#cc3a3a3a" android:id="@+id/tv_content" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="14dp" android:layout_below="@+id/tv_delcare" android:layout_alignLeft="@+id/tv_sub_title"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_double" android:layout_width="345dp" android:layout_height="wrap_content" android:layout_marginTop="6.6dp" android:layout_below="@+id/rl_content">
+        <View android:id="@+id/v_divider" android:background="#ffffffff" android:layout_width="2px" android:layout_height="45.3dp" android:layout_centerHorizontal="true"/>
+        <Button android:textSize="14dp" android:textColor="#ccffffff" android:id="@+id/btn_left" android:background="@drawable/fimisdk_selector_dialog_btn_left" android:layout_width="wrap_content" android:layout_height="45.3dp" android:layout_toLeftOf="@+id/v_divider" android:layout_alignParentLeft="true"/>
+        <Button android:textSize="14dp" android:textColor="#fff36705" android:id="@+id/btn_right" android:background="@drawable/fimisdk_selector_dialog_btn_right" android:layout_width="wrap_content" android:layout_height="45.3dp" android:layout_toRightOf="@+id/v_divider" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <Button android:textSize="14dp" android:textColor="#fff36705" android:id="@+id/btn_single" android:background="@drawable/fimisdk_selector_dialog_btn_single" android:visibility="invisible" android:layout_width="345dp" android:layout_height="45.3dp" android:layout_marginTop="6.6dp" android:layout_below="@+id/rl_content"/>
+</RelativeLayout>

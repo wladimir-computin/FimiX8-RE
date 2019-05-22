@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fimi.kernel.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/x8_ai_point_to_point_confirm_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentRight="true">
+    <com.fimi.kernel.percent.PercentRelativeLayout android:id="@+id/rl_ai_follow_confirm" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_marginTopPercent="2.7777%">
+        <ImageView android:id="@+id/img_ai_follow_return" android:background="@drawable/x8_img_return" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/textsize_39" android:textColor="@color/white_90" android:id="@+id/tv_ai_follow_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/x8_ai_heading_lock" android:layout_centerInParent="true"/>
+    </com.fimi.kernel.percent.PercentRelativeLayout>
+    <View android:background="@color/white_10" android:layout_width="match_parent" android:layout_height="@dimen/x8s_ai_point_to_point_confirm_layout_x1" app:layout_marginTopPercent="11.11111%"/>
+    <RelativeLayout android:id="@+id/rl_head_lock_course" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/btn_ai_follow_confirm_ok" app:layout_marginTopPercent="13.666%">
+        <ImageView android:id="@+id/img_heading_lock_flag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+        <ScrollView android:id="@+id/sv_ai_items" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:layout_below="@+id/img_heading_lock_flag" android:overScrollMode="never">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <RelativeLayout android:paddingRight="18dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:textSize="@dimen/textsize_36" android:textColor="@color/white_90" android:id="@+id/tv_ai_follow_confirm_title1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:text="@string/x8_ai_heading_lock_tip1"/>
+                    <TextView android:textSize="@dimen/textsize_36" android:textColor="@color/white_90" android:id="@+id/tv_ai_follow_confirm_title2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginTop="10dp" android:text="@string/x8_ai_fixed_wing_tip2" android:layout_below="@+id/tv_ai_follow_confirm_title1"/>
+                    <CheckBox android:textSize="@dimen/textsize_36" android:textColor="@color/white_90" android:id="@+id/cb_ai_follow_confirm_ok" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginTop="13dp" android:checked="false" android:button="@null" android:text="@string/x8_ai_fly_follow_tip3" android:drawableLeft="@drawable/checkbox_selector" android:drawablePadding="@dimen/x8s_ai_point_to_point_confirm_layout_x2" android:layout_below="@+id/tv_ai_follow_confirm_title2"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_head_lock_setangle" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_marginTopPercent="13.666%">
+        <TextView android:textSize="@dimen/textsize_36" android:textColor="@color/white_90" android:id="@+id/tv_lock_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginTop="10dp" android:layout_marginRight="18dp" android:text="@string/x8_ai_heading_lock_tip2"/>
+        <TextView android:textSize="@dimen/textsize_36" android:textColor="@color/white_90" android:id="@+id/tv_lock_angle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginTop="10dp" android:layout_marginRight="18dp" android:text="@string/x8_ai_heading_lock_tip3" android:layout_below="@+id/tv_lock_tip"/>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/tv_lock_angle" android:layout_centerHorizontal="true">
+            <ImageView android:id="@+id/img_lock_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+            <ImageView android:id="@+id/img_lock_angle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <Button android:textSize="@dimen/textsize_36" android:textColor="@color/black_90" android:id="@+id/btn_ai_follow_confirm_ok" android:background="@drawable/x8_btn_white_selector" android:layout_width="@dimen/x8s_ai_takeoff_layout_x4" android:layout_height="@dimen/x8s_ai_takeoff_layout_x3" android:layout_marginBottom="@dimen/x8s_ai_takeoff_layout_x2" android:text="@string/x8_ai_fly_follow_ok" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</com.fimi.kernel.percent.PercentRelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/img_action" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/img_action" android:layout_centerHorizontal="true">
+            <ImageView android:id="@+id/img_point" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="10dp" android:textColor="@color/white_100" android:id="@+id/tv_index" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5m" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

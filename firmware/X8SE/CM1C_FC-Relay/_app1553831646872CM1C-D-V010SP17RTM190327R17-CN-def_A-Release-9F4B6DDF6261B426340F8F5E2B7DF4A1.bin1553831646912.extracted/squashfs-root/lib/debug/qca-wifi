@@ -1,0 +1,11 @@
+#!/bin/sh /sbin/sysdebug
+
+for dev in $(ls -1 /sys/class/net); do
+	[ -f /sys/class/net/${dev}/parent ] && {
+		log cat /sys/class/net/${dev}/parent
+		log iwpriv ${dev} txrx_fw_stats 1
+		log iwpriv ${dev} txrx_fw_stats 3
+		log iwpriv ${dev} txrx_fw_stats 6
+		log iwpriv ${dev} txrx_fw_stats 8
+	}
+done

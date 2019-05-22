@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="tw__time_hours">
+        <item>%dமணி</item>
+        <item>1மணி</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item>%dநி</item>
+        <item>1நி</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item>%dநொ</item>
+        <item>1நொ</item>
+    </plurals>
+</resources>

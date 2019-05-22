@@ -1,0 +1,13 @@
+Package: base-files
+Version: 117-unknown
+Depends: libc, netifd
+Provides: 
+Source: package/base-files
+Section: base
+Status: unknown ok not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: ar71xx
+Installed-Size: 46343
+Description:  This package contains a base filesystem and system scripts for OpenWrt.

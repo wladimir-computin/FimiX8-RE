@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rl_top_bar" android:background="@color/black" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="50dp">
+    <Button android:textSize="12dp" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/btn_cancle" android:background="@drawable/album_frame_selector" android:layout_width="56dp" android:layout_height="27dp" android:layout_marginLeft="11dp" android:text="@string/media_cancel" android:layout_centerVertical="true"/>
+    <TextView android:textSize="12dp" android:textColor="#ffffffff" android:id="@+id/tv_select_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    <Button android:textSize="12dp" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/btn_is_select" android:background="@drawable/album_frame_selector" android:layout_width="56dp" android:layout_height="27dp" android:layout_marginRight="11dp" android:text="@string/media_select_all" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

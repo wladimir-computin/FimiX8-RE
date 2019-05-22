@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="@dimen/x8s_main_right_menu_layout_x4" android:layout_alignParentRight="true" app:layout_marginTopPercent="15.833%h">
+        <com.fimi.app.x8s.widget.TwoStateImageButton android:id="@+id/imb_location" android:background="@drawable/x8_main_location_selector" android:layout_width="@dimen/x8s_main_right_menu_layout_x4" android:layout_height="@dimen/x8s_main_right_menu_layout_x4" android:layout_marginRight="@dimen/x8s_main_right_menu_layout_x2" android:layout_alignParentRight="true"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_set_home_point" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_toLeftOf="@+id/imb_location" android:layout_centerVertical="true">
+            <LinearLayout android:background="@drawable/x8_tab_left_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.fimi.app.x8s.widget.TwoStateImageButton android:id="@+id/img_set_home_by_dv" android:background="@drawable/x8_btn_set_home_point_by_dv" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View android:layout_width="1dp" android:layout_height="match_parent"/>
+            <LinearLayout android:background="@drawable/x8_tab_right_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.fimi.app.x8s.widget.TwoStateImageButton android:id="@+id/img_set_home_by_man" android:background="@drawable/x8_btn_set_home_point_by_man" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_takeoff_landing_aifly" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" app:layout_marginTopPercent="84.16%h">
+        <com.fimi.app.x8s.widget.TwoStateImageButton android:id="@+id/imb_x8_ai_reture" android:background="@drawable/x8_btn_ai_small_return_home" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginRight="@dimen/x8s_main_right_menu_layout_x3" android:layout_alignParentRight="true"/>
+        <com.fimi.app.x8s.widget.TwoStateImageButton android:id="@+id/imb_x8_take_off_land" android:background="@drawable/x8_btn_ai_small_takeoff" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginRight="@dimen/x8s_main_right_menu_layout_x3" android:layout_alignParentRight="true"/>
+        <com.fimi.app.x8s.widget.TwoStateImageButton android:id="@+id/imb_ai_fly" android:background="@drawable/x8_main_intelligent_flight_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/x8s_main_right_menu_layout_x3" android:layout_alignParentRight="true"/>
+    </LinearLayout>
+</merge>

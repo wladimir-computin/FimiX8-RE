@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent"/>
+            <size android:height="@dimen/tw__seekbar_thumb_size" android:width="@dimen/tw__seekbar_thumb_size"/>
+        </shape>
+    </item>
+    <item android:left="@dimen/tw__seekbar_thumb_outer_padding" android:top="@dimen/tw__seekbar_thumb_outer_padding" android:right="@dimen/tw__seekbar_thumb_outer_padding" android:bottom="@dimen/tw__seekbar_thumb_outer_padding">
+        <shape android:shape="oval">
+            <solid android:color="@color/tw__seekbar_thumb_outer_color"/>
+        </shape>
+    </item>
+    <item android:left="@dimen/tw__seekbar_thumb_inner_padding" android:top="@dimen/tw__seekbar_thumb_inner_padding" android:right="@dimen/tw__seekbar_thumb_inner_padding" android:bottom="@dimen/tw__seekbar_thumb_inner_padding">
+        <shape android:shape="oval">
+            <solid android:color="@color/tw__seekbar_thumb_inner_color"/>
+        </shape>
+    </item>
+</layer-list>

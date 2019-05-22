@@ -1,0 +1,175 @@
+#!/bin/sh /etc/rc.common
+#
+# Copyright (c) 2013 Qualcomm Atheros, Inc..
+#
+# All Rights Reserved.
+# Qualcomm Atheros Confidential and Proprietary.
+#
+
+# We don't want to start ART2 automatically at boot time as we want the
+# default to be a working user configuration.
+# At the end of the boot process, the user can start art using:
+# /etc/init.d/art start
+START=
+SERVICE_DAEMONIZE=1
+SERVICE_WRITE_PID=1
+wifi_dir=/sys/class/net/wifi
+arm_platform=`uname -m | grep arm`
+
+ART_QCA_WIFI_DETECTED=1
+MTD_ART_PART_NAME="ART"
+
+unload_wifi_art_modules() {
+	if [ "${ART_QCA_WIFI_DETECTED}" -eq 1 ]; then
+		for mod in art $(cat /etc/modules.d/33-qca-wifi* | sed '1!G;h;$!d'); do
+			[ -d /sys/module/${mod} ] && rmmod ${mod}
+		done
+	else
+		[ -d /sys/module/art ] && rmmod art
+	fi
+}
+
+load_wifi_art_modules() {
+	if [ "${ART_QCA_WIFI_DETECTED}" -eq 1 ]; then
+		for mod in $(cat /etc/modules.d/33-qca-wifi*) art ; do
+			case ${mod} in
+				umac) [ -d /sys/module/${mod} ] || { \
+					insmod ${mod} testmode=1 ahbskip=1 || { \
+						unload_wifi_art_modules
+					}
+				};;
+				*) [ -d /sys/module/${mod} ] || { \
+					insmod ${mod} || { \
+						unload_wifi_art_modules
+					}
+				};;
+			esac
+		done
+	else
+		for mod in $(lsmod | grep ath) ; do
+			case ${mod} in
+				ath9k | ath10k) rmmod ${mod};;
+			esac
+		done
+		[ -d /sys/module/art ] || insmod art
+	fi
+}
+
+is_art_runnable() {
+	if [ -e "$wifi_dir$1/device/device" ]; then
+		read dev_id < "$wifi_dir$1/device/device"
+		case "$dev_id" in
+			"0x0040")
+				return 0
+				;;
+			*)
+				return 1
+				;;
+		esac
+	fi
+	return 1
+}
+
+start_nart_out() {
+	local cfg=$1 wifi_index
+
+	if [ "${ART_QCA_WIFI_DETECTED}" -eq 1 ]; then
+		wifi_index=${cfg#wifi}
+	else
+		wifi_index=$cfg
+	fi
+
+	is_art_runnable $wifi_index && return
+
+	SERVICE_PID_FILE=/var/run/nart${wifi_index}.pid
+	if [ -n "$arm_platform" ]; then
+		service_start /usr/sbin/nart.out -instance ${wifi_index} -pcie ${wifi_index} -console
+	else
+		service_start /usr/sbin/nart.out -instance ${wifi_index} -console
+	fi
+}
+
+stop_nart_out() {
+	local cfg=$1 wifi_index
+
+	if [ "${ART_QCA_WIFI_DETECTED}" -eq 1 ]; then
+		wifi_index=${cfg#wifi}
+	else
+		wifi_index=$cfg
+	fi
+
+	is_art_runnable $wifi_index && return
+
+	# in qca-wifi, cfg name is the wifi iface name
+	SERVICE_PID_FILE=/var/run/nart${wifi_index}.pid
+	if [ -f /etc/modules.d/33-qca-wifi-akronite* ]; then
+		service_stop /usr/sbin/nart.out -instance ${wifi_index} -pcie ${wifi_index} -console
+	else
+		service_stop /usr/sbin/nart.out -instance ${wifi_index} -console
+	fi
+}
+
+art_qca_wifi_detect() {
+	local qca_wifi_entry
+
+	if [ -f /etc/modules.d/33-qca-wifi* ]; then
+		qca_wifi_entry=`cat /etc/modules.d/33-qca-wifi*`
+		[ -n "$qca_wifi_entry" ] || ART_QCA_WIFI_DETECTED=0
+	else
+		ART_QCA_WIFI_DETECTED=0
+	fi
+
+}
+
+start() {
+	local nor_flash=""
+	art_qca_wifi_detect
+
+	config_load wireless
+
+	# ART2 conflicts with the WiFi driver so we don't start anything here
+	# We'll just prepare the field in case we want to start nart.out
+	[ -c /dev/dk0 ] || mknod /dev/dk0 c 63 0
+	[ -c /dev/dk1 ] || mknod /dev/dk1 c 63 1
+
+	mtd_name=$(grep -i -w ${MTD_ART_PART_NAME} /proc/mtd | cut -f1 -d:)
+
+	nor_flash=`find /sys/devices/platform/spi* -name ${mtd_name}`
+
+	if [ -n "$nor_flash" -a -n "$arm_platform" ]; then
+		[ -L /dev/caldata ] || \
+			ln -s /dev/${mtd_name} /dev/caldata
+	else
+		[ -L /dev/caldata ] || \
+			ln -s /dev/${mtd_name//mtd/mtdblock} /dev/caldata
+	fi
+
+	load_wifi_art_modules
+
+# Start the daemon
+	if [ "${ART_QCA_WIFI_DETECTED}" -eq 1 ]; then
+		config_foreach start_nart_out wifi-device
+	else
+		start_nart_out "0"
+	fi
+}
+
+stop() {
+	art_qca_wifi_detect
+
+	config_load wireless
+
+	# Stop the daemon
+	if [ "${ART_QCA_WIFI_DETECTED}" -eq 1 ]; then
+		config_foreach stop_nart_out wifi-device
+	else
+		stop_nart_out "0"
+	fi
+
+	unload_wifi_art_modules
+
+	[ -c /dev/dk0 ] && rm /dev/dk0
+	[ -c /dev/dk1 ] && rm /dev/dk1
+	[ -L /dev/caldata ] && rm /dev/caldata
+
+}

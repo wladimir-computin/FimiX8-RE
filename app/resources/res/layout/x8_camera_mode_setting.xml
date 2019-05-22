@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/x8_mode_setting_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ViewStub android:id="@+id/param_default_layout" android:layout="@layout/x8_camera_sub_viewstub_defualt_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ViewStub android:id="@+id/sub_param_layout" android:layout="@layout/x8_camera_sub_param_viewstub_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

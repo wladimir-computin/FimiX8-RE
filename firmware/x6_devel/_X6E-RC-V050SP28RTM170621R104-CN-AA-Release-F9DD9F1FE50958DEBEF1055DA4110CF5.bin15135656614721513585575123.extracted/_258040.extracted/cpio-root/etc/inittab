@@ -1,0 +1,4 @@
+::sysinit:/etc/rc.d/rcS
+::respawn:/sbin/getty ttyS0 230400
+::shutdown:/bin/umount -a
+

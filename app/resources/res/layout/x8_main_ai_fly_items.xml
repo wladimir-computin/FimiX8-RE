@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fimi.kernel.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/x8_rl_main_ai_fly_items" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:id="@+id/sv_ai_items" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_ai_item1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                <RelativeLayout android:id="@+id/rl_ai_take_land_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:id="@+id/img_ai_take_land_off" android:background="@drawable/x8_btn_ai_takeoff_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+                    <TextView android:textSize="@dimen/textsize_36" android:textColor="@drawable/x8_ai_fly_items_text_selector" android:id="@+id/tv_ai_take_land_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x8s_main_ai_fly_items_x1" android:text="@string/x8_ai_fly_take_off" android:layout_below="@+id/img_ai_take_land_off" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_ai_return_home" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:id="@+id/img_ai_return_home" android:background="@drawable/x8_btn_ai_return_home" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+                    <TextView android:textSize="@dimen/textsize_36" android:textColor="@drawable/x8_ai_fly_items_text_selector" android:gravity="center" android:id="@+id/tv_ai_return_home" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x8s_main_ai_fly_items_x1" android:text="@string/x8_ai_fly_return_home" android:layout_below="@+id/img_ai_return_home" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:background="@drawable/x8_btn_ai_takeoff_selector" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:background="@color/black_80" android:layout_width="match_parent" android:layout_height="41dp">
+                <TextView android:textSize="@dimen/textsize_39" android:textColor="@color/white_90" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/x8_ai_fly_title" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="15dp">
+                <View android:background="@color/white_10" android:layout_width="match_parent" android:layout_height="1px"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_ai_item2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/ll_ai_item1" android:layout_alignParentRight="true" app:layout_marginTopPercent="5.277777%">
+                <RelativeLayout android:id="@+id/rl_ai_rout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:id="@+id/img_ai_rout" android:background="@drawable/x8_btn_ai_rout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+                    <TextView android:textSize="@dimen/textsize_36" android:textColor="@drawable/x8_ai_fly_items_text_selector" android:gravity="center" android:id="@+id/tv_ai_rout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x8s_main_ai_fly_items_x1" android:text="@string/x8_ai_fly_route" android:layout_below="@+id/img_ai_rout" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_ai_auto_photo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:id="@+id/img_ai_auto_photo" android:background="@drawable/x8_btn_ai_auto_photo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+                    <TextView android:textSize="@dimen/textsize_36" android:textColor="@drawable/x8_ai_fly_items_text_selector" android:gravity="center" android:id="@+id/tv_ai_auto_photo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x8s_main_ai_fly_items_x1" android:text="@string/x8_ai_fly_auto_photo" android:layout_below="@+id/img_ai_auto_photo" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_ai_follow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:id="@+id/img_ai_follow" android:background="@drawable/x8_btn_ai_follow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+                    <TextView android:textSize="@dimen/textsize_36" android:textColor="@drawable/x8_ai_fly_items_text_selector" android:gravity="center" android:id="@+id/tv_ai_follow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x8s_main_ai_fly_items_x1" android:text="@string/x8_ai_fly_follow" android:layout_below="@+id/img_ai_follow" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="30dp"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_ai_item3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/ll_ai_item2" android:layout_alignParentRight="true" app:layout_marginTopPercent="5.277777%">
+                <RelativeLayout android:id="@+id/rl_ai_point_to_point" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:id="@+id/img_ai_point_to_point" android:background="@drawable/x8_btn_ai_point_to_point" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+                    <TextView android:textSize="@dimen/textsize_36" android:textColor="@drawable/x8_ai_fly_items_text_selector" android:gravity="center" android:id="@+id/tv_ai_point_to_point" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x8s_main_ai_fly_items_x1" android:text="@string/x8_ai_fly_point_to_point" android:layout_below="@+id/img_ai_point_to_point" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_ai_surround_to_point" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:id="@+id/img_ai_surround_to_point" android:background="@drawable/x8_btn_ai_surround_to_point" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+                    <TextView android:textSize="@dimen/textsize_36" android:textColor="@drawable/x8_ai_fly_items_text_selector" android:gravity="center" android:id="@+id/tv_ai_surround_to_point" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x8s_main_ai_fly_items_x1" android:text="@string/x8_ai_fly_surround_to_point" android:layout_below="@+id/img_ai_surround_to_point" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_ai_screw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:id="@+id/img_ai_screw" android:background="@drawable/x8_btn_ai_screw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+                    <TextView android:textSize="@dimen/textsize_36" android:textColor="@drawable/x8_ai_fly_items_text_selector" android:gravity="center" android:id="@+id/tv_ai_screw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x8s_main_ai_fly_items_x1" android:text="@string/x8_ai_fly_screw" android:layout_below="@+id/img_ai_screw" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="30dp"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_ai_gravitation_item" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/ll_ai_item3" android:layout_alignParentRight="true" app:layout_marginTopPercent="5.277777%">
+                <RelativeLayout android:id="@+id/rl_ai_fly_gravitation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:id="@+id/img_ai_fly_gravitation" android:background="@drawable/x8_btn_ai_follow_to_hostpot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+                    <TextView android:textSize="@dimen/textsize_36" android:textColor="@drawable/x8_ai_fly_items_text_selector" android:gravity="center" android:id="@+id/tv_ai_fly_gravitation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x8s_main_ai_fly_items_x1" android:text="@string/x8_ai_fly_gravitation" android:layout_below="@+id/img_ai_fly_gravitation" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:background="@drawable/x8_img_ai_follow_to_hostpot2" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:background="@drawable/x8_img_ai_follow_to_hostpot2" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="15dp">
+                <View android:background="@color/white_10" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:background="@color/black_80" android:layout_width="match_parent" android:layout_height="41dp">
+                <TextView android:textSize="@dimen/textsize_39" android:textColor="@color/white_90" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/x8_ai_fly_mode" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="15dp">
+                <View android:background="@color/white_10" android:layout_width="match_parent" android:layout_height="1px"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_ai_item4" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rl_ai_fly_gravitation" android:layout_alignParentRight="true" app:layout_marginTopPercent="5.277777%">
+                <RelativeLayout android:id="@+id/rl_ai_aerial_photograph" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:id="@+id/img_ai_aerial_photograph" android:background="@drawable/x8_btn_ai_aerial_photograph" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+                    <TextView android:textSize="@dimen/textsize_36" android:textColor="@drawable/x8_ai_fly_items_text_selector" android:gravity="center" android:id="@+id/tv_ai_aerial_photograph" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x8s_main_ai_fly_items_x1" android:text="@string/x8_ai_aerial_photograph" android:layout_below="@+id/img_ai_aerial_photograph" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_ai_tripod" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:id="@+id/img_ai_tripod" android:background="@drawable/x8_btn_ai_tripod" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+                    <TextView android:textSize="@dimen/textsize_36" android:textColor="@drawable/x8_ai_fly_items_text_selector" android:gravity="center" android:id="@+id/tv_ai_tripod" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x8s_main_ai_fly_items_x1" android:text="@string/x8_ai_tripod" android:layout_below="@+id/img_ai_tripod" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_ai_heading_lock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:id="@+id/img_ai_heading_lock" android:background="@drawable/x8_btn_ai_headinglock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+                    <TextView android:textSize="@dimen/textsize_36" android:textColor="@drawable/x8_ai_fly_items_text_selector" android:gravity="center" android:id="@+id/tv_ai_heading_lock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x8s_main_ai_fly_items_x1" android:text="@string/x8_ai_heading_lock" android:layout_below="@+id/img_ai_heading_lock" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="30dp"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_ai_item5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/ll_ai_item4" android:layout_alignParentRight="true" app:layout_marginTopPercent="5.277777%">
+                <RelativeLayout android:id="@+id/rl_ai_fixed_wing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:id="@+id/img_ai_fixed_wing" android:background="@drawable/x8_btn_ai_fixed_wing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+                    <TextView android:textSize="@dimen/textsize_36" android:textColor="@drawable/x8_ai_fly_items_text_selector" android:gravity="center" android:id="@+id/tv_ai_fixed_wing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x8s_main_ai_fly_items_x1" android:text="@string/x8_ai_fixed_wing" android:layout_below="@+id/img_ai_fixed_wing" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_ai_follow_to_hostpot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:id="@+id/img_ai_follow_to_hostpot" android:background="@drawable/x8_btn_ai_follow_to_hostpot" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+                    <TextView android:textSize="@dimen/textsize_36" android:textColor="@drawable/x8_ai_fly_items_text_selector" android:gravity="center" android:id="@+id/tv_ai_follow_to_hostpot" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x8s_main_ai_fly_items_x1" android:text="@string/x8_ai_fly_follow_to_hotspot" android:layout_below="@+id/img_ai_follow_to_hostpot" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:background="@drawable/x8_btn_ai_follow_to_hostpot" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="15dp">
+                <View android:background="@color/white_10" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:background="@color/black_80" android:layout_width="match_parent" android:layout_height="41dp">
+                <TextView android:textSize="@dimen/textsize_39" android:textColor="@color/white_90" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/x8_ai_fly_other" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="15dp">
+                <View android:background="@color/white_10" android:layout_width="match_parent" android:layout_height="1px"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_ai_item6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/ll_ai_item4" android:layout_alignParentRight="true" app:layout_marginTopPercent="5.277777%">
+                <RelativeLayout android:id="@+id/rl_ai_sar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:id="@+id/img_ai_sar" android:background="@drawable/x8_btn_ai_sar_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+                    <TextView android:textSize="@dimen/textsize_36" android:textColor="@drawable/x8_ai_fly_items_text_selector" android:gravity="center" android:id="@+id/tv_ai_sar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x8s_main_ai_fly_items_x1" android:text="@string/x8_ai_fly_sar" android:layout_below="@+id/img_ai_sar" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:background="@drawable/x8_btn_ai_fixed_wing" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:background="@drawable/x8_btn_ai_follow_to_hostpot" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</com.fimi.kernel.percent.PercentRelativeLayout>

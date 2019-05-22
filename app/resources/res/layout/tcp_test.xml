@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_cmd_connect" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:id="@+id/btn_connect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="建立Cmd连接"/>
+        <Button android:id="@+id/btn_disconnect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cmd断开"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_cmd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:layout_below="@+id/ll_cmd_connect">
+        <Button android:id="@+id/btn_getversion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="获取版本"/>
+        <Button android:id="@+id/btn_start_update" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请求升级"/>
+        <Button android:id="@+id/btn_request_put_file" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请求传固件"/>
+    </LinearLayout>
+    <View android:id="@+id/view1" android:background="#aa000000" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="5dp" android:layout_marginTop="10dp" android:layout_marginRight="5dp" android:layout_below="@+id/ll_cmd"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_data_connect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/view1">
+        <Button android:id="@+id/btn_data_connect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="建立Data连接"/>
+        <Button android:id="@+id/btn_data_disconnect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Data断开"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_file" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:layout_below="@+id/ll_data_connect">
+        <Button android:id="@+id/btn_file_merge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="固件合成"/>
+        <Button android:id="@+id/btn_file_upload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="固件上传"/>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="80dp" android:layout_below="@+id/ll_file">
+        <TextView android:id="@+id/tv_result" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

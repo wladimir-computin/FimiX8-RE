@@ -1,0 +1,14 @@
+Package: qca-hostapd-cli
+Version: ge59f151-dirty-1
+Depends: libc, qca-hostap
+Provides: 
+Source: qca/feeds/wlan_10_2/qca-hostap
+Section: QCA
+Status: unknown ok not-installed
+Essential: no
+Priority: optional
+Maintainer: Qualcomm Atheros
+Architecture: ar71xx
+Installed-Size: 16446
+Description:  This package contains a command line utility to control the
+ IEEE 802.1x/WPA/EAP/RADIUS Authenticator.

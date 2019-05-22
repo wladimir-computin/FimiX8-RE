@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="tw__time_hours">
+        <item>%ds</item>
+        <item>1s</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item>%dd</item>
+        <item>1d</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item>%d</item>
+        <item>1s</item>
+    </plurals>
+</resources>

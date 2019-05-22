@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="tw__time_hours">
+        <item>%dঘ</item>
+        <item>1ঘ</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item>%dমি</item>
+        <item>1মি</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item>%dসেকেন্ড</item>
+        <item>1সে</item>
+    </plurals>
+</resources>

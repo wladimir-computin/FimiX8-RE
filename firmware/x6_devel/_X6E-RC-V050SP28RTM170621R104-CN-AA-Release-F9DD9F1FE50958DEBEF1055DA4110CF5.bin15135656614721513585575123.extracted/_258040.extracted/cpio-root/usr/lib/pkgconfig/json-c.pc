@@ -1,0 +1,11 @@
+prefix=/home/wangyf/X6E_svn/build/../rootfs-db12x_mi124_f1e.build/usr
+exec_prefix=/home/wangyf/X6E_svn/build/../rootfs-db12x_mi124_f1e.build/usr
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: json-c
+Description: JSON implementation in C
+Version: 0.12
+Requires: 
+Libs:  -L${libdir} -ljson-c
+Cflags: -I${includedir}/json-c

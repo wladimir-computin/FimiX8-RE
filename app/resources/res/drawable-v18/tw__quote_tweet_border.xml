@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <solid android:color="@android:color/transparent"/>
+    <stroke android:width="@dimen/tw__quote_tweet_border_width" android:color="@color/tw__light_gray"/>
+    <corners android:radius="@dimen/tw__media_view_radius"/>
+</shape>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/media_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.fimi.player.widget.FimiVideoView android:id="@+id/fimi_video" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:id="@+id/player_btn" android:background="@drawable/album_btn_media_play_big_selector" android:layout_width="67dp" android:layout_height="67dp" android:layout_centerInParent="true"/>
+    <include android:id="@+id/media_contoller" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/activity_x8_fimi_media_control"/>
+</RelativeLayout>

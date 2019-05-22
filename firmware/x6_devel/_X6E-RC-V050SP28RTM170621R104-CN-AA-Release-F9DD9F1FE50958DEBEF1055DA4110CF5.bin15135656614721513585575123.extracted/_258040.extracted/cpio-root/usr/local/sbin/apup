@@ -1,0 +1,24 @@
+#!/bin/sh
+LSMOD_UMAC=`lsmod | grep umac`
+if [ "${LSMOD_UMAC}" == "" ]; then
+  insmod /lib/modules/2.6.31/net/adf.ko
+  insmod /lib/modules/2.6.31/net/asf.ko
+  insmod /lib/modules/2.6.31/net/ath_hal.ko
+  insmod /lib/modules/2.6.31/net/ath_rate_atheros.ko
+  insmod /lib/modules/2.6.31/net/ath_dfs.ko
+  insmod /lib/modules/2.6.31/net/ath_dev.ko
+  insmod /lib/modules/2.6.31/net/umac.ko
+fi
+
+wlanconfig ath0 create wlandev wifi0 wlanmode ap
+
+APSSID=`uci get wireless.ap0.ssid`
+if [ "${APSSID}" == "" ]; then
+	APSSID=CAMAP00000000
+fi
+ifconfig ath0 down
+iwconfig ath0 essid ${APSSID}
+iwconfig ath0 channel 153
+ifconfig ath0 192.168.40.254 up
+
+

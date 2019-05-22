@@ -1,0 +1,208 @@
+<!--debug属性用来决定是否打印logback的日志信息-->
+<configuration debug='false'>
+
+    <!--声明一个属性,用来指定log文件存放的路径-->
+    <property name="LOG_DIR" value="/sdcard/FimiLogger"/>
+
+    <!--声明一个时间戳-->
+    <timestamp datePattern="yyyyMMdd" key="today"/>
+
+    <!--用于在控制台输出的Appender-->
+    <appender name="LOGCAT" class="ch.qos.logback.classic.android.LogcatAppender">
+        <encoder>
+            <pattern>%-5relative [%thread][%file:%M:%line] - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!--声明一个FileAppender-->
+    <appender name="BASE_FILE" class="ch.qos.logback.core.FileAppender">
+        <!--初始化的时候不创建文件,在第一次使用的时候创建文件-->
+        <lazy>true</lazy>
+        <!--log追加到文件,否则覆盖文件-->
+        <append>true</append>
+        <!--用来保存log的文件全路径-->
+        <file>${LOG_DIR}/base.log</file>
+        <!--输出log的格式-->
+        <encoder>
+            <!--<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} [%file:%line] - %msg%n</pattern>-->
+            <pattern>%date [%thread] %-5level %logger{36} [%file:%line] - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+
+
+    <!--主工程log-->
+    <appender name="host_app_config" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_DIR}/x8/log.txt</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%date %-5relative [%thread] %-5level  [%file:%M:%line] - %msg%n
+            </pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <fileNamePattern>${LOG_DIR}/Bak/host/app/log.%i.txt</fileNamePattern>
+            <minIndex>1</minIndex>
+            <maxIndex>1</maxIndex>
+        </rollingPolicy>
+
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <maxFileSize>20MB</maxFileSize>
+        </triggeringPolicy>
+    </appender>
+
+
+    <logger name="host_app_log">
+        <appender-ref ref="host_app_config"/>
+    </logger>
+
+
+
+    <!--x9通讯收发命令-->
+    <appender name="x9_communication_config" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_DIR}/X9/X9Connect/communication.txt</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%date %-5relative [%thread] %-5level  [%file:%M:%line] - %msg%n
+            </pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <fileNamePattern>${LOG_DIR}/Bak/X9/X9Connect/log.%i.txt</fileNamePattern>
+            <minIndex>1</minIndex>
+            <maxIndex>1</maxIndex>
+        </rollingPolicy>
+
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <maxFileSize>20MB</maxFileSize>
+        </triggeringPolicy>
+    </appender>
+
+    <appender name="x9_handVerfiy" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_DIR}/X9/X9Connect/handVerfiy.txt</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%date %-5relative [%thread] %-5level  [%file:%M:%line] - %msg%n
+            </pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <fileNamePattern>${LOG_DIR}/Bak/X9/X9Connect/log.%i.txt</fileNamePattern>
+            <minIndex>1</minIndex>
+            <maxIndex>1</maxIndex>
+        </rollingPolicy>
+
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <maxFileSize>20MB</maxFileSize>
+        </triggeringPolicy>
+    </appender>
+
+    <!--x9通讯订阅-->
+    <appender name="x9_subscribe_config" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_DIR}/X9/Subscribe/subscribe.txt</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%date %-5relative [%thread] %-5level  [%file:%M:%line] - %msg%n
+            </pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <fileNamePattern>${LOG_DIR}/Bak/X9/Subscribe/log.%i.txt</fileNamePattern>
+            <minIndex>1</minIndex>
+            <maxIndex>1</maxIndex>
+        </rollingPolicy>
+
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <maxFileSize>20MB</maxFileSize>
+        </triggeringPolicy>
+    </appender>
+
+
+    <!--gh2通讯收发命令-->
+    <appender name="gh2_communication_config" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_DIR}/Gh2/gh2Connect/communication.txt</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%date %-5relative [%thread] %-5level  [%file:%M:%line] - %msg%n
+            </pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <fileNamePattern>${LOG_DIR}/Bak/Gh2/gh2Connect/log.%i.txt</fileNamePattern>
+            <minIndex>1</minIndex>
+            <maxIndex>1</maxIndex>
+        </rollingPolicy>
+
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <maxFileSize>20MB</maxFileSize>
+        </triggeringPolicy>
+    </appender>
+
+    <!--gh2扫描-连接-->
+    <appender name="gh2_scanner_connectz_config" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_DIR}/Gh2/gh2Connect/connect.txt</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%date %-5relative [%thread] %-5level  [%file:%M:%line] - %msg%n
+            </pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <fileNamePattern>${LOG_DIR}/Bak/Gh2/gh2Connect/connect.%i.txt</fileNamePattern>
+            <minIndex>1</minIndex>
+            <maxIndex>1</maxIndex>
+        </rollingPolicy>
+
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <maxFileSize>20MB</maxFileSize>
+        </triggeringPolicy>
+    </appender>
+
+
+    <!--x8s_cmd_log-->
+    <appender name="x8s_cmd_log_config" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_DIR}/x8/cmd/log.txt</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%date %-5relative [%thread] %-5level  [%file:%M:%line] - %msg%n
+            </pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <fileNamePattern>${LOG_DIR}/x8/cmd/log.%i.txt</fileNamePattern>
+            <minIndex>1</minIndex>
+            <maxIndex>1</maxIndex>
+        </rollingPolicy>
+
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <maxFileSize>20MB</maxFileSize>
+        </triggeringPolicy>
+    </appender>
+
+    <logger name="x8s_cmd_log">
+        <appender-ref ref="x8s_cmd_log_config"/>
+    </logger>
+
+    <logger name="x9_subscribe_log">
+        <appender-ref ref="x9_subscribe_config"/>
+    </logger>
+
+    <logger name="x9_communication_log">
+        <appender-ref ref="x9_communication_config"/>
+    </logger>
+
+    <logger name="host_app_log">
+        <appender-ref ref="host_app_config"/>
+    </logger>
+
+    <logger name="x9_hand_log">
+        <appender-ref ref="x9_handVerfiy"/>
+    </logger>
+
+    <logger name="gh2_communication_log">
+        <appender-ref ref="gh2_communication_config"/>
+    </logger>
+    <logger name="gh2_scanner_connectz_log">
+        <appender-ref ref="gh2_scanner_connectz_config"/>
+    </logger>
+
+    <!-- Write INFO (and higher-level) messages to the log file -->
+    <root level="TRACE">
+        <appender-ref ref="LOGCAT"/>
+    </root>
+
+</configuration>
+

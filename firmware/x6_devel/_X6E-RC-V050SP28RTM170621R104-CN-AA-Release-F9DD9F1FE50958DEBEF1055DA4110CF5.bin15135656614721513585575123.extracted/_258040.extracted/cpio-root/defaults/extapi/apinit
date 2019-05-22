@@ -1,0 +1,47 @@
+#!/bin/sh
+
+
+WIFI_MODE=`uci get wireless.wifi0.hwmode`
+WIFI_BW=`uci get wireless.wifi0.chanbw`
+WIFI_CH=`uci get wireless.wifi0.channel`
+WIFI_TXCHMASK=`uci get wireless.wifi0.txchmask`
+WIFI_TXPWR=`uci get wireless.wifi0.txpower`
+WIFI_TXPWR_MAX=`uci get wireless.wifi0.txpower_max`
+WIFI_DYNPWR=`uci get wireless.wifi0.dynpwr`
+
+iwpriv wifi0 setCountryID 840
+iwconfig ath0 channel ${WIFI_CH}
+iwpriv ath0 wds 1
+iwpriv ath0 no_wradar 0
+iwpriv ath0 chanbw ${WIFI_BW}
+ifconfig ath0 txqueuelen 1000
+ifconfig wifi0 txqueuelen 1000
+iwpriv ath0 shortgi 0
+if [ ${WIFI_MODE} == "11A" ] || [ ${WIFI_MODE} == "11NAHT20" ]; then
+  iwpriv ath0 mode ${WIFI_MODE}
+else
+  iwpriv ath0 mode 11A
+fi
+iwpriv ath0 vap_doth 0
+iwpriv wifi0 AMPDU 1
+iwpriv wifi0 AMPDUFrames 32
+iwpriv wifi0 AMPDULim 50000
+iwpriv ath0 pureg 0
+iwpriv ath0 puren 0
+iwconfig ath0 essid "" mode master freq ${WIFI_CH}
+
+iwpriv wifi0 rxchainmask 3
+iwpriv wifi0 txchainmask ${WIFI_TXCHMASK}
+if [ ${WIFI_DYNPWR} == '0' ]; then
+    iwconfig ath0 txpower ${WIFI_TXPWR_MAX}
+else
+    iwconfig ath0 txpower ${WIFI_TXPWR}
+fi    
+
+ifconfig ath0 allmulti
+
+##activiteVAP
+ifconfig ath0 192.168.40.100 up
+iwpriv ath0 wps 1
+
+/sbin/hostapd /opt/config/x6_hostapd.conf -e /tmp/entropy &

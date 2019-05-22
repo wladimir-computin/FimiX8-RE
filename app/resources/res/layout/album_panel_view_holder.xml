@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="12sp" android:textColor="@android:color/white" android:gravity="left" android:id="@+id/title_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="13dp" android:alpha="0.9"/>
+    <RelativeLayout android:id="@+id/right_select" android:paddingLeft="20dp" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_alignParentRight="true">
+        <TextView android:textSize="11.5dp" android:textColor="@android:color/white" android:id="@+id/all_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/media_select_all" android:alpha="0.9"/>
+        <ImageView android:id="@+id/icon_select" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.5dp" android:src="@drawable/album_btn_category_select_normal" android:layout_toRightOf="@+id/all_select"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/rl" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.fimi.album.widget.HackyViewPager android:id="@+id/viewpaper" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <include layout="@layout/x8_layout_media_detail_top"/>
+    <include layout="@layout/x8_media_bottonm_bar"/>
+    <include layout="@layout/x8_layout_media_bar_select_bottom"/>
+    <FrameLayout android:id="@+id/fl_share" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageButton android:id="@+id/ibtn_left_slide" android:background="@drawable/album_left_slide" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_centerVertical="true"/>
+    <ImageButton android:id="@+id/ibtn_right_slide" android:background="@drawable/album_right_slide" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <Button android:id="@+id/btn_play_max" android:background="@drawable/album_btn_media_play_big_selector" android:visibility="gone" android:layout_width="67dp" android:layout_height="67dp" android:layout_centerInParent="true"/>
+</RelativeLayout>

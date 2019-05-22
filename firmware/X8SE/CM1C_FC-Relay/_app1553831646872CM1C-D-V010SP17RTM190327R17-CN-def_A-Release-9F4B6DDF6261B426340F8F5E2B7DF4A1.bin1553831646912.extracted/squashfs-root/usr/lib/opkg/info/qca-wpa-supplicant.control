@@ -1,0 +1,13 @@
+Package: qca-wpa-supplicant
+Version: ge59f151-dirty-1
+Depends: libc, kmod-qca-wifi
+Provides: 
+Source: qca/feeds/wlan_10_2/qca-hostap
+Section: QCA
+Status: unknown ok not-installed
+Essential: no
+Priority: optional
+Maintainer: Qualcomm Atheros
+Architecture: ar71xx
+Installed-Size: 375738
+Description:  WPA Supplicant

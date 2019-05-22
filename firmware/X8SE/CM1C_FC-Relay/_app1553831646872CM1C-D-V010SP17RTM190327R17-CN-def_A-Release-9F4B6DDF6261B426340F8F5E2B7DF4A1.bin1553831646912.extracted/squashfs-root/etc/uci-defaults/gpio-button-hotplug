@@ -1,0 +1,34 @@
+#!/bin/sh
+#
+# Copyright (c) 2013 The Linux Foundation. All rights reserved.
+# Copyright (C) 2011-2012 OpenWrt.org
+#
+
+. /lib/ar71xx.sh
+. /lib/functions/gpio-button-hotplug.sh
+. /lib/functions.sh
+
+board=$(ar71xx_board_name)
+
+# If the button config was already provisionned on the FS, then we do nothing
+is_button_set=
+button_set() {
+	is_button_set=1;
+}
+local button
+config_load system
+config_foreach button_set button
+[ "${is_button_set}" == "1" ] && exit 0;
+
+case "$board" in
+cus227)
+	button_add_uci_config "pressed" "BTN_2" "mtd -r erase rootfs_data"
+	;;
+
+reh132 | aph131)
+	button_add_range_uci_config "released" "reset" "reboot" "1" "10"
+	button_add_range_uci_config "released" "reset" "mtd -r erase rootfs_data" "15" "30"
+	;;
+esac
+
+exit 0

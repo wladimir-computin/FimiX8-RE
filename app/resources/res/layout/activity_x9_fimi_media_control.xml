@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/bottom_play_rl" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_head" android:background="#00eedd" android:layout_width="match_parent" android:layout_height="60dp">
+        <ImageButton android:id="@+id/ibtn_return" android:background="@drawable/ic_launcher" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10.6dp"/>
+        <TextView android:textSize="14dp" android:textColor="#ccffffff" android:id="@+id/tv_photo_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19dp" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/show" android:background="#cc1f1f21" android:layout_width="match_parent" android:layout_height="67dp" android:layout_alignParentBottom="true">
+        <TextView android:background="#26ffffff" android:layout_width="match_parent" android:layout_height="0.33dp"/>
+        <ImageButton android:id="@+id/mini_player_btn" android:background="#00000000" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.6dp" android:src="@drawable/ic_launcher" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="12sp" android:textColor="#ffffffff" android:id="@+id/time_current_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="15.3dp"/>
+        <SeekBar android:id="@+id/play_sb" android:paddingBottom="1dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.5dp" android:thumb="@drawable/ic_launcher" android:layout_toLeftOf="@+id/mini_player_btn" android:layout_below="@+id/time_current_tv"/>
+        <TextView android:textSize="12sp" android:textColor="#ffffffff" android:id="@+id/total_time_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.3dp" android:layout_marginRight="17dp" android:layout_toLeftOf="@+id/mini_player_btn"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/fimisdk_shape_dialog_content_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rl_content" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="13dp" android:textColor="#e6000000" android:gravity="center" android:id="@+id/tv_title" android:layout_width="251.6dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="12.3dp" android:layout_marginRight="20dp" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="12dp" android:textColor="#99000000" android:gravity="center" android:id="@+id/tv_content" android:layout_width="251.6dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="15dp" android:layout_marginRight="20dp" android:layout_marginBottom="15dp" android:layout_below="@+id/tv_title"/>
+            <TextView android:textSize="12dp" android:textColor="#99000000" android:gravity="center" android:id="@+id/tv_content_sigle" android:visibility="gone" android:layout_width="250dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="27.3dp" android:layout_marginRight="20dp" android:layout_marginBottom="15dp"/>
+        </RelativeLayout>
+        <LinearLayout android:id="@+id/rl_double" android:layout_width="251.6dp" android:layout_height="wrap_content" android:layout_below="@+id/rl_content" android:layout_alignLeft="@+id/rl_content" android:layout_alignRight="@+id/rl_content">
+            <Button android:textSize="13sp" android:textColor="#e6000000" android:gravity="center" android:id="@+id/btn_left" android:background="@drawable/fimisdk_btn_dialog_left_bg" android:layout_width="match_parent" android:layout_height="52dp" android:text="@string/cancel" android:layout_weight="1" android:layout_alignParentLeft="true"/>
+            <Button android:textSize="13sp" android:textColor="#e6000000" android:gravity="center" android:id="@+id/btn_right" android:background="@drawable/fimisdk_btn_dialog_right_bg" android:layout_width="match_parent" android:layout_height="52dp" android:text="@string/ensure" android:layout_weight="1" android:layout_toRightOf="@+id/left_btn"/>
+        </LinearLayout>
+        <Button android:textSize="13dp" android:textColor="#e6000000" android:id="@+id/btn_single" android:background="@drawable/fimisdk_btn_dialog_sigle_bg_selector" android:layout_width="wrap_content" android:layout_height="52dp" android:layout_below="@+id/rl_content" android:layout_alignLeft="@+id/rl_content" android:layout_alignRight="@+id/rl_content"/>
+    </RelativeLayout>
+</RelativeLayout>

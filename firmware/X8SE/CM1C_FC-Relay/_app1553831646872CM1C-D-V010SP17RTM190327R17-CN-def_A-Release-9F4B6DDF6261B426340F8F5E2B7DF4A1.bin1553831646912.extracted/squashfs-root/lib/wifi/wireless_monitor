@@ -1,0 +1,26 @@
+#!/bin/sh
+  
+AP_IP="192.168.40.100"
+WAIT_COUNT=1
+
+ASSOC=`iwconfig ath0 | grep Not-Associated`
+if [ -z "$ASSOC" ]; then
+    # firstly ping to check again
+    FAIL_COUNT=0
+    while [ $FAIL_COUNT -lt $WAIT_COUNT ];
+    do
+        if ping -w 1 $AP_IP >/dev/null; then
+            #echo "$AP_IP Ping is successful."
+            #sleep 10
+            break
+        else
+            let FAIL_COUNT++
+        fi
+    done
+    
+    if [ $FAIL_COUNT -eq $WAIT_COUNT ]; then
+        wpa_cli -p /var/run/wpa_supplicant-ath0 disconnect > /dev/null
+        sleep 1
+        wpa_cli -p /var/run/wpa_supplicant-ath0 reconnect > /dev/null        
+    fi
+fi

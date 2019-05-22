@@ -1,0 +1,9 @@
+#!/bin/sh
+
+mtd erase /dev/mtd2
+insmod /lib/modules/2.6.31/net/art.ko 
+chmod +x /opt/nart.out
+mknod /dev/dk0 c 63 0
+mknod /dev/dk1 c 63 1
+export LD_LIBRARY_PATH=./:$LD_LIBRARY_PATH
+/opt/nart.out -console -instance 0 -port 2390&

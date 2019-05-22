@@ -1,0 +1,13 @@
+Package: qca-ssdk-shell
+Version: ge59f151-dirty-1
+Depends: libc
+Provides: 
+Source: package/qca-ssdk-shell
+Section: QCA
+Status: unknown ok not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: ar71xx
+Installed-Size: 99258
+Description:  Shell application for QCA SSDK

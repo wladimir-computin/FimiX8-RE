@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/view_group" android:background="#ff141719" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_head" android:background="#ff000000" android:layout_width="match_parent" android:layout_height="50dp">
+        <ImageButton android:id="@+id/ibtn_return" android:background="@drawable/x8_selector_return_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_centerVertical="true"/>
+        <Button android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv_media_select" android:background="@drawable/album_frame_selector" android:layout_width="55dp" android:layout_height="29dp" android:layout_marginRight="10dp" android:text="@string/media_select" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <android.support.design.widget.TabLayout android:id="@+id/tl_title_categoly" android:layout_width="400dp" android:layout_height="match_parent" android:layout_centerInParent="true" app:tabIndicatorHeight="0dp" app:tabBackground="@null" app:tabGravity="1" app:tabTextColor="@android:color/holo_blue_light" app:tabSelectedTextColor="@android:color/black" app:tabPaddingEnd="15dp"/>
+    </RelativeLayout>
+    <com.fimi.album.widget.HackyViewPager android:id="@+id/viewpaper" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rl_head"/>
+    <include layout="@layout/x8_media_top_bar"/>
+    <include layout="@layout/x8_media_bottonm_bar"/>
+</RelativeLayout>

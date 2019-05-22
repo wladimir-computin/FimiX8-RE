@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fimi.kernel.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rl_title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_marginTopPercent="2.5%h">
+        <View android:id="@+id/cb_select" android:background="@drawable/checkbox_fm_select_style" android:layout_width="4dp" android:layout_height="4dp" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/text_size_42" android:textColor="#e6000000" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="title" android:layout_toRightOf="@+id/cb_select"/>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/text_size_36" android:textColor="#66000000" android:id="@+id/tv_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="info" android:layout_below="@+id/rl_title" android:layout_alignLeft="@+id/tv_title" android:lineSpacingExtra="8dp" app:layout_marginTopPercent="1.6666%h"/>
+    <View android:id="@+id/v_lin_one" android:background="#26000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/downfw_divide_height" android:layout_marginTop="5dp" android:layout_below="@+id/tv_info" android:layout_alignLeft="@+id/tv_title"/>
+</com.fimi.kernel.percent.PercentRelativeLayout>

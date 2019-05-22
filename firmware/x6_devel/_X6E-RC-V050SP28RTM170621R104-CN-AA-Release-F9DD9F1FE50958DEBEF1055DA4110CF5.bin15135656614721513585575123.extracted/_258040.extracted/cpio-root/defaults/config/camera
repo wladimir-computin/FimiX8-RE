@@ -1,0 +1,15 @@
+config settings defaults
+	option wifi_iface	ath1
+	option network		camera
+	option ssid 		'REMCNTL0284C5'
+	option mac 		''
+	option encryption 	'none'
+	option key		''
+	option key1		''
+	option key2		''
+	option key3		''
+	option key4		''
+	option proto 		'static'
+	option ipaddr 		'192.168.40.1'
+	option netmask 		'255.255.255.0'
+

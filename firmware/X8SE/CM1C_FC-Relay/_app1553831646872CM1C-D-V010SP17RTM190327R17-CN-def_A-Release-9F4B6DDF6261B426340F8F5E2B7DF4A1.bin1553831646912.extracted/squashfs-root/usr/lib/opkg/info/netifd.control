@@ -1,0 +1,13 @@
+Package: netifd
+Version: 2013-05-13-bc4a4bb127622c76085ecec7fd20448aad7bafaf
+Depends: libc, libuci, libnl-tiny, libubus, ubus, ubusd, jshn, kmod-bonding
+Provides: 
+Source: package/netifd
+Section: base
+Status: unknown ok not-installed
+Essential: no
+Priority: optional
+Maintainer: OpenWrt Developers Team <openwrt-devel@openwrt.org>
+Architecture: ar71xx
+Installed-Size: 47983
+Description:  OpenWrt Network Interface Configuration Daemon
